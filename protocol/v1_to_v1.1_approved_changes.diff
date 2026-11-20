@@ -1,0 +1,111 @@
+--- Experimental_Protocol_V1.md
++++ Experimental_Protocol_V1.1_FINAL.md
+@@ -6,6 +6,6 @@
+ **Engineering Lead:** Claude  
+ **Independent Reviewers:** Gemini and Grok  
+-**Version:** 1.0 — Design proposal  
+-**Status:** G1 ALIGN — awaiting PI approval
++**Version:** 1.1 — Final PI-approved G2 revision (20 November 2026)  
++**Status:** G0 DESIGN and G1 ALIGN approved; G2 SCIENTIFIC DRY RUN CONDITIONAL GO, with PI-approved refinements; G3 RECON authorized (not yet executed)
+ 
+ ---
+@@ -86,4 +86,6 @@
+ 4. Test whether these candidates generalize to held-out contexts and distinguish the entity from relevant non-entities.
+ 5. Check whether their selectivity persists across property changes rather than merely tracking one material, descriptor, token, or grammatical position.
++6. **Required P1 identity validation (PI-approved G2 refinement):** In held-out, property-matched contrasts, test whether the candidate representation still discriminates the intended entity from non-entities when material, fragility, affordances, and descriptive context are matched or varied independently. Also vary grammatical role and position so selectivity cannot be explained solely by noun placement or object/patient tracking. For the same entity, verify stability across such changes; for matched non-entities, verify discrimination.
++7. At G5, preregister the candidate-selection procedure, property-matched contrast construction, held-out split, quantitative selectivity/stability criteria, and failure/inconclusive thresholds before confirmatory tests. A candidate driven by property or grammatical role without residual entity identity does not qualify as validated Substance for P1 or subsequent Substance-specific claims.
+ 
+ **Operational definition of a candidate Form:** An identified internal representation with demonstrated selectivity and stability across the tested variations.
+@@ -120,4 +122,6 @@
+ Use the same prompt and model weights throughout each comparison.
+ 
++**P3 pathway-specific evidence (PI-approved G2 refinement):** A claim of mandatory Substance → Causality dependency requires (i) a localized upstream Substance representation and identified downstream interaction component(s), (ii) targeted disruption with measurements showing the downstream component uses information from that upstream site, and (iii) pathway-specific restoration/patching that recovers downstream processing and, where applicable, the output log-odds signal. Global recovery or reintroduction of correlated information through an unspecified alternate channel does not by itself establish the claimed pathway. If pathway isolation or specific restoration is technically infeasible, report P3 as inconclusive/unestablished rather than inferring necessity from P2. These are pathway-evidence requirements, not a replacement or co-primary metric for B6.
++
+ ### B5. Mandatory controls
+ 
+@@ -139,4 +143,6 @@
+ 
+ Purpose: distinguish the hypothesized dependency from generic noun tracking or attention routing.
++
++**C1/C2 intervention-matching rules (PI-approved G2 refinement; exact numerical settings frozen at G5):** For each confirmatory comparison, use the same model checkpoint, target continuation, activation-ablation operator, and intervention layer/hook class. Match and record the actual L2 norm of the intervention-induced activation change at the affected site, together with the number/dimensionality of intervened features; do not infer equality merely from applying the same scalar coefficient. For C1, apply unrelated-feature ablation at the same candidate activation site and target token position(s), where feature selectivity permits. For C2, apply the corresponding noun-representation intervention at the bystander noun token position(s); match layer, hook, operator, intervention dimensionality, and actual change magnitude, while explicitly recording unavoidable differences in token position, grammatical role, or salience. Never describe C2 as position-matched when it is not. At G5 freeze the feature/position matching algorithm, numerical magnitude tolerance, token-span handling, paired-stimulus rules, exclusion/failure criteria, and logging fields; apply them identically without consulting confirmatory outcomes. Comparisons that fail required matching checks are flagged as non-confirmatory, not interpreted as positive evidence. Both original controls remain mandatory and distinct.
+ 
+ **Exploratory diagnostic — Material property**
+@@ -185,5 +191,5 @@
+ - Sensitivity to property and sentence variations.
+ 
+-Secondary measurements cannot retroactively replace the primary metric.
++Secondary measurements cannot retroactively replace the primary metric. For P3, downstream-component intervention and pathway-specific restoration evidence is required **before making a necessity claim**; these measurements remain secondary to the unchanged primary B6 log-odds measurement.
+ 
+ ### B8. Falsification and interpretation
+@@ -199,5 +205,5 @@
+ | Selective disruption followed by restoration recovers performance | Stronger causal evidence for the targeted pathway |
+ 
+-A mandatory pathway requires stronger evidence than a statistically significant output change. Even successful interventions establish necessity only relative to the tested representations, model, tasks, and intervention coverage.
++A mandatory pathway requires stronger evidence than a statistically significant output change. Even successful interventions establish necessity only relative to the tested representations, model, tasks, and intervention coverage. **Interpretation rule:** P1 selectivity, P2 log-odds specificity, and P3 pathway necessity must be reported separately. P2 superiority over both controls supports causal contribution to the output; it cannot alone establish a specific downstream Causality circuit or a mandatory Substance → Causality route. P3 necessity is supported only by adequately selective, pathway-specific disruption and restoration evidence; otherwise mark P3 inconclusive or contradicted as indicated by the observations.
+ 
+ ---
+@@ -271,7 +277,10 @@
+ - [ ] Define the precise intervention site and causal comparison.
+ - [ ] Check that entity identity is distinguishable from lexical, grammatical, material and other property information.
++- [ ] Verify that held-out property-matched entity/non-entity contrasts and grammatical-role variations can test residual identity selectivity.
+ - [ ] Explain how feature validation avoids circular selection.
+ - [ ] Verify intervention magnitude matching for C1 and C2.
++- [ ] Verify comparability and logging of intervention layer, hook, affected feature dimensionality, actual activation-change norm, and token position for each mandatory control.
+ - [ ] Define evidence for contribution versus mandatory dependency.
++- [ ] Separate output-level P2 from downstream pathway-specific P3 disruption and restoration evidence.
+ - [ ] Check that measurements and proposed comparisons could falsify the hypothesis.
+ - [ ] Verify fidelity to every relevant original experimental specification.
+@@ -336,8 +345,11 @@
+ - [ ] Freeze experimental prompt families and inclusion rules.
+ - [ ] Freeze feature-discovery and validation datasets.
++- [ ] Freeze property-matched P1 identity/non-identity contrasts, grammatical-role variation, and selectivity/stability thresholds.
+ - [ ] Freeze held-out testing data with no selection leakage.
+ - [ ] Freeze feature identification and downstream circuit localization procedures.
+ - [ ] Freeze intervention layer, site, strength, and matching rules.
+ - [ ] Freeze C1 and C2 implementations.
++- [ ] Freeze the actual-activation-change norm matching tolerance, hook/layer/dimensionality and token-position matching rules, diagnostic records, and failure/exclusion handling for C1 and C2.
++- [ ] Freeze pathway-specific disruption, downstream-component measures, and restoration criteria for any P3 necessity claim, including what to report if infeasible.
+ - [ ] Freeze primary and secondary measurements.
+ - [ ] Freeze sample size using probe variability and available resources.
+@@ -383,6 +395,8 @@
+ - [ ] Verify that ablations modify only intended activations.
+ - [ ] Verify intervention magnitudes and matched controls.
++- [ ] Test and log site/position/dimensionality matching, actual activation-change norms, tolerance failures, and the distinction between C1 and C2.
+ - [ ] Verify numerical calculation of target-token log-odds.
+ - [ ] Verify activation restoration behaves correctly on deterministic fixtures.
++- [ ] Verify that P3 pathway-specific restoration affects only the intended path and that non-specific recovery cannot be labeled necessity evidence.
+ - [ ] Check dataset separation and prevent test-data leakage.
+ - [ ] Check random seeds and configuration logging.
+@@ -469,5 +483,7 @@
+ - [ ] Analyze results across stimulus families and variations.
+ - [ ] Assess candidate Form selectivity and invariance.
++- [ ] Report property-matched identity discrimination and sensitivity to grammatical role separately from material/affordance tracking.
+ - [ ] Analyze downstream circuit dependency and restoration.
++- [ ] Treat any P3 necessity conclusion as conditional on pathway-specific intervention and restoration evidence, independently of P2 log-odds comparisons.
+ - [ ] Produce intervention-comparison figures.
+ - [ ] Produce a circuit diagram showing observed versus hypothetical pathways.
+@@ -555,5 +571,5 @@
+ **Hypothesis support:** Candidate entity representations generalize sufficiently, targeted interventions have stronger effects than both original controls, and pathway evidence supports the proposed dependency.
+ 
+-**Strong necessity evidence:** A sufficiently characterized pathway is shown to be required under specified conditions, with appropriate intervention coverage and restoration evidence. Universal necessity is outside scope.
++**Strong necessity evidence:** A sufficiently characterized pathway is shown to be required under specified conditions, with appropriate intervention coverage and pathway-specific downstream disruption/restoration evidence. A positive P2 output-log-odds effect alone is insufficient. Universal necessity is outside scope.
+ 
+ **Hackathon completion:** A coherent empirical or clearly labeled exploratory project is publicly submitted with documented methods, evidence, limitations and accessible artifacts.
+@@ -565,9 +581,11 @@
+ ## F. Current status and immediate next decision
+ 
+-**G0:** Revised workflow proposed; formal sign-off pending.  
+-**G1:** Philosophical interpretation and experimental design developed; formal PI approval pending.  
+-**G2–G13:** Not executed.
+-
+-No model, feature, circuit, experimental result, compute expenditure, independent review, or repository commit has been verified for this experiment in this design session.
+-
+-**Next action:** Ali reviews and approves or amends G0–G1. Then the complete original agenda and approved design go independently to Gemini and Grok for G2 Scientific Dry Run.+**G0:** DESIGN approved by the PI on 20 November 2026.  
++**G1:** ALIGN approved by the PI on 20 November 2026.  
++**G2:** SCIENTIFIC DRY RUN — independent Gemini and Grok reports received; both recommended CONDITIONAL GO. Qualam consolidated the substantive findings, and Ali explicitly approved the three refinements incorporated in V1.1 on 20 November 2026. G2 scientific design decision: CONDITIONAL GO. Remaining quantitative implementation details are to be fixed at G5; this does not imply empirical validation.  
++**G3:** RECON authorized as the next gate; not executed in this protocol revision.  
++**G4–G13:** Not executed.
++
++The two independent G2 design reviews have been received. No model, feature, circuit, empirical result, compute expenditure, or GitHub commit/push has been verified by this protocol revision. Existing G4/G8 exploratory-versus-held-out safeguards remain mandatory and unchanged.
++
++**Next action:** Proceed to G3 RECON with Claude. Preserve the original agenda, this V1.1 protocol, and the independent G2 reviews. Resolve model choice, resources, and practical feasibility at the proper gates; freeze all quantitative rules and criteria at G5 before confirmatory execution. Any further substantive scientific change requires explicit PI approval.
