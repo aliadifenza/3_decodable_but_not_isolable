@@ -2,7 +2,7 @@
 
 **Single source of truth.** Read this before writing any brief or starting any work. Claude updates it after every step; anything not listed here does not exist yet.
 
-**Last updated:** 2026-11-21 19:50 CET · Claude · see git log · **Continuation:** `HANDOFF_2026-11-21_post_G5r.md`
+**Last updated:** 2026-11-21 20:45 CET · Claude · see git log · **Continuation:** `HANDOFF_2026-11-21_post_G5r.md`
 
 ## Current state — confirmatory phase CLOSED
 
@@ -10,7 +10,7 @@
 
 **G5r verification: DONE → NO VALID LAYER.** Under the frozen §7/§14 rules, **P2 and P3 are INCONCLUSIVE**. The confirmatory pipeline (G6 ENGINEER → G10 FULL RUN) is **closed, not executed** — documented NO-GO by the frozen rule. **The evaluation set (v1.1) remains sealed and unused.**
 
-**Next:** **exploratory** follow-up E1–E3 — APPROVED 19:38–19:39 (hard cap $10, target ≈ $2.5); code built + local tests PASS; awaiting PI Modal run. Then G11 analysis, G12 independent review, G13 submission. **Deadline: submission 2026-11-22 13:00 CET** (target 12:30).
+**Next:** E1–E3 **DONE** (exploratory; results below). **Morning: PI pastes `review/G12_review_package_2026-11-22.md` to Gemini and Grok** → Claude consolidates → report + README + submission. **Deadline: submission 2026-11-22 13:00 CET** (target 12:30).
 
 ### Gate report — G5r (universal format)
 
@@ -60,6 +60,9 @@ Discovery = provided set (v1.1: 231 logged fixes; v1.2: fixed bystander + 60 bys
 - **Measures:** = R1 (downstream r, amnesic AUC, role-AUC drop, ‖Δ‖/‖h‖, KL) + item-bootstrap 95% CIs. Frozen R1 thresholds used only as a descriptive bar.
 - **Optional D comparison:** discovery causal items only, for conditions meeting the R1 bar; C1 = random control, C2 = same method on the bystander; **no magnitude matching (deviation from Decision 2, stated)**; event-cluster means + bootstrap CI.
 - **Cost guard:** 2 runs (layers 2–8, 9–14), 45-min hard timeout each → worst case ≈ $1.65 total.
+- **RUN DONE (2026-11-21 ~20:30):** Modal ap-xz03ZHllg5j0TTRSkrwGdC (layers 2–8, 2167 s, ≈ $0.66) + ap-W1YapGqj2QUqgYZME8cuZr (9–14, 2504 s, ≈ $0.77); all 13 layers, no errors. Raw `exploratory/results/e_results_layers_*.json` (commit 1f25778). Analysis `exploratory/e_analyze.py` → `e_summary.md/json`, `fig_e1e3.png`.
+- **RESULT (exploratory):** E1/E2 — up to 128 identity latents, last or all reference tokens: downstream removal r ≈ 0 (median ≤ 0.005); random active latents with ~5× larger edits also ≈ 0 [HIGH]. E3 — whole-direction erasure on the full residual: median r 0.26 (mean-difference, all tokens) / 0.18 (LEACE), peak L6 0.55; random direction ≈ 0.01; role drop ≈ 0 [MED]. 9/312 E3 cases meet the R1 bar (wide CIs). D comparison: only windshield (5 items) and acrylic (3) usable, effects ≤ 0.1 log-odds → no conclusion [HIGH].
+- **Caveats found in analysis (for reviewers):** amnesic AUC = 0.50 under E3 is by construction (equal class means ⇒ logistic optimum w = 0); identity may already be copied to the final token before layer L (interventions edit only the span) — untested; r has small denominators at L2, L5–L8.
 
 ## PI decisions today (2026-11-21, CET)
 
@@ -67,7 +70,7 @@ Discovery = provided set (v1.1: 231 logged fixes; v1.2: fixed bystander + 60 bys
 
 ## Spending
 
-Cap $30 (Modal). Spent (estimates from run logs): G4 ≈ $0.056 · G5v ≈ $0.029 · tokenizer < $0.01 · G5r ≈ $0.44 (0.287 + 0.153). **Total ≈ $0.53.** Pilot + full run ceiling ($5, frozen §15) unused — confirmatory run not executed.
+Cap $30 (Modal). Spent (estimates from run logs): G4 ≈ $0.056 · G5v ≈ $0.029 · tokenizer < $0.01 · G5r ≈ $0.44 (0.287 + 0.153) · E1–E3 exploratory ≈ $1.43 (0.662 + 0.765; PI cap $10). **Total ≈ $1.96.** Pilot + full run ceiling ($5, frozen §15) unused — confirmatory run not executed.
 
 ## Rules
 
