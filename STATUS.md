@@ -2,7 +2,7 @@
 
 **Single source of truth.** Read this before writing any brief or starting any work. Claude updates it after every step; anything not listed here does not exist yet.
 
-**Last updated:** 2026-11-21 20:45 CET · Claude · see git log · **Continuation:** `HANDOFF_2026-11-21_post_G5r.md`
+**Last updated:** 2026-11-21 21:35 CET · Claude · see git log · **Continuation:** `HANDOFF_2026-11-21_post_G5r.md`
 
 ## Current state — confirmatory phase CLOSED
 
@@ -10,7 +10,7 @@
 
 **G5r verification: DONE → NO VALID LAYER.** Under the frozen §7/§14 rules, **P2 and P3 are INCONCLUSIVE**. The confirmatory pipeline (G6 ENGINEER → G10 FULL RUN) is **closed, not executed** — documented NO-GO by the frozen rule. **The evaluation set (v1.1) remains sealed and unused.**
 
-**Next:** E1–E3 **DONE** (exploratory; results below). **Morning: PI pastes `review/G12_review_package_2026-11-22.md` to Gemini and Grok** → Claude consolidates → report + README + submission. **Deadline: submission 2026-11-22 13:00 CET** (target 12:30).
+**Next:** E1–E4 **DONE**; G12 reviews **DONE** (Gemini + DeepSeek independent, Qualam internal); report draft + README **DONE**. **Morning: PI reads and edits `report/AlignedLab_Exp3_Kantian_Positional_Logic_report.docx`, optionally sends `review/G12_review_package_v2_2026-11-22.md` to one more independent reviewer, then submits by 12:30.** **Deadline: submission 2026-11-22 13:00 CET** (target 12:30).
 
 ### Gate report — G5r (universal format)
 
@@ -64,13 +64,21 @@ Discovery = provided set (v1.1: 231 logged fixes; v1.2: fixed bystander + 60 bys
 - **RESULT (exploratory):** E1/E2 — up to 128 identity latents, last or all reference tokens: downstream removal r ≈ 0 (median ≤ 0.005); random active latents with ~5× larger edits also ≈ 0 [HIGH]. E3 — whole-direction erasure on the full residual: median r 0.26 (mean-difference, all tokens) / 0.18 (LEACE), peak L6 0.55; random direction ≈ 0.01; role drop ≈ 0 [MED]. 9/312 E3 cases meet the R1 bar (wide CIs). D comparison: only windshield (5 items) and acrylic (3) usable, effects ≤ 0.1 log-odds → no conclusion [HIGH].
 - **Caveats found in analysis (for reviewers):** amnesic AUC = 0.50 under E3 is by construction (equal class means ⇒ logistic optimum w = 0); identity may already be copied to the final token before layer L (interventions edit only the span) — untested; r has small denominators at L2, L5–L8.
 
+### E4 "already traveled?" (exploratory) and G12 reviews
+
+- **E4 run:** Modal ap-GK63sOtfiHMoseAls3RcmP, 820 s, ≈ $0.25, layers 2,4,…,14, no errors (commit 217d657). Summary `exploratory/results/e4_summary.md`, figure `fig_e4.png`.
+- **Result:** identity already readable at the final token at layer L before any edit (AUC 0.71–0.92) [HIGH]. Erasing at span + final token: r at L 0.76–1.15; r at L+4 0.22–0.65 (mean-diff.), 0.19–0.44 (LEACE); random ≈ 0 [MED]. E4b (one pooled direction at all tokens) failed as a test (does not remove identity at the final token) [HIGH].
+- **G12 reviews:** Gemini (independent), DeepSeek (independent; substituted for Grok, unavailable), Qualam (internal audit, not independent). All agree claims 2, 6; all judge 3–4 overstated; claim 5 moved to Discussion as a V2 hypothesis (PI 21:05). Consolidation `review/G12_consolidation_2026-11-21.md`; v2 package with E4 addendum `review/G12_review_package_v2_2026-11-22.md`.
+- **Report draft:** `report/AlignedLab_Exp3_Kantian_Positional_Logic_report.docx` (Apart template structure, Baskerville, US English; build script `report/build_report.js`). Open items for PI: confirm discovery-set provenance wording (§3.2), confirm hackathon name in footnote, revise text in own voice (template asks for primarily team-written text).
+- **README** rewritten in the house style of 2_epistemic_vacuum.
+
 ## PI decisions today (2026-11-21, CET)
 
-18:01 one fixed C2 bystander per family · 18:08 freeze layer/k/strength as rules · 18:32 **G5 SPEC FREEZE** · 18:33 G5r run authorized ($0.37) · 18:47 **Amendment 1** (inclusion by target token only) · 19:10 G5r cap raised to $0.55 · 19:15 Protocol V1.2 pushed with four non-scientific edits · 19:23 direction B (exploratory follow-up) accepted in principle · 19:34 **close this phase; continue E1–E3 discussion in a new session.** · 19:38 **E1–E3 approved, $3 version (all layers, random controls, CIs, E1×E2, optional D); hard spend cap $10** · 19:39 go.
+18:01 one fixed C2 bystander per family · 18:08 freeze layer/k/strength as rules · 18:32 **G5 SPEC FREEZE** · 18:33 G5r run authorized ($0.37) · 18:47 **Amendment 1** (inclusion by target token only) · 19:10 G5r cap raised to $0.55 · 19:15 Protocol V1.2 pushed with four non-scientific edits · 19:23 direction B (exploratory follow-up) accepted in principle · 19:34 **close this phase; continue E1–E3 discussion in a new session.** · 19:38 **E1–E3 approved, $3 version (all layers, random controls, CIs, E1×E2, optional D); hard spend cap $10** · 19:39 go. · 20:47 standing rule: spending within €30 total needs no separate permission · 20:52–21:00 DeepSeek substitutes for Grok as independent reviewer; Qualam reported as internal audit · 21:05 claim 5 (organized togetherness) moved from claims to Discussion as V2 hypothesis · 21:23 report + README + figures requested.
 
 ## Spending
 
-Cap $30 (Modal). Spent (estimates from run logs): G4 ≈ $0.056 · G5v ≈ $0.029 · tokenizer < $0.01 · G5r ≈ $0.44 (0.287 + 0.153) · E1–E3 exploratory ≈ $1.43 (0.662 + 0.765; PI cap $10). **Total ≈ $1.96.** Pilot + full run ceiling ($5, frozen §15) unused — confirmatory run not executed.
+Cap $30 (Modal). Spent (estimates from run logs): G4 ≈ $0.056 · G5v ≈ $0.029 · tokenizer < $0.01 · G5r ≈ $0.44 (0.287 + 0.153) · E1–E3 exploratory ≈ $1.43 (0.662 + 0.765) · E4 ≈ $0.25. **Total ≈ $2.21.** Pilot + full run ceiling ($5, frozen §15) unused — confirmatory run not executed.
 
 ## Rules
 
