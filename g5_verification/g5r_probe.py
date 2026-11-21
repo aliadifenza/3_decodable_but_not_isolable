@@ -1,4 +1,5 @@
-"""Kantian Positional Logic Test — G5 REPAIR VERIFICATION (discovery/validation only; NOT authorized to run on Modal yet).
+"""Kantian Positional Logic Test — G5r VERIFICATION under the FROZEN G5 spec (protocol/G5_SPEC_FREEZE.md, PI-approved 2026-11-21).
+Discovery/validation only; run authorized by PI 2026-11-21 (hard cap: 20-min timeout, ~$0.37).
 
 Repairs verified (no causal-target log-odds is used for ANY selection):
   R1 intervention efficacy   : nested SAE sets k in {1,2,4,8} chosen on DISCOVERY identity criteria; on VALIDATION measure
@@ -21,7 +22,7 @@ GPU, GPU_USD_PER_H, TIMEOUT_S, SEED = "A10G", 1.10, 20 * 60, 20261121
 LAYERS = list(range(2, 15)); KS = [1, 2, 4, 8]; READ_OFFSET = 4; BATCH = 32
 A_MAX, RHO_MIN, TOL = 2.0, 0.5, 0.10                         # Decision 2 (active-unit ratio: measured only, R3)
 P_MIN, RANK_MAX, BYSTANDER_SHIFT_MAX = 0.10, 5, 1.0           # Decision 4 eligibility
-# proposed thresholds (NOT approved)
+# thresholds FROZEN by G5_SPEC_FREEZE.md (§4 R2, §7 R1, §8 R3, §6 P3) — identical values to the G5r proposal
 T = dict(r_down=0.67, amnesic_max=0.70, role_drop_max=0.05,                       # R1
          recog_noun=0.85, worst_property=0.75, description=0.75, loro=0.75, lexical_gap_max=0.20, min_per_stratum=10,  # R2
          retention_min=0.75, c1_identity_removal_max=0.10, c2_r_min=0.67, collateral_role_drop_max=0.05,             # R3
@@ -51,7 +52,7 @@ def run_repair(model, tok, device, recs, sae_loader, log=print, time_left=lambda
     torch.manual_seed(SEED)
     F = torch.nn.functional
     t0 = time.time(); R = dict(settings=dict(layers=layers, ks=ks, READ_OFFSET=READ_OFFSET, A_MAX=A_MAX, RHO_MIN=RHO_MIN, TOL=TOL,
-                                             thresholds_PROPOSED=T), stages={}, errors={})
+                                             thresholds_FROZEN=T), stages={}, errors={})
     def stage(n): R["stages"][n] = round(time.time() - t0, 1); log(f"[{R['stages'][n]:7.1f}s] {n}")
     nL, nH = model.config.num_hidden_layers, model.config.num_attention_heads
     nKV = getattr(model.config, "num_key_value_heads", nH); hd = getattr(model.config, "head_dim", model.config.hidden_size // nH)
@@ -312,7 +313,7 @@ def run_repair(model, tok, device, recs, sae_loader, log=print, time_left=lambda
             ok = (actfrac >= 0.5) & ((au - 0.5).abs() < 0.05); ok[lat] = False
             cS = float(contrib[lat].mean()); c1 = sorted(torch.nonzero(ok).flatten().tolist(), key=lambda j: (abs(float(contrib[j]) - cS), j))[:k]
             c2_sets = {b: LO["kinds"].get(b, {}).get("greedy_order", [])[:k] for b in byst}
-            ccs = [c for c in caus if c["patient"] == K and c["split"] in ("discovery", "p3_discovery")]
+            ccs = [c for c in caus if c.get("kind", c["patient"]) == K and c["split"] in ("discovery", "p3_discovery")]
             rows, retained = [], 0; elig = [c for c in ccs if not c["codes"]]
             for c in elig:
                 c2 = c2_sets.get(c["bystander"], [])
@@ -346,8 +347,8 @@ def run_repair(model, tok, device, recs, sae_loader, log=print, time_left=lambda
                 kb = LO["kinds"].get(b, {}).get("per_k", {})
                 kk = max([x for x in kb if x <= k] or [None]) if kb else None
                 if kk: coll[f"C2_{b}_r_down_at_k{kk}"] = kb[kk]["R1"]["r_down"]
-            # ---- P3 feasibility on p3_discovery prompts (attention + information use S vs C1; NO target log-odds)
-            p3 = [c for c in elig if c["split"] == "p3_discovery"]
+            # ---- P3 feasibility on discovery causal prompts (frozen §6; no separate p3_discovery split) — attention + information use S vs C1; NO target log-odds
+            p3 = [c for c in elig if c["split"] in ("discovery", "p3_discovery")]
             Ts = [t for t in range(L + T["p3_gap"], nL)]; p3res = None
             if p3 and Ts and c1:
                 att = torch.zeros(len(Ts), nKV); ratio_num = torch.zeros(len(Ts), nKV); ratio_den = torch.zeros(len(Ts), nKV); used = 0
@@ -385,7 +386,8 @@ def run_repair(model, tok, device, recs, sae_loader, log=print, time_left=lambda
         stage(f"layer_{L}")
     R["layers"] = out_layers
     # ---------------- layer verdicts (no causal target log-odds anywhere)
-    patients = sorted({c["patient"] for c in caus})
+    patients = sorted({c.get("kind", c["patient"]) for c in caus})
+    confirm = sorted({c.get("kind", c["patient"]) for c in caus if c.get("family") == "physical_impact"}) or patients   # frozen §7: impact kinds
     verdict = {}
     for L, LO in out_layers.items():
         v = {}
@@ -397,11 +399,16 @@ def run_repair(model, tok, device, recs, sae_loader, log=print, time_left=lambda
                         P3=(i.get("P3") or {}).get("feasible", False))
             v[K]["ok"] = all(v[K][x] for x in ("R1", "R2", "R3", "P3"))
         verdict[L] = v
-    ok_layers = [L for L, v in verdict.items() if all(x["ok"] for x in v.values())]
-    def mm(L): return min(x["R2_margin"] for x in verdict[L].values())
+    complete = sorted(out_layers) == sorted(layers)
+    ok_layers = [L for L, v in verdict.items() if all(v[K]["ok"] for K in confirm)] if complete else []
+    ok_all = [L for L, v in verdict.items() if all(x["ok"] for x in v.values())]
+    def mm(L): return min(verdict[L][K]["R2_margin"] for K in confirm)
     R["layer_verdicts"] = verdict
-    R["layer_selection"] = dict(eligible=ok_layers, L_star=(max(ok_layers, key=lambda L: (mm(L), -L)) if ok_layers else None),
-                                rule="among layers passing R1,R2,R3,P3 for every patient kind: argmax min R2 margin; ties shallower; None = no valid layer")
+    L_star = max(ok_layers, key=lambda x: (mm(x), -x)) if ok_layers else None
+    R["layer_selection"] = dict(eligible=ok_layers, L_star=L_star, confirmatory_kinds=confirm, all_layers_completed=complete,
+                                eligible_for_all_kinds_reported=ok_all,
+                                k_at_L_star=({K: out_layers[L_star]["kinds"][K]["k_selected"] for K in out_layers[L_star]["kinds"]} if L_star is not None else None),
+                                rule="frozen §7: among layers 2-14 passing R1,R2,R3,P3 for every IMPACT patient kind: argmax min R2 margin; ties shallower; None = no valid layer (or run incomplete) -> P2/P3 inconclusive")
     stage("verdicts")
     return R
 
