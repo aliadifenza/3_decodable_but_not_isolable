@@ -1,6 +1,8 @@
-# G5 SPEC FREEZE — Kantian Positional Logic Test (DRAFT for PI approval)
+# G5 SPEC FREEZE — Kantian Positional Logic Test (FROZEN)
 
 **Date:** 2026-11-21 · **Drafted by:** Claude · **Owner / approver:** Ali · **Authority:** Protocol V1.1 (`protocol/experimental_protocol_v1.1.md`), fidelity record, PI Decisions 1–4, G5v report, G5r repair spec, dataset v1.
+
+**FROZEN 2026-11-21 18:32 CET by PI approval (verbatim below). All PROPOSED items are approved as written and are now binding.**
 
 **Status legend:** **FROZEN** = already PI-approved, restated here. **RULE** = a fixed procedure is frozen; its numerical outcome is produced by G5r on discovery/validation data only, then recorded without change. **PROPOSED** = needs Ali's yes/no in this document.
 
@@ -94,7 +96,13 @@ Cap remains $30 (Modal). Spent ≈ $0.09. G5r verification: hard cap $0.37 (20-m
 
 ---
 
-## Sign-off
+## Sign-off — PI approval (verbatim, 2026-11-21 18:32 CET)
 
-☐ Ali approves this specification as the G5 freeze (with PROPOSED items accepted or amended as noted).
-Date / time: ______ · Commit: ______
+> **PI APPROVAL — G5 SPEC FREEZE, 21 November 2026.**
+> I approve the G5 specification exactly as presented in your latest draft, including §§4, 10, 12, 13, 14, and 15.
+> No additional methodological changes, thresholds, conditions, or refinements proposed by Qualam are authorized.
+> Freeze the specification, record my approval, and update `STATUS.md`.
+> Proceed with the remaining verification and implementation steps according to the approved protocol. Report any actual failures without changing the scientific design.
+> **Scientific authority: Protocol V1.1 and the approved G5 specification.**
+
+Approved text = draft at commit 2602ac3 (content unchanged except this header and sign-off). Any later change requires a new, explicit PI amendment.
