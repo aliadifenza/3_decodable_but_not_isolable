@@ -2,71 +2,69 @@
 
 **Single source of truth.** Read this before writing any brief or starting any work. Claude updates it after every step; anything not listed here does not exist yet.
 
-**Last updated:** 2026-11-21 · Claude · see git log
+**Last updated:** 2026-11-21 19:40 CET · Claude · see git log · **Continuation:** `HANDOFF_2026-11-21_post_G5r.md`
 
-## Current gate
+## Current state — confirmatory phase CLOSED
 
-**G5 — SPEC FREEZE: FROZEN** (PI approval 2026-11-21 18:32 CET, `protocol/G5_SPEC_FREEZE.md`). **Scientific authority: Protocol V1.1 + G5_SPEC_FREEZE.md.** No method, threshold or condition changes without a new explicit PI amendment (none from Qualam authorized). Next gate: G6 ENGINEER. No real causal experiment has been run.
+**G5 SPEC FREEZE: FROZEN** (PI 2026-11-21 18:32 CET; Amendment 1 18:47 CET). **Scientific authority: Protocol V1.1 + `protocol/G5_SPEC_FREEZE.md`** (V1.2 is a consolidated reissue; the freeze document governs on conflict).
+
+**G5r verification: DONE → NO VALID LAYER.** Under the frozen §7/§14 rules, **P2 and P3 are INCONCLUSIVE**. The confirmatory pipeline (G6 ENGINEER → G10 FULL RUN) is **closed, not executed** — documented NO-GO by the frozen rule. **The evaluation set (v1.1) remains sealed and unused.**
+
+**Next (PI decision pending):** labelled **exploratory** follow-up E1–E3 (see Open decisions), then G11 analysis, G12 independent review, G13 submission. **Deadline: submission 2026-11-22 13:00 CET** (target 12:30).
+
+### Gate report — G5r (universal format)
+
+- **DONE:** G5r run on discovery v1.2 + validation v1.1 under the frozen rules, layers 2–14, 12 kinds (9 patients + 3 bystanders). Two runs merged (`merge_g5r.py`; per-layer results independent).
+- **EVIDENCE:** `g5_verification/results/g5r_results_layers_2-10.json` (Modal ap-HjkhUsCPA7dYzyRHoiX4Qw, 937.7 s, ≈ $0.287; stopped at the 20-min budget), `g5r_results_layers_11-12-13-14.json` (ap-wVzoKopHVYB4wQwhExVCx7, 500.6 s, ≈ $0.153), merged `g5r_merged.json` (commit ab13994). Input `g5_verification/g5r_input.jsonl` (sha256 0bb8d11c…).
+- **RESULT [HIGH]:**
+  - **Identity is strongly represented:** linear readout at the ablation site separates each kind from property-matched look-alikes at AUC ≈ 0.93–1.0 at every layer.
+  - **R1 efficacy failed everywhere, 0/156 layer×kind:** ablating up to k = 8 selected SAE latents at the referent position removes ≈ 0 identity information downstream (removal r ≈ 0.00 vs required ≥ 0.67; amnesic AUC ≈ clean AUC; ‖Δ‖/‖h‖ ≈ 3–7%; next-token KL ≈ 0).
+  - **R3 controls** failed almost everywhere (few discovery causal items pass baseline eligibility: beverage can 0/8, egg 2/8, windshield 5/8).
+  - **P1 (R2, held-out validation):** passed for some kind×layer pairs only — egg 6, 8, 14; can 7, 12; windshield 3, 5, 6, 8, 9, 12 — never all three impact kinds at one layer.
+- **DECISION:** frozen rule → **no valid layer → P2/P3 inconclusive**; confirmatory run not executed (rule-determined, not a choice).
+- **NEXT:** PI decision on exploratory E1–E3; then G11–G13.
+- **BLOCKER:** none beyond that decision.
+
+### Interpretation guard (agreed in conversation, 19:26–19:31)
+
+The G5r result is **consistent with** the PI's working definition of identity ("organized togetherness; no single part essential") but is **not evidence for it**: a failed intervention is a null result of the tool; mundane explanations remain (identity re-readable from other tokens of the description; SAE reconstruction error; only one position ablated); and "identity is distributed" was not the pre-registered hypothesis. Honest claim now: *the model clearly represents identity; sparse local SAE ablation cannot remove it, so the Substance → Causality dependency could not be tested.*
 
 ## What exists (verified, in this repo)
 
 | Item | Path | Commit |
 |---|---|---|
 | Protocol V1.1 (PI-approved) + fidelity record | `protocol/` | a7de87b |
-| G4 feasibility probe (code, results, report) | `g4_probe/` | a7de87b |
-| G5 verification run (G5v): interventions too weak | `g5_verification/2026-11-21_g5_verification.md` | 088b6d3 |
-| C2 selection bug fix | `g5_verification/2026-11-21_c2_bugfix.md` | e3978f3 |
-| G5 repair design (G5r), local tests | `g5_verification/2026-11-21_g5_repair_spec.md`, `g5r_probe.py` | 2e90e26 |
-| Adaption converter | `g5_verification/adaption_convert.py` | 8bb235b |
+| **G5 spec — FROZEN** (+ Amendment 1) | `protocol/G5_SPEC_FREEZE.md` | 99f093c, 71670bc |
+| Protocol V1.2 (consolidated reissue; V1.1 kept as cited authority) | `protocol/experimental_protocol_v1.2_G5_frozen.docx` (+ `.md`) | d5a3729 |
+| G4 feasibility probe | `g4_probe/` | a7de87b |
+| G5v verification (interventions too weak) + C2 bug fix | `g5_verification/2026-11-21_g5_verification.md`, `..._c2_bugfix.md` | 088b6d3, e3978f3 |
+| G5r design, adapter, tests, merge | `g5_verification/` (`g5r_probe.py`, `g5r_from_dataset.py`, `merge_g5r.py`, `test_g5r_*`) | 2e90e26, 88b9c87, de20455 |
+| **G5r results (no valid layer)** | `g5_verification/results/g5r_*.json` | ab13994 |
 | Dataset v1 (superseded versions kept) | `datasets/kantian_v1/` | b0e61bb |
-| **Dataset current: discovery v1.2 (492) · validation v1.1 (492) · evaluation v1.1 (1,152)** — fixed C2 bystander + bystander recognition data | `datasets/kantian_v1/` (`DATASET_CARD.md` §8) | this commit |
-| **G5 spec — FROZEN, PI-approved** | `protocol/G5_SPEC_FREEZE.md` | 99f093c |
-| Protocol V1.2 (consolidated reissue; G5_SPEC_FREEZE.md governs on conflict). V1.1 kept as the cited authority | `protocol/experimental_protocol_v1.2_G5_frozen.docx` (+ `.md`) | this commit |
+| **Dataset current: discovery v1.2 (492) · validation v1.1 (492) · evaluation v1.1 (1,152, sealed)** | `datasets/kantian_v1/` (`DATASET_CARD.md` §8) | 2602ac3 |
+| Tokenizer check results | `datasets/kantian_v1/audit/tokcheck_results.json` | 934fb43 |
 
-Discovery = provided set (v1.1: 231 logged fixes; v1.2: fixed bystander + 60 bystander records). Validation/evaluation generated by Claude from templates ($0, reproducible). Causal items are event-clustered: evaluation impact 24 distinct events (heating 15, cutting 15).
+Discovery = provided set (v1.1: 231 logged fixes; v1.2: fixed bystander + 60 bystander records). Validation/evaluation generated by Claude from templates. Causal items are event-clustered (eval impact 24 events; after tokenization 90 items / 22 events).
 
-**Do not regenerate the dataset.** The Modal/Qwen cutting generator (`~/Downloads/modal_cutting_generator/`) is superseded by dataset v1 unless the PI decides otherwise.
+**Do not regenerate the dataset.** The Modal/Qwen cutting generator is superseded.
 
 ## Open decisions (PI)
 
-1. **G5r verification run authorization** (paid GPU, hard cap $0.37). It applies the frozen selection rules to set layer/k; failures are reported, not tuned.
+1. **Exploratory follow-up E1–E3 — not yet approved** (discussed 19:21–19:34; PI paused to continue in a new session). Proposal: discovery/validation only, evaluation stays sealed, labelled exploratory, ≈ 1.5 h build + ≈ $0.30 GPU.
+   - **E1 Dose:** ablate 8 → 16 → 32 → 64 → 128 identity latents (is it "not enough"?).
+   - **E2 Place:** ablate at the last token vs **all tokens** of the description (is identity re-read from other words?).
+   - **E3 Whole:** linear erasure of the full identity direction, incl. the SAE error term (is it one organized direction?).
+   - Same measures as R1 (downstream removal r, amnesic AUC, role-probe preservation, KL). If a method removes identity cleanly, optionally run the causal comparison on **discovery** items only (exploratory).
 
-## G5 SPEC FREEZE — PI checklist (completed 2026-11-21)
+## PI decisions today (2026-11-21, CET)
 
-**Required outcome: One immutable experimental specification.** Owner: Ali. Source: `protocol/G5_SPEC_FREEZE.md` (PI-approved 2026-11-21 18:32 CET). The frozen **rules** may produce numerical layer/k results at G5r; this does not reopen the specification.
-
-- [x] Select model, exact revision, tokenizer and execution environment.
-- [x] Freeze experimental prompt families and inclusion rules.
-- [x] Freeze feature-discovery and validation datasets.
-- [x] Freeze property-matched P1 identity/non-identity contrasts, grammatical-role variation, and selectivity/stability thresholds.
-- [x] Freeze held-out testing data with no selection leakage.
-- [x] Freeze feature identification and downstream circuit localization procedures.
-- [x] Freeze intervention layer, site, strength, and matching rules.
-- [x] Freeze C1 and C2 implementations.
-- [x] Freeze actual-activation-change norm tolerance, hook/layer/dimensionality and token-position matching rules, diagnostics, and failure/exclusion handling.
-- [x] Freeze pathway-specific disruption, downstream-component measures, restoration criteria, and infeasibility reporting for P3.
-- [x] Freeze primary and secondary measurements.
-- [x] Freeze sample size and the predeclared discovery-only probe-variability planning procedure within available resources.
-- [x] Freeze effect-size criteria, uncertainty method and multiplicity handling.
-- [x] Freeze falsification, inconclusive and success criteria.
-- [x] Freeze maximum expenditure and engineering contract.
-- [x] Ali approves the complete specification.
-
-**Checklist completion means the rules are approved, not that the pending tokenizer check, G5r run, or independent review has succeeded.** Those remain in Next actions.
-
-## Next actions (in order)
-
-1. ~~Tokenizer check~~ **DONE** 2026-11-21 (Modal app ap-gpbV9nmiJa8xUMBCZzE6RR). Multi-token targets excluded (impact eval 6, heating eval 10). Amendment 1 (PI-approved): alternatives no longer exclude items. Eligible eval causal items after tokenization: impact 90 / 22 events, heating 86, cutting 96. Full JSON to be archived (`datasets/kantian_v1/audit/`).
-2. ~~Adapt g5r_probe.py~~ DONE (88b9c87, de20455).
-3. **G5r DONE — result: NO VALID LAYER** (`g5_verification/results/g5r_merged.json`; runs ap-HjkhUsCPA7dYzyRHoiX4Qw + ap-wVzoKopHVYB4wQwhExVCx7, ≈ $0.44). R1 efficacy failed for every layer 2–14 and every kind (0/156): ablating up to 8 SAE latents removes ≈ 0 identity information downstream (r ≈ 0, amnesic AUC ≈ clean AUC ≈ 0.93–1.0). Per frozen §7/§14: **P2 and P3 are INCONCLUSIVE.** P1 reported separately (§4).
-4. G6 ENGINEER → G7 code dry run with Gemini + Grok review against Protocol V1.1 + G5_SPEC_FREEZE.md.
+18:01 one fixed C2 bystander per family · 18:08 freeze layer/k/strength as rules · 18:32 **G5 SPEC FREEZE** · 18:33 G5r run authorized ($0.37) · 18:47 **Amendment 1** (inclusion by target token only) · 19:10 G5r cap raised to $0.55 · 19:15 Protocol V1.2 pushed with four non-scientific edits · 19:23 direction B (exploratory follow-up) accepted in principle · 19:34 **close this phase; continue E1–E3 discussion in a new session.**
 
 ## Spending
 
-Cap $30 (Modal). Spent (estimates from run logs): G4 ≈ $0.056 · G5v ≈ $0.029 · tokenizer check < $0.01 · G5r layers 2–10 ≈ $0.287 + layers 11–14 ≈ $0.153. Total ≈ $0.53.
-G5r cap raised by PI to **$0.55** (2026-11-21 19:10, "of course i approve") to complete layers 11–14. Pilot + full run ceiling: $5 (frozen §15).
+Cap $30 (Modal). Spent (estimates from run logs): G4 ≈ $0.056 · G5v ≈ $0.029 · tokenizer < $0.01 · G5r ≈ $0.44 (0.287 + 0.153). **Total ≈ $0.53.** Pilot + full run ceiling ($5, frozen §15) unused — confirmatory run not executed.
 
 ## Rules
 
 - PI decides science and spending; Qualam writes briefs **from this file**; Claude executes and updates this file.
-- No regenerating, re-running or re-deciding anything listed as done without a PI decision.
+- No regenerating, re-running or re-deciding anything listed as done without a PI decision. Exploratory work is labelled as such and never feeds the confirmatory result.
