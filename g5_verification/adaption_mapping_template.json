@@ -1,0 +1,38 @@
+{
+  "_comment": "TEMPLATE. Fill in after running: python3 adaption_convert.py inspect <export>. Each field maps a g5r schema field to a source path in the Adaption export (dotted for nested keys), to {\"const\": value}, or to null if absent. value_maps translate source values to schema values. Evaluation records are audited but never written.",
+  "format": "jsonl",
+  "records_key": null,
+  "fields": {
+    "id": "<source id field>",
+    "bundle_id": "<source bundle / base-stimulus id>",
+    "template_id": "<source template id>",
+    "split": "<source split field>",
+    "type": "<source item-type field>",
+    "target_kind": "<entity kind field (recognition items)>",
+    "is_member": "<member / non-member flag>",
+    "stratum": "<contrast type, e.g. identity variant or property-matched material/fragility/shape/function>",
+    "ref_type": "<reference type: noun / description / pronoun>",
+    "role": "<grammatical role>",
+    "text": "<recognition sentence>",
+    "ref_phrase": "<the reference phrase (noun phrase or description) whose last token is measured>",
+    "ref_span": null,
+    "mentioned_attribute": "<optional: attribute a description mentions>",
+    "family": "<causal family: impact / heating / cutting>",
+    "patient": "<patient noun in the causal prompt>",
+    "bystander": "<bystander noun in the C2 prompt>",
+    "target": "<correct causal-outcome word>",
+    "prompt": "<causal prompt, patient named once, '..., causing it to'>",
+    "prompt_c2": "<same prompt with the bystander clause inserted>"
+  },
+  "value_maps": {
+    "split": {"<source discovery value>": "discovery", "<source validation value>": "validation", "<source evaluation value>": "evaluation", "<source P3-discovery value>": "p3_discovery"},
+    "type": {},
+    "ref_type": {"<source noun value>": "noun", "<source description value>": "description", "<source pronoun value>": "pronoun"},
+    "stratum": {"<source identity-variant value>": "member:identity_variant", "<source material-matched value>": "property_matched:material", "<source fragility-matched value>": "property_matched:fragility", "<source shape-matched value>": "property_matched:shape", "<source function-matched value>": "property_matched:function"},
+    "role": {}
+  },
+  "type_values": {
+    "recognition": ["<source value(s) meaning a recognition item>"],
+    "causal": ["<source value(s) meaning a causal item>"]
+  }
+}
