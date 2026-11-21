@@ -1,0 +1,232 @@
+unique_id,field,old,new,reason
+IMP_DISC_K01_FORM_B01_A2,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_FORM_B01_B,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_FORM_B02_A1,grammatical_role,indirect object,indirect_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_FORM_B02_A2,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_FORM_B02_B,grammatical_role,genitive complement (of-phrase),genitive_complement,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_FORM_B02_C,grammatical_role,direct object,passive_subject,role label contradicts sentence (two parsers + manual reading)
+IMP_DISC_K01_FORM_B03_A1,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_FORM_B03_B,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_FORM_B03_C,grammatical_role,passive subject,subject,role label contradicts sentence (two parsers + manual reading)
+IMP_DISC_K01_FORM_B04_A1,grammatical_role,predicate nominative,predicate_nominative,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_FORM_B04_A2,grammatical_role,genitive complement (of-phrase),genitive_complement,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_FORM_B04_B,grammatical_role,indirect object,indirect_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_FORM_B04_C,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_FORM_S_M02,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_FORM_S_N02,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_FORM_S_N03,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_FORM_S_N04,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_FORM_S_N05,grammatical_role,genitive complement (of-phrase),genitive_complement,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_FORM_S_N06,grammatical_role,indirect object,indirect_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_B05_A2,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_B05_B,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_B06_A1,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_B06_A2,grammatical_role,genitive complement (of-phrase),genitive_complement,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_B06_C,grammatical_role,direct object,passive_subject,role label contradicts sentence (two parsers + manual reading)
+IMP_DISC_K01_MAT_B07_A1,grammatical_role,indirect object,indirect_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_B07_A2,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_B07_B,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_B07_C,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_B08_A1,grammatical_role,genitive complement (of-phrase),genitive_complement,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_B08_B,grammatical_role,indirect object,indirect_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_B08_C,grammatical_role,prepositional object,direct_object,role label contradicts sentence (two parsers + manual reading)
+IMP_DISC_K01_MAT_S_M01,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_S_M02,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_S_N02,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_S_N03,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_S_N04,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_S_N05,grammatical_role,genitive complement (of-phrase),genitive_complement,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K01_MAT_S_N06,grammatical_role,indirect object,indirect_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_B09_A2,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_B09_B,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_B10_A1,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_B10_A2,grammatical_role,genitive complement (of-phrase),prepositional_object,role label contradicts sentence (two parsers + manual reading)
+IMP_DISC_K02_FORM_B10_C,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_B11_A1,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_B11_A2,grammatical_role,indirect object,indirect_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_B11_B,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_B11_C,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_B12_A1,grammatical_role,genitive complement (of-phrase),genitive_complement,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_B12_B,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_B12_C,grammatical_role,passive subject,subject,role label contradicts sentence (two parsers + manual reading)
+IMP_DISC_K02_FORM_S_M01,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_S_M02,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_S_N02,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_S_N03,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_S_N04,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_S_N05,grammatical_role,genitive complement (of-phrase),genitive_complement,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_FORM_S_N06,grammatical_role,indirect object,indirect_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_B13_A2,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_B13_B,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_B14_A1,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_B14_A2,grammatical_role,genitive complement (of-phrase),genitive_complement,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_B14_C,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_B15_A1,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_B15_A2,grammatical_role,indirect object,indirect_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_B15_B,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_B15_C,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_B16_A1,grammatical_role,genitive complement (of-phrase),genitive_complement,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_B16_B,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_B16_C,grammatical_role,passive subject,direct_object,role label contradicts sentence (two parsers + manual reading)
+IMP_DISC_K02_MAT_S_M02,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_S_N02,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_S_N03,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_S_N04,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_S_N05,grammatical_role,genitive complement (of-phrase),genitive_complement,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K02_MAT_S_N06,grammatical_role,indirect object,indirect_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_MAT_B17_A2,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_MAT_B17_B,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_MAT_B17_C,grammatical_role,subject,direct_object,role label contradicts sentence (two parsers + manual reading)
+IMP_DISC_K03_MAT_B18_A1,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_MAT_B18_A2,grammatical_role,genitive complement (of-phrase),genitive_complement,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_MAT_B18_C,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_MAT_B19_A1,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_MAT_B19_A2,grammatical_role,indirect object,indirect_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_MAT_B19_B,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_MAT_B19_C,grammatical_role,prepositional object,direct_object,role label contradicts sentence (two parsers + manual reading)
+IMP_DISC_K03_MAT_B20_A1,grammatical_role,genitive complement (of-phrase),prepositional_object,role label contradicts sentence (two parsers + manual reading)
+IMP_DISC_K03_MAT_B20_B,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_MAT_B20_C,grammatical_role,passive subject,direct_object,role label contradicts sentence (two parsers + manual reading)
+IMP_DISC_K03_MAT_S_M01,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_MAT_S_M02,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_MAT_S_N02,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_MAT_S_N03,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_MAT_S_N04,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_MAT_S_N05,grammatical_role,genitive complement (of-phrase),genitive_complement,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_MAT_S_N06,grammatical_role,indirect object,indirect_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_CTX_B21_A2,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_CTX_B21_B,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_CTX_B21_C,grammatical_role,subject,direct_object,role label contradicts sentence (two parsers + manual reading)
+IMP_DISC_K03_CTX_B22_A1,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_CTX_B22_A2,grammatical_role,genitive complement (of-phrase),genitive_complement,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_CTX_B22_B,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+IMP_DISC_K03_CTX_B22_C,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_CTX_B23_A1,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_CTX_B23_A2,grammatical_role,indirect object,indirect_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_CTX_B23_B,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_CTX_B23_C,grammatical_role,prepositional object,direct_object,role label contradicts sentence (two parsers + manual reading)
+IMP_DISC_K03_CTX_B24_A1,grammatical_role,genitive complement (of-phrase),genitive_complement,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_CTX_B24_A2,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+IMP_DISC_K03_CTX_B24_B,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_CTX_B24_C,grammatical_role,passive subject,direct_object,role label contradicts sentence (two parsers + manual reading)
+IMP_DISC_K03_CTX_S_M02,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_CTX_S_N02,grammatical_role,direct object,direct_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_CTX_S_N03,grammatical_role,prepositional object,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_CTX_S_N04,grammatical_role,passive subject,passive_subject,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_CTX_S_N05,grammatical_role,genitive complement (of-phrase),genitive_complement,role-label spelling harmonised to dataset-wide vocabulary
+IMP_DISC_K03_CTX_S_N06,grammatical_role,indirect object,indirect_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_B001_C,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+HEAT_DISC_B002_A1,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_B003_C,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+HEAT_DISC_B004_A2,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_B006_A2,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_B008_A1,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_B010_A2,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_B010_C,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+HEAT_DISC_B011_C,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+HEAT_DISC_B012_A1,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_B013_C,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+HEAT_DISC_B014_A2,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_B015_C,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+HEAT_DISC_B016_A1,grammatical_role,object_of_preposition,direct_object,role label contradicts sentence (two parsers + manual reading)
+HEAT_DISC_B018_A2,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_B020_A1,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_B020_C,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+HEAT_DISC_B021_C,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+HEAT_DISC_B022_A2,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_B022_C,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+HEAT_DISC_B023_C,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+HEAT_DISC_B024_A1,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_SUP_PG1_sealed_moisture_hull_S06,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_SUP_PG2_dense_starchy_grain_S02,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_SUP_PG2_dense_starchy_grain_S08,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_SUP_PG1_coagulable_albumin_fluid_S02,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_SUP_PG1_coagulable_albumin_fluid_S08,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_SUP_PG2_aqueous_protein_film_S06,grammatical_role,object_of_preposition,direct_object,role label contradicts sentence (two parsers + manual reading)
+HEAT_DISC_SUP_PG2_aqueous_protein_film_S08,grammatical_role,object_of_preposition,direct_object,role label contradicts sentence (two parsers + manual reading)
+HEAT_DISC_SUP_PG1_low_temp_softening_mass_S02,grammatical_role,object_of_preposition,direct_object,role label contradicts sentence (two parsers + manual reading)
+HEAT_DISC_SUP_PG1_low_temp_softening_mass_S08,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_SUP_PG2_molded_apiary_slab_S06,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+HEAT_DISC_SUP_PG2_molded_apiary_slab_S08,grammatical_role,object_of_preposition,direct_object,role label contradicts sentence (two parsers + manual reading)
+CUT_D004,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+CUT_D008,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+CUT_D008,sentence,The restorer guided the shears through the parchment while the weighted silk kept the margin flat and the fibrous sheet began to,The restorer guided the shears through the parchment while the weighted silk lay folded on a side table and the fibrous sheet began to,bystander took part in the cut; V1.1 C2 requires a causally irrelevant bystander; clause made inert
+CUT_D012,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+CUT_D013,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D015,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D016,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+CUT_D016,sentence,The technician drew the craft blade across the parchment while the glass weight held the far edge and the sheet began to,The technician drew the craft blade across the parchment while the glass weight sat on a nearby shelf and the sheet began to,bystander took part in the cut; V1.1 C2 requires a causally irrelevant bystander; clause made inert
+CUT_D017,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D020,grammatical_role,object_of_preposition,direct_object,role label contradicts sentence (two parsers + manual reading)
+CUT_D021,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D023,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D024,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+CUT_D024,sentence,The restorer advanced the blade through the parchment as the silk cord held the opposite edge and the material began to,The restorer advanced the blade through the parchment as the silk cord hung coiled on a hook and the material began to,bystander took part in the cut; V1.1 C2 requires a causally irrelevant bystander; clause made inert
+CUT_D027,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D028,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+CUT_D028,sentence,The technician guided the shears along the marked line on the parchment while the cotton weight stayed in place and the sheet began to,The technician guided the shears along the marked line on the parchment while the cotton weight sat in a drawer across the room and the sheet began to,bystander took part in the cut; V1.1 C2 requires a causally irrelevant bystander; clause made inert
+CUT_D029,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D031,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D032,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+CUT_D032,sentence,The conservator advanced the blade across the parchment while the felt pad protected the underlying surface and the membrane began to,The conservator advanced the blade across the parchment while the felt pad lay unused in a drawer and the membrane began to,bystander took part in the cut; V1.1 C2 requires a causally irrelevant bystander; clause made inert
+CUT_D036,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+CUT_D039,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D040,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+CUT_D040,sentence,The builder drew the sharp blade along the balsa strip while the steel square held the edge true and the wood began to,The builder drew the sharp blade along the balsa strip while the steel square hung on the wall and the wood began to,bystander took part in the cut; V1.1 C2 requires a causally irrelevant bystander; clause made inert
+CUT_D043,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D044,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+CUT_D044,sentence,The craftsman advanced the blade through the balsa strip while the wooden block braced the far end and the material started to,The craftsman advanced the blade through the balsa strip while the wooden block sat on a shelf across the room and the material started to,bystander took part in the cut; V1.1 C2 requires a causally irrelevant bystander; clause made inert
+CUT_D047,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D048,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+CUT_D048,sentence,The modeler guided the blade along the balsa strip while the plastic clamp held the free end and the soft wood began to,The modeler guided the blade along the balsa strip while the plastic clamp lay in a tool tray and the soft wood began to,bystander took part in the cut; V1.1 C2 requires a causally irrelevant bystander; clause made inert
+CUT_D049,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D051,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D052,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+CUT_D052,sentence,The technician pressed the blade into the balsa strip while the rubber mat protected the table and the porous wood started to,The technician pressed the blade into the balsa strip while the rubber mat lay rolled up in a corner and the porous wood started to,bystander took part in the cut; V1.1 C2 requires a causally irrelevant bystander; clause made inert
+CUT_D053,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D055,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D056,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+CUT_D056,sentence,The carver drew the blade through the balsa strip while the cork stop kept the piece from sliding and the soft timber began to,The carver drew the blade through the balsa strip while the cork stop lay in a parts drawer and the soft timber began to,bystander took part in the cut; V1.1 C2 requires a causally irrelevant bystander; clause made inert
+CUT_D057,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D059,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D060,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+CUT_D060,sentence,The builder guided the utility blade across the balsa strip while the metal weight stabilized the free end and the wood began to,The builder guided the utility blade across the balsa strip while the metal weight sat on a distant shelf and the wood began to,bystander took part in the cut; V1.1 C2 requires a causally irrelevant bystander; clause made inert
+CUT_D061,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D063,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D064,grammatical_role,object_of_preposition,prepositional_object,role-label spelling harmonised to dataset-wide vocabulary
+CUT_D064,sentence,The modeler advanced the blade into the balsa strip while the silicone pad cushioned the underside and the soft wood started to,The modeler advanced the blade into the balsa strip while the silicone pad lay folded on a side cart and the soft wood started to,bystander took part in the cut; V1.1 C2 requires a causally irrelevant bystander; clause made inert
+CUT_D068,grammatical_role,object_of_preposition,direct_object,role label contradicts sentence (two parsers + manual reading)
+CUT_D069,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D071,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D072,grammatical_role,object_of_preposition,direct_object,role label contradicts sentence (two parsers + manual reading)
+CUT_D073,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D075,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D076,grammatical_role,object_of_preposition,direct_object,role label contradicts sentence (two parsers + manual reading)
+CUT_D076,sentence,"While the foam underlay protected the table, the technician scored the acrylic sheet with a steel point, then bent it along that line until it began to","While the foam underlay lay rolled up in a corner, the technician scored the acrylic sheet with a steel point, then bent it along that line until it began to",bystander took part in the cut; V1.1 C2 requires a causally irrelevant bystander; clause made inert
+CUT_D077,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D079,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D080,grammatical_role,object_of_preposition,direct_object,role label contradicts sentence (two parsers + manual reading)
+CUT_D081,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D083,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D084,grammatical_role,object_of_preposition,direct_object,role label contradicts sentence (two parsers + manual reading)
+CUT_D085,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D087,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D088,grammatical_role,object_of_preposition,direct_object,role label contradicts sentence (two parsers + manual reading)
+CUT_D089,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D091,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D092,grammatical_role,object_of_preposition,direct_object,role label contradicts sentence (two parsers + manual reading)
+CUT_D092,sentence,"While the alignment fence stayed in place, the fabricator scored the acrylic sheet and bent it sharply along the groove until it began to","While the alignment fence leaned against the far wall, the fabricator scored the acrylic sheet and bent it sharply along the groove until it began to",bystander took part in the cut; V1.1 C2 requires a causally irrelevant bystander; clause made inert
+CUT_D093,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D095,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D096,grammatical_role,object_of_preposition,direct_object,role label contradicts sentence (two parsers + manual reading)
+CUT_D105,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D107,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D113,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D115,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D121,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D122,grammatical_role,direct_object,prepositional_object,role label contradicts sentence (two parsers + manual reading)
+CUT_D123,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D129,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D131,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D137,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)
+CUT_D139,grammatical_role,subject,passive_subject,role label contradicts sentence (two parsers + manual reading)

@@ -1,0 +1,335 @@
+[
+ {
+  "id": "IMP_DISC_K01_FORM_B02_A2",
+  "split": "discovery",
+  "label": "passive_subject",
+  "parsed": "subject",
+  "parser_head": "oval",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "IMP_DISC_K01_FORM_S_N06",
+  "split": "discovery",
+  "label": "indirect_object",
+  "parsed": "direct_object",
+  "parser_head": "oval",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser reads a dative (gave X a look) as direct object"
+ },
+ {
+  "id": "IMP_DISC_K01_MAT_B08_A1",
+  "split": "discovery",
+  "label": "genitive_complement",
+  "parsed": "subject",
+  "parser_head": "surface",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "referent is inside an of-phrase; parser head is the possessed noun"
+ },
+ {
+  "id": "IMP_DISC_K02_MAT_B15_C",
+  "split": "discovery",
+  "label": "prepositional_object",
+  "parsed": "direct_object",
+  "parser_head": "can",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "phrasal-verb reading (rolled over / stamped on) or head picked from a modifier"
+ },
+ {
+  "id": "IMP_DISC_K02_MAT_S_N02",
+  "split": "discovery",
+  "label": "direct_object",
+  "parsed": "prepositional_object",
+  "parser_head": "cap",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "IMP_DISC_K03_MAT_B18_A2",
+  "split": "discovery",
+  "label": "genitive_complement",
+  "parsed": "subject",
+  "parser_head": "band",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "referent is inside an of-phrase; parser head is the possessed noun"
+ },
+ {
+  "id": "IMP_DISC_K03_CTX_B22_A2",
+  "split": "discovery",
+  "label": "genitive_complement",
+  "parsed": "subject",
+  "parser_head": "strip",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "referent is inside an of-phrase; parser head is the possessed noun"
+ },
+ {
+  "id": "HEAT_DISC_B001_A2",
+  "split": "discovery",
+  "label": "direct_object",
+  "parsed": "prepositional_object",
+  "parser_head": "hull",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "HEAT_DISC_B012_A1",
+  "split": "discovery",
+  "label": "prepositional_object",
+  "parsed": "genitive_complement",
+  "parser_head": "fluid",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "phrasal-verb reading (rolled over / stamped on) or head picked from a modifier"
+ },
+ {
+  "id": "CUT_D033",
+  "split": "discovery",
+  "label": "subject",
+  "parsed": "ROOT",
+  "parser_head": "length",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "CUT_D063",
+  "split": "discovery",
+  "label": "passive_subject",
+  "parsed": "ROOT",
+  "parser_head": "foam",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "CUT_D097",
+  "split": "discovery",
+  "label": "subject",
+  "parsed": "ROOT",
+  "parser_head": "membrane",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "CUT_D099",
+  "split": "discovery",
+  "label": "subject",
+  "parsed": "ROOT",
+  "parser_head": "membrane",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "IMP_VAL_K01_FORM_B03_A1",
+  "split": "validation",
+  "label": "indirect_object",
+  "parsed": "direct_object",
+  "parser_head": "oval",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser reads a dative (gave X a look) as direct object"
+ },
+ {
+  "id": "IMP_VAL_K01_MAT_B08_A1",
+  "split": "validation",
+  "label": "indirect_object",
+  "parsed": "direct_object",
+  "parser_head": "casing",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser reads a dative (gave X a look) as direct object"
+ },
+ {
+  "id": "IMP_VAL_K02_MAT_B15_A2",
+  "split": "validation",
+  "label": "genitive_complement",
+  "parsed": "subject",
+  "parser_head": "outline",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "referent is inside an of-phrase; parser head is the possessed noun"
+ },
+ {
+  "id": "IMP_VAL_K03_CTX_B22_A2",
+  "split": "validation",
+  "label": "genitive_complement",
+  "parsed": "subject",
+  "parser_head": "outline",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "referent is inside an of-phrase; parser head is the possessed noun"
+ },
+ {
+  "id": "HEAT_VAL_B013_C",
+  "split": "validation",
+  "label": "direct_object",
+  "parsed": "compound",
+  "parser_head": "egg",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "CUT_V006",
+  "split": "validation",
+  "label": "prepositional_object",
+  "parsed": "direct_object",
+  "parser_head": "comment",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "phrasal-verb reading (rolled over / stamped on) or head picked from a modifier"
+ },
+ {
+  "id": "IMP_EVAL_K01_FORM_B06_A1",
+  "split": "evaluation",
+  "label": "indirect_object",
+  "parsed": "direct_object",
+  "parser_head": "oval",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser reads a dative (gave X a look) as direct object"
+ },
+ {
+  "id": "IMP_EVAL_K01_MAT_B21_B",
+  "split": "evaluation",
+  "label": "indirect_object",
+  "parsed": "direct_object",
+  "parser_head": "casing",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser reads a dative (gave X a look) as direct object"
+ },
+ {
+  "id": "IMP_EVAL_K01_MAT_B29_B",
+  "split": "evaluation",
+  "label": "direct_object",
+  "parsed": "prepositional_object",
+  "parser_head": "pebbles",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "IMP_EVAL_K02_FORM_B33_C",
+  "split": "evaluation",
+  "label": "prepositional_object",
+  "parsed": "direct_object",
+  "parser_head": "can",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "phrasal-verb reading (rolled over / stamped on) or head picked from a modifier"
+ },
+ {
+  "id": "IMP_EVAL_K02_FORM_B36_A2",
+  "split": "evaluation",
+  "label": "genitive_complement",
+  "parsed": "subject",
+  "parser_head": "colour",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "referent is inside an of-phrase; parser head is the possessed noun"
+ },
+ {
+  "id": "IMP_EVAL_K02_FORM_B42_A2",
+  "split": "evaluation",
+  "label": "genitive_complement",
+  "parsed": "subject",
+  "parser_head": "shape",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "referent is inside an of-phrase; parser head is the possessed noun"
+ },
+ {
+  "id": "IMP_EVAL_K02_MAT_B57_C",
+  "split": "evaluation",
+  "label": "prepositional_object",
+  "parsed": "direct_object",
+  "parser_head": "can",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "phrasal-verb reading (rolled over / stamped on) or head picked from a modifier"
+ },
+ {
+  "id": "IMP_EVAL_K03_MAT_B75_A1",
+  "split": "evaluation",
+  "label": "indirect_object",
+  "parsed": "direct_object",
+  "parser_head": "pane",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser reads a dative (gave X a look) as direct object"
+ },
+ {
+  "id": "IMP_EVAL_K03_CTX_B81_A1",
+  "split": "evaluation",
+  "label": "indirect_object",
+  "parsed": "direct_object",
+  "parser_head": "pane",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser reads a dative (gave X a look) as direct object"
+ },
+ {
+  "id": "HEAT_EVAL_B002_B",
+  "split": "evaluation",
+  "label": "direct_object",
+  "parsed": "subject",
+  "parser_head": "seed",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "HEAT_EVAL_B004_A1",
+  "split": "evaluation",
+  "label": "direct_object",
+  "parsed": "prepositional_object",
+  "parser_head": "hull",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "HEAT_EVAL_B032_B",
+  "split": "evaluation",
+  "label": "direct_object",
+  "parsed": "prepositional_object",
+  "parser_head": "body",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "HEAT_EVAL_B037_A1",
+  "split": "evaluation",
+  "label": "subject",
+  "parsed": "prepositional_object",
+  "parser_head": "solution",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "HEAT_EVAL_B038_A1",
+  "split": "evaluation",
+  "label": "direct_object",
+  "parsed": "prepositional_object",
+  "parser_head": "shell",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "HEAT_EVAL_B039_C",
+  "split": "evaluation",
+  "label": "direct_object",
+  "parsed": "compound",
+  "parser_head": "egg",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "HEAT_EVAL_B044_A1",
+  "split": "evaluation",
+  "label": "direct_object",
+  "parsed": "prepositional_object",
+  "parser_head": "shell",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "HEAT_EVAL_B046_A1",
+  "split": "evaluation",
+  "label": "direct_object",
+  "parsed": "prepositional_object",
+  "parser_head": "shell",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ },
+ {
+  "id": "HEAT_EVAL_B052_A1",
+  "split": "evaluation",
+  "label": "direct_object",
+  "parsed": "subject",
+  "parser_head": "film",
+  "verdict": "label correct by reading; parser/referent-head artifact",
+  "note": "parser chose a modifier/PP noun as head, or long NP parsed as ROOT"
+ }
+]
