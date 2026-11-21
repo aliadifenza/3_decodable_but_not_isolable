@@ -1,0 +1,31 @@
+✓ Initialized. View run at 
+https://modal.com/apps/aliadifenza/main/ap-GK63sOtfiHMoseAls3RcmP
+✓ Created objects.
+├── 🔨 Created mount /Users/antoniodifenza/kantian_e/e4_probe.py
+├── 🔨 Created mount PythonPackage:g4_probe, PythonPackage:e_probe
+└── 🔨 Created function run.
+EXPLORATORY E4 (already travelled?) — not confirmatory; discovery/validation only; evaluation sealed
+layers [2, 4, 6, 8, 10, 12, 14]; worst-case cost $0.73 (hard timeout 40 min)
+
+[1AFetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]
+[1AFetching 12 files: 100%|██████████| 12/12 [00:00<00:00, 2725.34it/s]
+
+[1ALoading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+[1ALoading checkpoint shards:  33%|███▎      | 1/3 [00:02<00:05,  2.76s/it]
+[1ALoading checkpoint shards:  67%|██████▋   | 2/3 [00:05<00:02,  2.77s/it]
+[1ALoading checkpoint shards: 100%|██████████| 3/3 [00:05<00:00,  1.67s/it]
+[1ALoading checkpoint shards: 100%|██████████| 3/3 [00:05<00:00,  1.97s/it]
+[   60.9s] capture
+[  167.7s] layer_2
+[  274.1s] layer_4
+[  380.2s] layer_6
+[  485.9s] layer_8
+[  592.2s] layer_10
+[  698.2s] layer_12
+[  804.2s] layer_14
+[  804.2s] done
+wrote modal_out/e/e4_results.json
+DONE runtime 820.1s est $0.251 errors {}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/aliadifenza/main/ap-GK63sOtfiHMoseAls3RcmP
