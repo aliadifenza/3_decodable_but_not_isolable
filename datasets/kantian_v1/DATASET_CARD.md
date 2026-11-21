@@ -1,7 +1,7 @@
 # Kantian Positional Logic — Dataset v1 (Workstream 1)
 
 **Experiment:** AlignedLab Exp. 3 (Research Agenda Ch.2 Exp.2) · **Authority:** Protocol V1.1 + fidelity record · **Model:** Gemma-2-2B @ `c5ebcd40d208330abc697524c919956e692655cf`
-**Built:** 2026-11-21 by Claude (lead engineer) · **Status:** BLOCKED (see §7). Not a G5 freeze.
+**Built:** 2026-11-21 by Claude (lead engineer) · **Current versions:** discovery v1.2 · validation v1.1 · evaluation v1.1 (§8) · **Status:** tokenizer check pending (§7). Not a G5 freeze.
 
 ## 1. Layout
 
@@ -48,4 +48,18 @@ Unchanged: families, kinds, strata, record types, bundle structure, label semant
 ## 7. Blockers
 
 1. **Tokenization check not yet run** (requires PI's Modal account; < $0.01 CPU).
-2. **C2 data gap (PI decision):** the allocation contains no recognition records for bystander kinds, so C2 cannot be drawn from this dataset as specified. Options: (a) add a bystander-recognition supplement (changes allocation); (b) resolve by method change in the specification workstream.
+2. ~~C2 data gap~~ — **resolved in §8** (PI decision 2026-11-21: one fixed bystander per family).
+
+## 8. v1.2 / v1.1 / v1.1 — fixed C2 bystander (PI decision 2026-11-21)
+
+**Why:** C2 needs a feature set for the bystander kind, selected on recognition data. v1.0 used ~95 different bystanders with no recognition data. **Decision:** one fixed bystander per family — impact **umbrella**, heating **wristwatch**, cutting **teapot** (the protocol's own C2 example uses one bystander, "clock").
+
+**Changes** (`scripts/bystander_fix.py` + `scripts/bystander_bank.py`; deterministic; logged per field in each version's `*_changelog.csv`):
+- Every causal prompt (72 discovery, 72 validation, 288 evaluation): only the bystander phrase replaced; patient, event, target and alternatives unchanged. Discovery: per-item substitution table (1 item already used "umbrella", sentence unchanged). Validation/evaluation: leading clause swapped from family-specific V/E clause banks (6 each, disjoint across splits).
+- New bystander recognition records, discovery and validation: per kind 10 members + 10 property-matched non-members sharing a head noun and frame (umbrella vs pop-up tent, "canopy"; wristwatch vs wrist compass, "dial"; teapot vs cream jug, "vessel"), noun-free, 4 grammatical roles, discovery frames new and disjoint. +60 records per split. Evaluation gets none (held out; C2 features are selected on discovery/validation only).
+
+**Counts:** discovery 492 (per family 70 / 70 / 24), validation 492 (70 / 70 / 24), evaluation 1,152 (unchanged count).
+**Audit** (`audit/audit_all_splits_v2.json`): no issues except 38 role-vs-parse disagreements, all reviewed as parser artifacts (`audit/reviewed_parser_artifacts_v2.json`). No G4 nouns (six caught and removed during the fix: lamp, bottle, bowl, basket, box, mirror), no kind-noun leaks, every causal prompt names patient and bystander exactly once.
+**Hashes (sha256 prefix):** discovery v1.2 `65c614bd47f7bfeb`, validation v1.1 `67dd259bd750d2c3`, evaluation v1.1 `e0c02030eaae8007` (full hashes in SHA256SUMS).
+
+**Disclosed limitation found during this fix — causal items are clustered by event [HIGH]:** the generator built causal items as event × patient-phrasing × bystander combinations, so many items share one event and differ only in wording. Distinct causal events (template_id): evaluation impact 24, heating 15, cutting 15 (of 96 items each); validation 6 / 3 / 3. Items within an event are not independent. The analysis must treat the event (`template_id` in the mapping CSV) as the cluster unit; the effective sample size for the confirmatory impact family is 24 events, not 96 items. Adding more distinct events would be a further dataset change.

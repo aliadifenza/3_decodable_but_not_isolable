@@ -1,0 +1,5114 @@
+{
+ "files": [
+  {
+   "jsonl": "discovery_v1.2.jsonl",
+   "sha256": "65c614bd47f7bfebcecbc99c6c3ef6a26f34b8fdb571d57ccd4a94e28c99dd1f",
+   "n": 492,
+   "csv": "discovery_v1.2_mapping.csv",
+   "csv_sha256": "75b9a93fcb23d1dffb13da5e8210c8c68cce169de64db8def858d14df01f6143"
+  },
+  {
+   "jsonl": "validation_v1.1.jsonl",
+   "sha256": "67dd259bd750d2c36b936bcf2dc190b1dfa7f3dfcae2759c64267617ac4d6859",
+   "n": 492,
+   "csv": "validation_v1.1_mapping.csv",
+   "csv_sha256": "c28c3385a3c996a58be8b2f5e23d2d322993c1d9da060c6000972571422dbecd"
+  },
+  {
+   "jsonl": "evaluation_v1.1.jsonl",
+   "sha256": "e0c02030eaae80079d90c9e9f7c5343d08f0a6238fb2e1ddabde3d7ed5b166da",
+   "n": 1152,
+   "csv": "evaluation_v1.1_mapping.csv",
+   "csv_sha256": "6feb6dc9b5b62a8322da5a0a2db913fb0502f8111e75a07caccb1815d5a3a0e3"
+  }
+ ],
+ "checks": {},
+ "issues": {},
+ "stats": {
+  "near_dup_pairs_within_split": 81,
+  "counts": {
+   "discovery|physical_impact|identity_preserving": 70,
+   "discovery|physical_impact|matched_nonmember": 70,
+   "discovery|physical_impact|causal_prediction": 24,
+   "discovery|heating|identity_preserving": 70,
+   "discovery|heating|matched_nonmember": 70,
+   "discovery|heating|causal_prediction": 24,
+   "discovery|cutting|identity_preserving": 70,
+   "discovery|cutting|matched_nonmember": 70,
+   "discovery|cutting|causal_prediction": 24,
+   "validation|physical_impact|identity_preserving": 70,
+   "validation|physical_impact|matched_nonmember": 70,
+   "validation|physical_impact|causal_prediction": 24,
+   "validation|heating|identity_preserving": 70,
+   "validation|heating|matched_nonmember": 70,
+   "validation|heating|causal_prediction": 24,
+   "validation|cutting|identity_preserving": 70,
+   "validation|cutting|matched_nonmember": 70,
+   "validation|cutting|causal_prediction": 24,
+   "evaluation|physical_impact|identity_preserving": 192,
+   "evaluation|physical_impact|matched_nonmember": 96,
+   "evaluation|physical_impact|causal_prediction": 96,
+   "evaluation|heating|identity_preserving": 192,
+   "evaluation|heating|matched_nonmember": 96,
+   "evaluation|heating|causal_prediction": 96,
+   "evaluation|cutting|identity_preserving": 192,
+   "evaluation|cutting|matched_nonmember": 96,
+   "evaluation|cutting|causal_prediction": 96
+  },
+  "role_counts": {
+   "discovery|physical_impact|subject": 36,
+   "discovery|physical_impact|direct_object": 38,
+   "discovery|physical_impact|prepositional_object": 30,
+   "discovery|physical_impact|indirect_object": 14,
+   "discovery|physical_impact|passive_subject": 29,
+   "discovery|physical_impact|genitive_complement": 16,
+   "discovery|physical_impact|predicate_nominative": 1,
+   "discovery|heating|subject": 60,
+   "discovery|heating|direct_object": 35,
+   "discovery|heating|passive_subject": 47,
+   "discovery|heating|prepositional_object": 22,
+   "discovery|cutting|subject": 23,
+   "discovery|cutting|direct_object": 68,
+   "discovery|cutting|prepositional_object": 24,
+   "discovery|cutting|passive_subject": 49,
+   "validation|physical_impact|subject": 35,
+   "validation|physical_impact|passive_subject": 26,
+   "validation|physical_impact|direct_object": 33,
+   "validation|physical_impact|prepositional_object": 30,
+   "validation|physical_impact|indirect_object": 24,
+   "validation|physical_impact|genitive_complement": 16,
+   "validation|heating|subject": 42,
+   "validation|heating|passive_subject": 38,
+   "validation|heating|direct_object": 56,
+   "validation|heating|prepositional_object": 28,
+   "validation|cutting|subject": 42,
+   "validation|cutting|passive_subject": 30,
+   "validation|cutting|direct_object": 56,
+   "validation|cutting|prepositional_object": 36,
+   "evaluation|physical_impact|subject": 90,
+   "evaluation|physical_impact|passive_subject": 51,
+   "evaluation|physical_impact|direct_object": 90,
+   "evaluation|physical_impact|prepositional_object": 57,
+   "evaluation|physical_impact|indirect_object": 64,
+   "evaluation|physical_impact|genitive_complement": 32,
+   "evaluation|heating|subject": 131,
+   "evaluation|heating|passive_subject": 88,
+   "evaluation|heating|direct_object": 117,
+   "evaluation|heating|prepositional_object": 48,
+   "evaluation|cutting|subject": 96,
+   "evaluation|cutting|passive_subject": 48,
+   "evaluation|cutting|direct_object": 138,
+   "evaluation|cutting|prepositional_object": 102
+  }
+ },
+ "role_mismatches": [
+  {
+   "id": "IMP_DISC_K01_FORM_B02_A2",
+   "label": "passive_subject",
+   "parsed": "subject",
+   "head": "oval"
+  },
+  {
+   "id": "IMP_DISC_K01_FORM_S_N06",
+   "label": "indirect_object",
+   "parsed": "direct_object",
+   "head": "oval"
+  },
+  {
+   "id": "IMP_DISC_K01_MAT_B08_A1",
+   "label": "genitive_complement",
+   "parsed": "subject",
+   "head": "surface"
+  },
+  {
+   "id": "IMP_DISC_K02_MAT_B15_C",
+   "label": "prepositional_object",
+   "parsed": "direct_object",
+   "head": "can"
+  },
+  {
+   "id": "IMP_DISC_K02_MAT_S_N02",
+   "label": "direct_object",
+   "parsed": "prepositional_object",
+   "head": "cap"
+  },
+  {
+   "id": "IMP_DISC_K03_MAT_B18_A2",
+   "label": "genitive_complement",
+   "parsed": "subject",
+   "head": "band"
+  },
+  {
+   "id": "IMP_DISC_K03_CTX_B22_A2",
+   "label": "genitive_complement",
+   "parsed": "subject",
+   "head": "strip"
+  },
+  {
+   "id": "HEAT_DISC_B001_A2",
+   "label": "direct_object",
+   "parsed": "prepositional_object",
+   "head": "hull"
+  },
+  {
+   "id": "HEAT_DISC_B012_A1",
+   "label": "prepositional_object",
+   "parsed": "genitive_complement",
+   "head": "fluid"
+  },
+  {
+   "id": "CUT_D033",
+   "label": "subject",
+   "parsed": "ROOT",
+   "head": "length"
+  },
+  {
+   "id": "CUT_D063",
+   "label": "passive_subject",
+   "parsed": "ROOT",
+   "head": "foam"
+  },
+  {
+   "id": "CUT_D097",
+   "label": "subject",
+   "parsed": "ROOT",
+   "head": "membrane"
+  },
+  {
+   "id": "CUT_D099",
+   "label": "subject",
+   "parsed": "ROOT",
+   "head": "membrane"
+  },
+  {
+   "id": "IMP_VAL_K01_FORM_B03_A1",
+   "label": "indirect_object",
+   "parsed": "direct_object",
+   "head": "oval"
+  },
+  {
+   "id": "IMP_VAL_K01_MAT_B08_A1",
+   "label": "indirect_object",
+   "parsed": "direct_object",
+   "head": "casing"
+  },
+  {
+   "id": "IMP_VAL_K02_MAT_B15_A2",
+   "label": "genitive_complement",
+   "parsed": "subject",
+   "head": "outline"
+  },
+  {
+   "id": "IMP_VAL_K03_CTX_B22_A2",
+   "label": "genitive_complement",
+   "parsed": "subject",
+   "head": "outline"
+  },
+  {
+   "id": "HEAT_VAL_B009_C",
+   "label": "direct_object",
+   "parsed": "compound",
+   "head": "egg"
+  },
+  {
+   "id": "CUT_V006",
+   "label": "prepositional_object",
+   "parsed": "direct_object",
+   "head": "comment"
+  },
+  {
+   "id": "HEAT_VAL_BYS_M08",
+   "label": "prepositional_object",
+   "parsed": "direct_object",
+   "head": "comment"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B06_A1",
+   "label": "indirect_object",
+   "parsed": "direct_object",
+   "head": "oval"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B21_B",
+   "label": "indirect_object",
+   "parsed": "direct_object",
+   "head": "casing"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B29_B",
+   "label": "direct_object",
+   "parsed": "prepositional_object",
+   "head": "pebbles"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B33_C",
+   "label": "prepositional_object",
+   "parsed": "direct_object",
+   "head": "can"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B36_A2",
+   "label": "genitive_complement",
+   "parsed": "subject",
+   "head": "colour"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B42_A2",
+   "label": "genitive_complement",
+   "parsed": "subject",
+   "head": "shape"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B49_C",
+   "label": "prepositional_object",
+   "parsed": "direct_object",
+   "head": "can"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B64_C",
+   "label": "prepositional_object",
+   "parsed": "direct_object",
+   "head": "can"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B75_A1",
+   "label": "indirect_object",
+   "parsed": "direct_object",
+   "head": "pane"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B81_A1",
+   "label": "indirect_object",
+   "parsed": "direct_object",
+   "head": "pane"
+  },
+  {
+   "id": "HEAT_EVAL_B002_B",
+   "label": "direct_object",
+   "parsed": "subject",
+   "head": "seed"
+  },
+  {
+   "id": "HEAT_EVAL_B004_A1",
+   "label": "direct_object",
+   "parsed": "prepositional_object",
+   "head": "hull"
+  },
+  {
+   "id": "HEAT_EVAL_B032_B",
+   "label": "direct_object",
+   "parsed": "prepositional_object",
+   "head": "body"
+  },
+  {
+   "id": "HEAT_EVAL_B037_A1",
+   "label": "subject",
+   "parsed": "prepositional_object",
+   "head": "solution"
+  },
+  {
+   "id": "HEAT_EVAL_B038_A1",
+   "label": "direct_object",
+   "parsed": "prepositional_object",
+   "head": "shell"
+  },
+  {
+   "id": "HEAT_EVAL_B044_A1",
+   "label": "direct_object",
+   "parsed": "prepositional_object",
+   "head": "shell"
+  },
+  {
+   "id": "HEAT_EVAL_B046_A1",
+   "label": "direct_object",
+   "parsed": "prepositional_object",
+   "head": "shell"
+  },
+  {
+   "id": "HEAT_EVAL_B052_A1",
+   "label": "direct_object",
+   "parsed": "subject",
+   "head": "film"
+  }
+ ],
+ "head_noun_shortcut": {
+  "discovery|physical_impact|K01_FORM": {
+   "member_heads": {
+    "oval": 10
+   },
+   "non_heads": {
+    "oval": 10
+   },
+   "shared": [
+    "oval"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "discovery|physical_impact|K01_MAT": {
+   "member_heads": {
+    "oval": 8,
+    "casing": 1,
+    "surface": 1
+   },
+   "non_heads": {
+    "casing": 6,
+    "fan": 2,
+    "moon": 1,
+    "spiral": 1
+   },
+   "shared": [
+    "casing"
+   ],
+   "member_frac_shared_head": 0.1,
+   "non_frac_shared_head": 0.6
+  },
+  "discovery|physical_impact|K02_FORM": {
+   "member_heads": {
+    "cylinder": 10
+   },
+   "non_heads": {
+    "cylinder": 10
+   },
+   "shared": [
+    "cylinder"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "discovery|physical_impact|K02_MAT": {
+   "member_heads": {
+    "cylinder": 10
+   },
+   "non_heads": {
+    "cylinder": 9,
+    "cap": 1
+   },
+   "shared": [
+    "cylinder"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 0.9
+  },
+  "discovery|physical_impact|K03_MAT": {
+   "member_heads": {
+    "pane": 8,
+    "sheet": 1,
+    "band": 1
+   },
+   "non_heads": {
+    "pane": 4,
+    "sheet": 3,
+    "panel": 2,
+    "section": 1
+   },
+   "shared": [
+    "pane",
+    "sheet"
+   ],
+   "member_frac_shared_head": 0.9,
+   "non_frac_shared_head": 0.7
+  },
+  "discovery|physical_impact|K03_CTX": {
+   "member_heads": {
+    "pane": 9,
+    "strip": 1
+   },
+   "non_heads": {
+    "panel": 5,
+    "sheet": 2,
+    "pane": 2,
+    "triangle": 1
+   },
+   "shared": [
+    "pane"
+   ],
+   "member_frac_shared_head": 0.9,
+   "non_frac_shared_head": 0.2
+  },
+  "discovery|heating|PG1_sealed_moisture_hull": {
+   "member_heads": {
+    "seed": 9,
+    "hull": 1
+   },
+   "non_heads": {
+    "seed": 3,
+    "ornament": 3,
+    "pebble": 2,
+    "chip": 2
+   },
+   "shared": [
+    "seed"
+   ],
+   "member_frac_shared_head": 0.9,
+   "non_frac_shared_head": 0.3
+  },
+  "discovery|heating|PG2_dense_starchy_grain": {
+   "member_heads": {
+    "grain": 9,
+    "center": 1
+   },
+   "non_heads": {
+    "grain": 7,
+    "seed": 3
+   },
+   "shared": [
+    "grain"
+   ],
+   "member_frac_shared_head": 0.9,
+   "non_frac_shared_head": 0.7
+  },
+  "discovery|heating|PG1_coagulable_albumin_fluid": {
+   "member_heads": {
+    "fluid": 5,
+    "liquid": 5
+   },
+   "non_heads": {
+    "liquid": 3,
+    "solution": 3,
+    "syrup": 1,
+    "slurry": 1,
+    "suspension": 1,
+    "dispersion": 1
+   },
+   "shared": [
+    "liquid"
+   ],
+   "member_frac_shared_head": 0.5,
+   "non_frac_shared_head": 0.3
+  },
+  "discovery|heating|PG2_aqueous_protein_film": {
+   "member_heads": {
+    "film": 4,
+    "coat": 3,
+    "layer": 2,
+    "sheen": 1
+   },
+   "non_heads": {
+    "film": 4,
+    "coating": 2,
+    "layer": 1,
+    "sheen": 1,
+    "coat": 1,
+    "wash": 1
+   },
+   "shared": [
+    "coat",
+    "film",
+    "layer",
+    "sheen"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 0.7
+  },
+  "discovery|heating|PG1_low_temp_softening_mass": {
+   "member_heads": {
+    "block": 9,
+    "bar": 1
+   },
+   "non_heads": {
+    "block": 4,
+    "bar": 3,
+    "stone": 3
+   },
+   "shared": [
+    "bar",
+    "block"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 0.7
+  },
+  "discovery|heating|PG2_molded_apiary_slab": {
+   "member_heads": {
+    "slab": 7,
+    "cake": 3
+   },
+   "non_heads": {
+    "piece": 5,
+    "slab": 3,
+    "bar": 2
+   },
+   "shared": [
+    "slab"
+   ],
+   "member_frac_shared_head": 0.7,
+   "non_frac_shared_head": 0.3
+  },
+  "discovery|cutting|parch_thin_flex": {
+   "member_heads": {
+    "sheet": 3,
+    "leaf": 2,
+    "membrane": 2,
+    "hide": 1,
+    "surface": 1,
+    "support": 1
+   },
+   "non_heads": {
+    "sheet": 4,
+    "film": 3,
+    "membrane": 2,
+    "surface": 1
+   },
+   "shared": [
+    "membrane",
+    "sheet",
+    "surface"
+   ],
+   "member_frac_shared_head": 0.6,
+   "non_frac_shared_head": 0.7
+  },
+  "discovery|cutting|parch_surface_aged": {
+   "member_heads": {
+    "leaf": 4,
+    "membrane": 2,
+    "support": 2,
+    "sheet": 2
+   },
+   "non_heads": {
+    "sheet": 6,
+    "film": 2,
+    "membrane": 1,
+    "support": 1
+   },
+   "shared": [
+    "membrane",
+    "sheet",
+    "support"
+   ],
+   "member_frac_shared_head": 0.6,
+   "non_frac_shared_head": 0.8
+  },
+  "discovery|cutting|balsa_soft_grained": {
+   "member_heads": {
+    "length": 4,
+    "strip": 3,
+    "member": 1,
+    "rectangle": 1,
+    "piece": 1
+   },
+   "non_heads": {
+    "strip": 4,
+    "rectangle": 2,
+    "bar": 2,
+    "foam": 1,
+    "polymer": 1
+   },
+   "shared": [
+    "rectangle",
+    "strip"
+   ],
+   "member_frac_shared_head": 0.4,
+   "non_frac_shared_head": 0.6
+  },
+  "discovery|cutting|balsa_porous_float": {
+   "member_heads": {
+    "strip": 4,
+    "piece": 2,
+    "timber": 2,
+    "length": 2
+   },
+   "non_heads": {
+    "foam": 7,
+    "beam": 1,
+    "strip": 1,
+    "cylinder": 1
+   },
+   "shared": [
+    "strip"
+   ],
+   "member_frac_shared_head": 0.4,
+   "non_frac_shared_head": 0.1
+  },
+  "discovery|cutting|acryl_rigid_clear": {
+   "member_heads": {
+    "panel": 6,
+    "sheet": 3,
+    "plastic": 1
+   },
+   "non_heads": {
+    "panel": 4,
+    "sheet": 4,
+    "slab": 1,
+    "casting": 1
+   },
+   "shared": [
+    "panel",
+    "sheet"
+   ],
+   "member_frac_shared_head": 0.9,
+   "non_frac_shared_head": 0.8
+  },
+  "discovery|cutting|acryl_brittle_room": {
+   "member_heads": {
+    "plastic": 3,
+    "thermoplastic": 3,
+    "panel": 2,
+    "sheet": 2
+   },
+   "non_heads": {
+    "sheet": 4,
+    "panel": 3,
+    "polystyrene": 1,
+    "copolymer": 1,
+    "polymer": 1
+   },
+   "shared": [
+    "panel",
+    "sheet"
+   ],
+   "member_frac_shared_head": 0.4,
+   "non_frac_shared_head": 0.7
+  },
+  "discovery|physical_impact|BYS_FORM": {
+   "member_heads": {
+    "canopy": 10
+   },
+   "non_heads": {
+    "canopy": 10
+   },
+   "shared": [
+    "canopy"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "discovery|heating|BYS_FORM": {
+   "member_heads": {
+    "dial": 10
+   },
+   "non_heads": {
+    "dial": 10
+   },
+   "shared": [
+    "dial"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "discovery|cutting|BYS_FORM": {
+   "member_heads": {
+    "vessel": 10
+   },
+   "non_heads": {
+    "vessel": 10
+   },
+   "shared": [
+    "vessel"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|physical_impact|K01_FORM": {
+   "member_heads": {
+    "oval": 10
+   },
+   "non_heads": {
+    "oval": 10
+   },
+   "shared": [
+    "oval"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|physical_impact|K01_MAT": {
+   "member_heads": {
+    "casing": 10
+   },
+   "non_heads": {
+    "casing": 10
+   },
+   "shared": [
+    "casing"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|physical_impact|K02_FORM": {
+   "member_heads": {
+    "cylinder": 10
+   },
+   "non_heads": {
+    "cylinder": 10
+   },
+   "shared": [
+    "cylinder"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|physical_impact|K02_MAT": {
+   "member_heads": {
+    "cylinder": 9,
+    "outline": 1
+   },
+   "non_heads": {
+    "cylinder": 10
+   },
+   "shared": [
+    "cylinder"
+   ],
+   "member_frac_shared_head": 0.9,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|physical_impact|K03_MAT": {
+   "member_heads": {
+    "pane": 10
+   },
+   "non_heads": {
+    "pane": 10
+   },
+   "shared": [
+    "pane"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|physical_impact|K03_CTX": {
+   "member_heads": {
+    "pane": 9,
+    "outline": 1
+   },
+   "non_heads": {
+    "pane": 10
+   },
+   "shared": [
+    "pane"
+   ],
+   "member_frac_shared_head": 0.9,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|heating|PG1_sealed_moisture_hull": {
+   "member_heads": {
+    "seed": 10
+   },
+   "non_heads": {
+    "seed": 10
+   },
+   "shared": [
+    "seed"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|heating|PG2_dense_starchy_grain": {
+   "member_heads": {
+    "grain": 10
+   },
+   "non_heads": {
+    "grain": 10
+   },
+   "shared": [
+    "grain"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|heating|PG1_coagulable_albumin_fluid": {
+   "member_heads": {
+    "fluid": 10
+   },
+   "non_heads": {
+    "fluid": 10
+   },
+   "shared": [
+    "fluid"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|heating|PG2_aqueous_protein_film": {
+   "member_heads": {
+    "film": 10
+   },
+   "non_heads": {
+    "film": 10
+   },
+   "shared": [
+    "film"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|heating|PG1_low_temp_softening_mass": {
+   "member_heads": {
+    "block": 10
+   },
+   "non_heads": {
+    "block": 10
+   },
+   "shared": [
+    "block"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|heating|PG2_molded_apiary_slab": {
+   "member_heads": {
+    "slab": 10
+   },
+   "non_heads": {
+    "slab": 10
+   },
+   "shared": [
+    "slab"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|cutting|parch_thin_flex": {
+   "member_heads": {
+    "sheet": 9,
+    "comment": 1
+   },
+   "non_heads": {
+    "sheet": 10
+   },
+   "shared": [
+    "sheet"
+   ],
+   "member_frac_shared_head": 0.9,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|cutting|parch_surface_aged": {
+   "member_heads": {
+    "leaf": 10
+   },
+   "non_heads": {
+    "leaf": 10
+   },
+   "shared": [
+    "leaf"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|cutting|balsa_soft_grained": {
+   "member_heads": {
+    "strip": 10
+   },
+   "non_heads": {
+    "strip": 10
+   },
+   "shared": [
+    "strip"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|cutting|balsa_porous_float": {
+   "member_heads": {
+    "piece": 10
+   },
+   "non_heads": {
+    "piece": 10
+   },
+   "shared": [
+    "piece"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|cutting|acryl_rigid_clear": {
+   "member_heads": {
+    "panel": 10
+   },
+   "non_heads": {
+    "panel": 10
+   },
+   "shared": [
+    "panel"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|cutting|acryl_brittle_room": {
+   "member_heads": {
+    "panel": 10
+   },
+   "non_heads": {
+    "panel": 10
+   },
+   "shared": [
+    "panel"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|physical_impact|BYS_FORM": {
+   "member_heads": {
+    "canopy": 10
+   },
+   "non_heads": {
+    "canopy": 10
+   },
+   "shared": [
+    "canopy"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|heating|BYS_FORM": {
+   "member_heads": {
+    "dial": 9,
+    "comment": 1
+   },
+   "non_heads": {
+    "dial": 10
+   },
+   "shared": [
+    "dial"
+   ],
+   "member_frac_shared_head": 0.9,
+   "non_frac_shared_head": 1.0
+  },
+  "validation|cutting|BYS_FORM": {
+   "member_heads": {
+    "vessel": 10
+   },
+   "non_heads": {
+    "vessel": 9,
+    "lip": 1
+   },
+   "shared": [
+    "vessel"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 0.9
+  },
+  "evaluation|physical_impact|K01_FORM": {
+   "member_heads": {
+    "oval": 32
+   },
+   "non_heads": {
+    "oval": 16
+   },
+   "shared": [
+    "oval"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "evaluation|physical_impact|K01_MAT": {
+   "member_heads": {
+    "casing": 32
+   },
+   "non_heads": {
+    "casing": 15,
+    "pebble": 1
+   },
+   "shared": [
+    "casing"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 0.94
+  },
+  "evaluation|physical_impact|K02_FORM": {
+   "member_heads": {
+    "cylinder": 30,
+    "colour": 1,
+    "shape": 1
+   },
+   "non_heads": {
+    "cylinder": 16
+   },
+   "shared": [
+    "cylinder"
+   ],
+   "member_frac_shared_head": 0.94,
+   "non_frac_shared_head": 1.0
+  },
+  "evaluation|physical_impact|K02_MAT": {
+   "member_heads": {
+    "cylinder": 32
+   },
+   "non_heads": {
+    "cylinder": 16
+   },
+   "shared": [
+    "cylinder"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "evaluation|physical_impact|K03_MAT": {
+   "member_heads": {
+    "pane": 32
+   },
+   "non_heads": {
+    "pane": 16
+   },
+   "shared": [
+    "pane"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "evaluation|physical_impact|K03_CTX": {
+   "member_heads": {
+    "pane": 32
+   },
+   "non_heads": {
+    "pane": 16
+   },
+   "shared": [
+    "pane"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "evaluation|heating|PG1_sealed_moisture_hull": {
+   "member_heads": {
+    "seed": 31,
+    "hull": 1
+   },
+   "non_heads": {
+    "seed": 16
+   },
+   "shared": [
+    "seed"
+   ],
+   "member_frac_shared_head": 0.97,
+   "non_frac_shared_head": 1.0
+  },
+  "evaluation|heating|PG2_dense_starchy_grain": {
+   "member_heads": {
+    "grain": 32
+   },
+   "non_heads": {
+    "grain": 15,
+    "body": 1
+   },
+   "shared": [
+    "grain"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 0.94
+  },
+  "evaluation|heating|PG1_coagulable_albumin_fluid": {
+   "member_heads": {
+    "fluid": 28,
+    "shell": 3,
+    "solution": 1
+   },
+   "non_heads": {
+    "fluid": 16
+   },
+   "shared": [
+    "fluid"
+   ],
+   "member_frac_shared_head": 0.88,
+   "non_frac_shared_head": 1.0
+  },
+  "evaluation|heating|PG2_aqueous_protein_film": {
+   "member_heads": {
+    "film": 32
+   },
+   "non_heads": {
+    "film": 16
+   },
+   "shared": [
+    "film"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "evaluation|heating|PG1_low_temp_softening_mass": {
+   "member_heads": {
+    "block": 32
+   },
+   "non_heads": {
+    "block": 16
+   },
+   "shared": [
+    "block"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "evaluation|heating|PG2_molded_apiary_slab": {
+   "member_heads": {
+    "slab": 32
+   },
+   "non_heads": {
+    "slab": 16
+   },
+   "shared": [
+    "slab"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "evaluation|cutting|parch_thin_flex": {
+   "member_heads": {
+    "sheet": 32
+   },
+   "non_heads": {
+    "sheet": 16
+   },
+   "shared": [
+    "sheet"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "evaluation|cutting|parch_surface_aged": {
+   "member_heads": {
+    "leaf": 32
+   },
+   "non_heads": {
+    "leaf": 16
+   },
+   "shared": [
+    "leaf"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "evaluation|cutting|balsa_soft_grained": {
+   "member_heads": {
+    "strip": 32
+   },
+   "non_heads": {
+    "strip": 16
+   },
+   "shared": [
+    "strip"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "evaluation|cutting|balsa_porous_float": {
+   "member_heads": {
+    "piece": 32
+   },
+   "non_heads": {
+    "piece": 16
+   },
+   "shared": [
+    "piece"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "evaluation|cutting|acryl_rigid_clear": {
+   "member_heads": {
+    "panel": 32
+   },
+   "non_heads": {
+    "panel": 16
+   },
+   "shared": [
+    "panel"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  },
+  "evaluation|cutting|acryl_brittle_room": {
+   "member_heads": {
+    "panel": 32
+   },
+   "non_heads": {
+    "panel": 16
+   },
+   "shared": [
+    "panel"
+   ],
+   "member_frac_shared_head": 1.0,
+   "non_frac_shared_head": 1.0
+  }
+ },
+ "causal_format": [
+  {
+   "id": "IMP_DISC_K01_FORM_B01_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "stone floor and",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_DISC_K01_FORM_B02_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "onto concrete and",
+   "target": "splattered"
+  },
+  {
+   "id": "IMP_DISC_K01_FORM_B03_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "a fall and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_DISC_K01_FORM_B04_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and its shell",
+   "target": "crunched"
+  },
+  {
+   "id": "IMP_DISC_K01_MAT_B05_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "slate floor and",
+   "target": "split"
+  },
+  {
+   "id": "IMP_DISC_K01_MAT_B06_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "tiled floor and",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_DISC_K01_MAT_B07_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "the pavement and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_DISC_K01_MAT_B08_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "made its casing",
+   "target": "crack"
+  },
+  {
+   "id": "IMP_DISC_K02_FORM_B09_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "its side visibly",
+   "target": "dented"
+  },
+  {
+   "id": "IMP_DISC_K02_FORM_B10_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "metal wall to",
+   "target": "crumple"
+  },
+  {
+   "id": "IMP_DISC_K02_FORM_B11_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "its thin body",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_DISC_K02_FORM_B12_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "steel step and",
+   "target": "burst"
+  },
+  {
+   "id": "IMP_DISC_K02_MAT_B13_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "kerb and became",
+   "target": "dented"
+  },
+  {
+   "id": "IMP_DISC_K02_MAT_B14_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "the lemonade can",
+   "target": "crumpled"
+  },
+  {
+   "id": "IMP_DISC_K02_MAT_B15_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "flattened"
+  },
+  {
+   "id": "IMP_DISC_K02_MAT_B16_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "left its side",
+   "target": "dented"
+  },
+  {
+   "id": "IMP_DISC_K03_MAT_B17_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_DISC_K03_MAT_B18_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "chipped"
+  },
+  {
+   "id": "IMP_DISC_K03_MAT_B19_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_DISC_K03_MAT_B20_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_DISC_K03_CTX_B21_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_DISC_K03_CTX_B22_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "left its surface",
+   "target": "chipped"
+  },
+  {
+   "id": "IMP_DISC_K03_CTX_B23_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "repeatedly until it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_DISC_K03_CTX_B24_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "cracked"
+  },
+  {
+   "id": "HEAT_DISC_B001_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_DISC_B002_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "puff"
+  },
+  {
+   "id": "HEAT_DISC_B003_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "toast"
+  },
+  {
+   "id": "HEAT_DISC_B004_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "hull, making it",
+   "target": "rupture"
+  },
+  {
+   "id": "HEAT_DISC_B005_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "surface started to",
+   "target": "scorch"
+  },
+  {
+   "id": "HEAT_DISC_B006_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "surface began to",
+   "target": "brown"
+  },
+  {
+   "id": "HEAT_DISC_B007_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_DISC_B008_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "long enough to",
+   "target": "char"
+  },
+  {
+   "id": "HEAT_DISC_B009_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "firm"
+  },
+  {
+   "id": "HEAT_DISC_B010_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "coagulate"
+  },
+  {
+   "id": "HEAT_DISC_B011_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "gel"
+  },
+  {
+   "id": "HEAT_DISC_B012_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "layer to turn",
+   "target": "rubbery"
+  },
+  {
+   "id": "HEAT_DISC_B013_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "coating began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_DISC_B014_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "pan started to",
+   "target": "stick"
+  },
+  {
+   "id": "HEAT_DISC_B015_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_DISC_B016_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "griddle began to",
+   "target": "firm"
+  },
+  {
+   "id": "HEAT_DISC_B017_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_DISC_B018_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "liquefy"
+  },
+  {
+   "id": "HEAT_DISC_B019_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "left a thin",
+   "target": "coating"
+  },
+  {
+   "id": "HEAT_DISC_B020_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "harden"
+  },
+  {
+   "id": "HEAT_DISC_B021_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "conform"
+  },
+  {
+   "id": "HEAT_DISC_B022_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and left to",
+   "target": "harden"
+  },
+  {
+   "id": "HEAT_DISC_B023_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "sag"
+  },
+  {
+   "id": "HEAT_DISC_B024_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "float"
+  },
+  {
+   "id": "CUT_D004",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "material began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_D008",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_D012",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "membrane started to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_D016",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet began to",
+   "target": "yield"
+  },
+  {
+   "id": "CUT_D020",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "membrane started to",
+   "target": "divide"
+  },
+  {
+   "id": "CUT_D024",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "material began to",
+   "target": "split"
+  },
+  {
+   "id": "CUT_D028",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_D032",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "membrane began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_D036",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "fibres began to",
+   "target": "yield"
+  },
+  {
+   "id": "CUT_D040",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_D044",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "material started to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_D048",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "yield"
+  },
+  {
+   "id": "CUT_D052",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood started to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_D056",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "timber began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_D060",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "yield"
+  },
+  {
+   "id": "CUT_D064",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood started to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_D068",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_D072",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_D076",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_D080",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_D084",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_D088",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_D092",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_D096",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "IMP_VAL_K01_FORM_B01_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "brick wall and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_VAL_K01_FORM_B02_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and its casing",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_VAL_K01_FORM_B03_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "brick wall and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_VAL_K01_FORM_B04_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and its casing",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_VAL_K01_MAT_B05_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and its casing",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_VAL_K01_MAT_B06_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and its casing",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_VAL_K01_MAT_B07_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "brick wall and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_VAL_K01_MAT_B08_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "brick wall and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_VAL_K02_FORM_B09_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_VAL_K02_FORM_B10_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "dented"
+  },
+  {
+   "id": "IMP_VAL_K02_FORM_B11_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_VAL_K02_FORM_B12_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_VAL_K02_MAT_B13_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_VAL_K02_MAT_B14_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "dented"
+  },
+  {
+   "id": "IMP_VAL_K02_MAT_B15_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_VAL_K02_MAT_B16_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_VAL_K03_MAT_B17_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "bridge and was",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_VAL_K03_MAT_B18_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "bridge and was",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_VAL_K03_MAT_B19_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "bridge and was",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_VAL_K03_MAT_B20_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "bridge and was",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_VAL_K03_CTX_B21_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "chipped"
+  },
+  {
+   "id": "IMP_VAL_K03_CTX_B22_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "bridge and was",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_VAL_K03_CTX_B23_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "chipped"
+  },
+  {
+   "id": "IMP_VAL_K03_CTX_B24_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "chipped"
+  },
+  {
+   "id": "HEAT_VAL_B001_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "quickly began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_VAL_B002_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "quickly began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_VAL_B003_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "quickly began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_VAL_B004_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "quickly began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_VAL_B005_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "char"
+  },
+  {
+   "id": "HEAT_VAL_B006_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "char"
+  },
+  {
+   "id": "HEAT_VAL_B007_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "char"
+  },
+  {
+   "id": "HEAT_VAL_B008_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "char"
+  },
+  {
+   "id": "HEAT_VAL_B009_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "firm"
+  },
+  {
+   "id": "HEAT_VAL_B010_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "firm"
+  },
+  {
+   "id": "HEAT_VAL_B011_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "firm"
+  },
+  {
+   "id": "HEAT_VAL_B012_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "firm"
+  },
+  {
+   "id": "HEAT_VAL_B013_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "wash began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_VAL_B014_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "wash began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_VAL_B015_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "wash began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_VAL_B016_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "wash began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_VAL_B017_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_VAL_B018_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_VAL_B019_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_VAL_B020_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_VAL_B021_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "sag"
+  },
+  {
+   "id": "HEAT_VAL_B022_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "sag"
+  },
+  {
+   "id": "HEAT_VAL_B023_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "sag"
+  },
+  {
+   "id": "HEAT_VAL_B024_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "sag"
+  },
+  {
+   "id": "CUT_V004",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "halves began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_V008",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "halves began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_V012",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "halves began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_V016",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "halves began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_V028",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "halves began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_V032",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "halves began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_V036",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "halves began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_V040",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "halves began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_V052",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "fibres began to",
+   "target": "yield"
+  },
+  {
+   "id": "CUT_V056",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "fibres began to",
+   "target": "yield"
+  },
+  {
+   "id": "CUT_V060",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "fibres began to",
+   "target": "yield"
+  },
+  {
+   "id": "CUT_V064",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "fibres began to",
+   "target": "yield"
+  },
+  {
+   "id": "CUT_V076",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "fibres began to",
+   "target": "yield"
+  },
+  {
+   "id": "CUT_V080",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "fibres began to",
+   "target": "yield"
+  },
+  {
+   "id": "CUT_V084",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "fibres began to",
+   "target": "yield"
+  },
+  {
+   "id": "CUT_V088",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "fibres began to",
+   "target": "yield"
+  },
+  {
+   "id": "CUT_V100",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_V104",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_V108",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_V112",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_V124",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_V128",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_V132",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_V136",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B01_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "tiled floor and",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B02_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "the rocks and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B03_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and its casing",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B04_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "slate floor and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B05_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and its casing",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B06_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and its casing",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B07_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and its casing",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B08_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "concrete path and",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B09_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "tiled floor and",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B10_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "stone step and",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B11_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "the rocks and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B12_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "slate floor and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B13_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and its casing",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B14_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and its casing",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B15_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "the rocks and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_EVAL_K01_FORM_B16_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and its casing",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B17_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "tiled floor and",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B18_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "stone step and",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B19_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "concrete path and",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B20_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "slate floor and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B21_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "slate floor and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B22_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "the rocks and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B23_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and its casing",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B24_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "the rocks and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B25_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "tiled floor and",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B26_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "stone step and",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B27_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "concrete path and",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B28_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "slate floor and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B29_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "tiled floor and",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B30_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and its casing",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B31_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and its casing",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K01_MAT_B32_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "the rocks and",
+   "target": "broke"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B33_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "left it completely",
+   "target": "flattened"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B34_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "truck and left",
+   "target": "flattened"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B35_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and was badly",
+   "target": "dented"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B36_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "can, leaving it",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B37_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "can, leaving it",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B38_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "can, leaving it",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B39_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "truck and left",
+   "target": "flattened"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B40_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and was instantly",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B41_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and was badly",
+   "target": "dented"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B42_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "can, leaving it",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B43_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and was badly",
+   "target": "dented"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B44_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "hand until it",
+   "target": "crumpled"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B45_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B46_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and was instantly",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B47_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "truck and left",
+   "target": "flattened"
+  },
+  {
+   "id": "IMP_EVAL_K02_FORM_B48_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and was instantly",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B49_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "left it completely",
+   "target": "flattened"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B50_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "truck and left",
+   "target": "flattened"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B51_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and was badly",
+   "target": "dented"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B52_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "hand until it",
+   "target": "crumpled"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B53_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B54_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "kerb and left",
+   "target": "dented"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B55_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "can, leaving it",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B56_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B57_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "left it completely",
+   "target": "flattened"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B58_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "can, leaving it",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B59_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and was badly",
+   "target": "dented"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B60_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "hand until it",
+   "target": "crumpled"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B61_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "crushed"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B62_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "hand until it",
+   "target": "crumpled"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B63_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "truck and left",
+   "target": "flattened"
+  },
+  {
+   "id": "IMP_EVAL_K02_MAT_B64_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "left it completely",
+   "target": "flattened"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B65_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "chipped"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B66_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B67_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "windshield until it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B68_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "motorway and left",
+   "target": "chipped"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B69_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B70_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B71_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B72_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B73_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "chipped"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B74_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B75_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "windshield until it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B76_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B77_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B78_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "thrown brick and",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B79_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_MAT_B80_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B81_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "windshield until it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B82_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "windshield until it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B83_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "windshield until it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B84_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "windshield until it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B85_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B86_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "thrown brick and",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B87_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "chipped"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B88_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "windshield until it",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B89_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "chipped"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B90_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "and left it",
+   "target": "chipped"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B91_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "puck and left",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B92_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "motorway and left",
+   "target": "chipped"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B93_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "puck and left",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B94_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "thrown brick and",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B95_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "puck and left",
+   "target": "cracked"
+  },
+  {
+   "id": "IMP_EVAL_K03_CTX_B96_C",
+   "family": "physical_impact",
+   "patient_mentions": 1,
+   "bystander_field": "umbrella",
+   "bystander_head_mentions": 1,
+   "ends": "thrown brick and",
+   "target": "cracked"
+  },
+  {
+   "id": "HEAT_EVAL_B001_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_EVAL_B002_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_EVAL_B003_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it started to",
+   "target": "puff"
+  },
+  {
+   "id": "HEAT_EVAL_B004_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_EVAL_B005_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it started to",
+   "target": "puff"
+  },
+  {
+   "id": "HEAT_EVAL_B006_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_EVAL_B007_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_EVAL_B008_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_EVAL_B009_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_EVAL_B010_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_EVAL_B011_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it started to",
+   "target": "puff"
+  },
+  {
+   "id": "HEAT_EVAL_B012_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_EVAL_B013_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_EVAL_B014_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_EVAL_B015_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it started to",
+   "target": "puff"
+  },
+  {
+   "id": "HEAT_EVAL_B016_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "pop"
+  },
+  {
+   "id": "HEAT_EVAL_B017_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "surface began to",
+   "target": "brown"
+  },
+  {
+   "id": "HEAT_EVAL_B018_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "char"
+  },
+  {
+   "id": "HEAT_EVAL_B019_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "surface began to",
+   "target": "brown"
+  },
+  {
+   "id": "HEAT_EVAL_B020_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_EVAL_B021_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "surface began to",
+   "target": "brown"
+  },
+  {
+   "id": "HEAT_EVAL_B022_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "char"
+  },
+  {
+   "id": "HEAT_EVAL_B023_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "char"
+  },
+  {
+   "id": "HEAT_EVAL_B024_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "surface began to",
+   "target": "brown"
+  },
+  {
+   "id": "HEAT_EVAL_B025_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_EVAL_B026_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "surface began to",
+   "target": "brown"
+  },
+  {
+   "id": "HEAT_EVAL_B027_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "surface began to",
+   "target": "brown"
+  },
+  {
+   "id": "HEAT_EVAL_B028_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "skin started to",
+   "target": "scorch"
+  },
+  {
+   "id": "HEAT_EVAL_B029_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "skin started to",
+   "target": "scorch"
+  },
+  {
+   "id": "HEAT_EVAL_B030_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_EVAL_B031_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "surface began to",
+   "target": "brown"
+  },
+  {
+   "id": "HEAT_EVAL_B032_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "surface began to",
+   "target": "brown"
+  },
+  {
+   "id": "HEAT_EVAL_B033_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "quickly began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B034_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "quickly began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B035_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B036_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B037_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B038_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "quickly began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B039_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "coagulate"
+  },
+  {
+   "id": "HEAT_EVAL_B040_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B041_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "coagulate"
+  },
+  {
+   "id": "HEAT_EVAL_B042_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "quickly began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B043_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "quickly began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B044_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "quickly began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B045_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B046_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "soon began to",
+   "target": "firm"
+  },
+  {
+   "id": "HEAT_EVAL_B047_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B048_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B049_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "coating began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B050_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and started to",
+   "target": "stick"
+  },
+  {
+   "id": "HEAT_EVAL_B051_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "coating began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B052_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "oven, began to",
+   "target": "firm"
+  },
+  {
+   "id": "HEAT_EVAL_B053_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it started to",
+   "target": "stick"
+  },
+  {
+   "id": "HEAT_EVAL_B054_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "glaze began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B055_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "coating began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B056_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it started to",
+   "target": "stick"
+  },
+  {
+   "id": "HEAT_EVAL_B057_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "oven, began to",
+   "target": "firm"
+  },
+  {
+   "id": "HEAT_EVAL_B058_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "glaze began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B059_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "glaze began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B060_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and started to",
+   "target": "stick"
+  },
+  {
+   "id": "HEAT_EVAL_B061_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "coating began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B062_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "oven, began to",
+   "target": "firm"
+  },
+  {
+   "id": "HEAT_EVAL_B063_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "coating began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B064_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "coating began to",
+   "target": "set"
+  },
+  {
+   "id": "HEAT_EVAL_B065_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "slowly began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_EVAL_B066_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "liquefy"
+  },
+  {
+   "id": "HEAT_EVAL_B067_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_EVAL_B068_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "liquefy"
+  },
+  {
+   "id": "HEAT_EVAL_B069_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_EVAL_B070_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_EVAL_B071_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_EVAL_B072_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_EVAL_B073_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "liquefy"
+  },
+  {
+   "id": "HEAT_EVAL_B074_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_EVAL_B075_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "slowly began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_EVAL_B076_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "liquefy"
+  },
+  {
+   "id": "HEAT_EVAL_B077_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "liquefy"
+  },
+  {
+   "id": "HEAT_EVAL_B078_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_EVAL_B079_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "liquefy"
+  },
+  {
+   "id": "HEAT_EVAL_B080_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "slowly began to",
+   "target": "soften"
+  },
+  {
+   "id": "HEAT_EVAL_B081_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "sag"
+  },
+  {
+   "id": "HEAT_EVAL_B082_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "sag"
+  },
+  {
+   "id": "HEAT_EVAL_B083_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "cellar, began to",
+   "target": "harden"
+  },
+  {
+   "id": "HEAT_EVAL_B084_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "left it to",
+   "target": "harden"
+  },
+  {
+   "id": "HEAT_EVAL_B085_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "left it to",
+   "target": "harden"
+  },
+  {
+   "id": "HEAT_EVAL_B086_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "conform"
+  },
+  {
+   "id": "HEAT_EVAL_B087_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "sag"
+  },
+  {
+   "id": "HEAT_EVAL_B088_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "conform"
+  },
+  {
+   "id": "HEAT_EVAL_B089_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "conform"
+  },
+  {
+   "id": "HEAT_EVAL_B090_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "cellar, began to",
+   "target": "harden"
+  },
+  {
+   "id": "HEAT_EVAL_B091_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "sag"
+  },
+  {
+   "id": "HEAT_EVAL_B092_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "conform"
+  },
+  {
+   "id": "HEAT_EVAL_B093_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "left it to",
+   "target": "harden"
+  },
+  {
+   "id": "HEAT_EVAL_B094_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "left it to",
+   "target": "harden"
+  },
+  {
+   "id": "HEAT_EVAL_B095_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "conform"
+  },
+  {
+   "id": "HEAT_EVAL_B096_C",
+   "family": "heating",
+   "patient_mentions": 1,
+   "bystander_field": "wristwatch",
+   "bystander_head_mentions": 1,
+   "ends": "and began to",
+   "target": "sag"
+  },
+  {
+   "id": "CUT_E004",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "edge began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E008",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "membrane started to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_E012",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E016",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "leaf began to",
+   "target": "split"
+  },
+  {
+   "id": "CUT_E020",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet started to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E024",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "membrane started to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_E028",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "edge began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E032",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet started to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E036",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "leaf began to",
+   "target": "split"
+  },
+  {
+   "id": "CUT_E040",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet started to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E044",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "edge began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E048",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E052",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "edge began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E056",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "membrane started to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_E060",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet started to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E064",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E068",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet started to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E072",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "leaf began to",
+   "target": "split"
+  },
+  {
+   "id": "CUT_E076",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "edge began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E080",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "leaf began to",
+   "target": "split"
+  },
+  {
+   "id": "CUT_E084",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet started to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E088",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E092",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "membrane started to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_E096",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "leaf began to",
+   "target": "split"
+  },
+  {
+   "id": "CUT_E100",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "leaf began to",
+   "target": "split"
+  },
+  {
+   "id": "CUT_E104",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet started to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E108",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet started to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E112",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E116",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "edge began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E120",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E124",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "membrane started to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_E128",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "sheet started to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E132",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood started to",
+   "target": "split"
+  },
+  {
+   "id": "CUT_E136",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "fibres began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_E140",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E144",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E148",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood started to",
+   "target": "split"
+  },
+  {
+   "id": "CUT_E152",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E156",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "fibres began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_E160",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood started to",
+   "target": "split"
+  },
+  {
+   "id": "CUT_E164",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E168",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "pieces began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_E172",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E176",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "fibres began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_E180",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "pieces began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_E184",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E188",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "fibres began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_E192",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E196",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E200",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E204",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E208",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E212",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "fibres began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_E216",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood started to",
+   "target": "split"
+  },
+  {
+   "id": "CUT_E220",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E224",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood started to",
+   "target": "split"
+  },
+  {
+   "id": "CUT_E228",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E232",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "pieces began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_E236",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E240",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "fibres began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_E244",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "fibres began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_E248",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "pieces began to",
+   "target": "separate"
+  },
+  {
+   "id": "CUT_E252",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood started to",
+   "target": "split"
+  },
+  {
+   "id": "CUT_E256",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "wood began to",
+   "target": "part"
+  },
+  {
+   "id": "CUT_E260",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E264",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E268",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E272",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E276",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E280",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E284",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E288",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E292",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E296",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E300",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E304",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E308",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E312",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E316",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E320",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E324",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E328",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E332",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E336",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E340",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E344",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E348",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E352",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E356",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E360",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E364",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E368",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E372",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E376",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E380",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  },
+  {
+   "id": "CUT_E384",
+   "family": "cutting",
+   "patient_mentions": 1,
+   "bystander_field": "teapot",
+   "bystander_head_mentions": 1,
+   "ends": "it began to",
+   "target": "crack"
+  }
+ ],
+ "summary": {
+  "role_mismatches": 38
+ }
+}

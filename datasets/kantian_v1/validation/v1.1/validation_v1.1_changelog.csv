@@ -1,0 +1,205 @@
+unique_id,field,old,new,reason
+IMP_VAL_K01_FORM_B01_C,sentence,"As a radio played quietly in the next room, the fresh egg was flung against the brick wall and","While a folded umbrella hung by the door, the fresh egg was flung against the brick wall and",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K01_FORM_B01_C,comparison_entity_kind,radio,umbrella,fixed C2 bystander
+IMP_VAL_K01_FORM_B02_C,sentence,"As a radio played quietly in the next room, the farmer accidentally stepped on the fresh egg, and its casing","With an umbrella leaning in the hallway, the farmer accidentally stepped on the fresh egg, and its casing",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K01_FORM_B02_C,comparison_entity_kind,radio,umbrella,fixed C2 bystander
+IMP_VAL_K01_FORM_B03_C,sentence,"While a potted fern stood in the corner, the brown egg was flung against the brick wall and","As an umbrella dried on the porch, the brown egg was flung against the brick wall and",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K01_FORM_B03_C,comparison_entity_kind,fern,umbrella,fixed C2 bystander
+IMP_VAL_K01_FORM_B04_C,sentence,"With a calendar pinned to the wall, the farmer accidentally stepped on the speckled egg, and its casing","While an umbrella waited by the gate, the farmer accidentally stepped on the speckled egg, and its casing",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K01_FORM_B04_C,comparison_entity_kind,calendar,umbrella,fixed C2 bystander
+IMP_VAL_K01_MAT_B05_C,sentence,"With a stack of postcards on the sideboard, the farmer accidentally stepped on the egg, and its casing","With a wet umbrella in the stand, the farmer accidentally stepped on the egg, and its casing",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K01_MAT_B05_C,comparison_entity_kind,postcards,umbrella,fixed C2 bystander
+IMP_VAL_K01_MAT_B06_C,sentence,"With a wristwatch lying on the dresser, the farmer accidentally stepped on the raw egg, and its casing","As an umbrella swung from a peg, the farmer accidentally stepped on the raw egg, and its casing",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K01_MAT_B06_C,comparison_entity_kind,wristwatch,umbrella,fixed C2 bystander
+IMP_VAL_K01_MAT_B07_C,sentence,"While a cat dozed on the windowsill, the fresh egg was flung against the brick wall and","With an umbrella leaning in the hallway, the fresh egg was flung against the brick wall and",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K01_MAT_B07_C,comparison_entity_kind,cat,umbrella,fixed C2 bystander
+IMP_VAL_K01_MAT_B08_C,sentence,"With a woollen scarf on the coat rack, the raw egg was flung against the brick wall and","With an umbrella leaning in the hallway, the raw egg was flung against the brick wall and",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K01_MAT_B08_C,comparison_entity_kind,scarf,umbrella,fixed C2 bystander
+IMP_VAL_K02_FORM_B09_C,sentence,"As a dog barked somewhere outside, the hiker sat down heavily on the soda can and left it","As an umbrella dried on the porch, the hiker sat down heavily on the soda can and left it",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K02_FORM_B09_C,comparison_entity_kind,dog,umbrella,fixed C2 bystander
+IMP_VAL_K02_FORM_B10_C,sentence,"With a woollen scarf on the coat rack, a hailstone struck the soda can on the patio and left it","While an umbrella waited by the gate, a hailstone struck the soda can on the patio and left it",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K02_FORM_B10_C,comparison_entity_kind,scarf,umbrella,fixed C2 bystander
+IMP_VAL_K02_FORM_B11_C,sentence,"With a stack of postcards on the sideboard, the hiker sat down heavily on the empty drink can and left it","With a wet umbrella in the stand, the hiker sat down heavily on the empty drink can and left it",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K02_FORM_B11_C,comparison_entity_kind,postcards,umbrella,fixed C2 bystander
+IMP_VAL_K02_FORM_B12_C,sentence,"While a bicycle leaned against the fence, the hiker sat down heavily on the beverage can and left it","As an umbrella swung from a peg, the hiker sat down heavily on the beverage can and left it",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K02_FORM_B12_C,comparison_entity_kind,bicycle,umbrella,fixed C2 bystander
+IMP_VAL_K02_MAT_B13_C,sentence,"With a wristwatch lying on the dresser, the hiker sat down heavily on the soda can and left it","While a folded umbrella hung by the door, the hiker sat down heavily on the soda can and left it",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K02_MAT_B13_C,comparison_entity_kind,wristwatch,umbrella,fixed C2 bystander
+IMP_VAL_K02_MAT_B14_C,sentence,"With a deck of cards on the shelf, a hailstone struck the lemonade can on the patio and left it","With an umbrella leaning in the hallway, a hailstone struck the lemonade can on the patio and left it",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K02_MAT_B14_C,comparison_entity_kind,cards,umbrella,fixed C2 bystander
+IMP_VAL_K02_MAT_B15_C,sentence,"With a woollen scarf on the coat rack, the hiker sat down heavily on the beverage can and left it","As an umbrella dried on the porch, the hiker sat down heavily on the beverage can and left it",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K02_MAT_B15_C,comparison_entity_kind,scarf,umbrella,fixed C2 bystander
+IMP_VAL_K02_MAT_B16_C,sentence,"With a deck of cards on the shelf, the hiker sat down heavily on the soda can and left it","While an umbrella waited by the gate, the hiker sat down heavily on the soda can and left it",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K02_MAT_B16_C,comparison_entity_kind,cards,umbrella,fixed C2 bystander
+IMP_VAL_K03_MAT_B17_C,sentence,"As a radio played quietly in the next room, the hatchback's windshield met a flying piece of debris on the bridge and was","With a wet umbrella in the stand, the hatchback's windshield met a flying piece of debris on the bridge and was",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K03_MAT_B17_C,comparison_entity_kind,radio,umbrella,fixed C2 bystander
+IMP_VAL_K03_MAT_B18_C,sentence,"While a teddy bear sat on the sofa, the taxi's windshield met a flying piece of debris on the bridge and was","As an umbrella swung from a peg, the taxi's windshield met a flying piece of debris on the bridge and was",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K03_MAT_B18_C,comparison_entity_kind,bear,umbrella,fixed C2 bystander
+IMP_VAL_K03_MAT_B19_C,sentence,"With a woollen scarf on the coat rack, the taxi's windshield met a flying piece of debris on the bridge and was","While a folded umbrella hung by the door, the taxi's windshield met a flying piece of debris on the bridge and was",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K03_MAT_B19_C,comparison_entity_kind,scarf,umbrella,fixed C2 bystander
+IMP_VAL_K03_MAT_B20_C,sentence,"While a bicycle leaned against the fence, the bus's windshield met a flying piece of debris on the bridge and was","With an umbrella leaning in the hallway, the bus's windshield met a flying piece of debris on the bridge and was",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K03_MAT_B20_C,comparison_entity_kind,bicycle,umbrella,fixed C2 bystander
+IMP_VAL_K03_CTX_B21_C,sentence,"With a stack of postcards on the sideboard, a pebble from the gravel road struck the hatchback's windshield at speed and left it","As an umbrella dried on the porch, a pebble from the gravel road struck the hatchback's windshield at speed and left it",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K03_CTX_B21_C,comparison_entity_kind,postcards,umbrella,fixed C2 bystander
+IMP_VAL_K03_CTX_B22_C,sentence,"With a calendar pinned to the wall, the taxi's windshield met a flying piece of debris on the bridge and was","While an umbrella waited by the gate, the taxi's windshield met a flying piece of debris on the bridge and was",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K03_CTX_B22_C,comparison_entity_kind,calendar,umbrella,fixed C2 bystander
+IMP_VAL_K03_CTX_B23_C,sentence,"With a wristwatch lying on the dresser, a pebble from the gravel road struck the lorry's windshield at speed and left it","With a wet umbrella in the stand, a pebble from the gravel road struck the lorry's windshield at speed and left it",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K03_CTX_B23_C,comparison_entity_kind,wristwatch,umbrella,fixed C2 bystander
+IMP_VAL_K03_CTX_B24_C,sentence,"As a radio played quietly in the next room, a pebble from the gravel road struck the windshield at speed and left it","As an umbrella swung from a peg, a pebble from the gravel road struck the windshield at speed and left it",bystander clause replaced by fixed C2 bystander
+IMP_VAL_K03_CTX_B24_C,comparison_entity_kind,radio,umbrella,fixed C2 bystander
+HEAT_VAL_B001_C,sentence,"With a deck of cards on the shelf, the golden corn kernel was dropped into a very hot popper, where it quickly began to","While a wristwatch lay beside the keys, the golden corn kernel was dropped into a very hot popper, where it quickly began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B001_C,comparison_entity_kind,cards,wristwatch,fixed C2 bystander
+HEAT_VAL_B002_C,sentence,"With a stack of postcards on the sideboard, the fresh corn kernel was dropped into a very hot popper, where it quickly began to","With a wristwatch on the dresser, the fresh corn kernel was dropped into a very hot popper, where it quickly began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B002_C,comparison_entity_kind,postcards,wristwatch,fixed C2 bystander
+HEAT_VAL_B003_C,sentence,"With a calendar pinned to the wall, the fresh corn kernel was dropped into a very hot popper, where it quickly began to","As a wristwatch ticked in the next room, the fresh corn kernel was dropped into a very hot popper, where it quickly began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B003_C,comparison_entity_kind,calendar,wristwatch,fixed C2 bystander
+HEAT_VAL_B004_C,sentence,"As a radio played quietly in the next room, the unpierced corn kernel was dropped into a very hot popper, where it quickly began to","While a wristwatch lay on the piano, the unpierced corn kernel was dropped into a very hot popper, where it quickly began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B004_C,comparison_entity_kind,radio,wristwatch,fixed C2 bystander
+HEAT_VAL_B005_C,sentence,"With a deck of cards on the shelf, the camper held the moist corn kernel over the campfire until it began to","With a wristwatch on the mantelpiece, the camper held the moist corn kernel over the campfire until it began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B005_C,comparison_entity_kind,cards,wristwatch,fixed C2 bystander
+HEAT_VAL_B006_C,sentence,"With a stack of postcards on the sideboard, the camper held the plump corn kernel over the campfire until it began to","As a wristwatch hung from a nail, the camper held the plump corn kernel over the campfire until it began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B006_C,comparison_entity_kind,postcards,wristwatch,fixed C2 bystander
+HEAT_VAL_B007_C,sentence,"While a potted fern stood in the corner, the camper held the plump corn kernel over the campfire until it began to","While a wristwatch lay beside the keys, the camper held the plump corn kernel over the campfire until it began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B007_C,comparison_entity_kind,fern,wristwatch,fixed C2 bystander
+HEAT_VAL_B008_C,sentence,"While a bicycle leaned against the fence, the camper held the plump corn kernel over the campfire until it began to","With a wristwatch on the dresser, the camper held the plump corn kernel over the campfire until it began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B008_C,comparison_entity_kind,bicycle,wristwatch,fixed C2 bystander
+HEAT_VAL_B009_C,sentence,"With a woollen scarf on the coat rack, the cook poached the egg white in barely simmering water until it began to","As a wristwatch ticked in the next room, the cook poached the egg white in barely simmering water until it began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B009_C,comparison_entity_kind,scarf,wristwatch,fixed C2 bystander
+HEAT_VAL_B010_C,sentence,"While a folded umbrella hung by the door, the cook poached the raw egg white in barely simmering water until it began to","While a wristwatch lay on the piano, the cook poached the raw egg white in barely simmering water until it began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B010_C,comparison_entity_kind,umbrella,wristwatch,fixed C2 bystander
+HEAT_VAL_B011_C,sentence,"With a calendar pinned to the wall, the cook poached the chilled egg white in barely simmering water until it began to","With a wristwatch on the mantelpiece, the cook poached the chilled egg white in barely simmering water until it began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B011_C,comparison_entity_kind,calendar,wristwatch,fixed C2 bystander
+HEAT_VAL_B012_C,sentence,"While a potted fern stood in the corner, the cook poached the raw egg white in barely simmering water until it began to","As a wristwatch hung from a nail, the cook poached the raw egg white in barely simmering water until it began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B012_C,comparison_entity_kind,fern,wristwatch,fixed C2 bystander
+HEAT_VAL_B013_C,sentence,"With a deck of cards on the shelf, the pastry chef brushed the egg white over the dough and baked it until the wash began to","While a wristwatch lay beside the keys, the pastry chef brushed the egg white over the dough and baked it until the wash began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B013_C,comparison_entity_kind,cards,wristwatch,fixed C2 bystander
+HEAT_VAL_B014_C,sentence,"With a calendar pinned to the wall, the pastry chef brushed the fresh egg white over the dough and baked it until the wash began to","With a wristwatch on the dresser, the pastry chef brushed the fresh egg white over the dough and baked it until the wash began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B014_C,comparison_entity_kind,calendar,wristwatch,fixed C2 bystander
+HEAT_VAL_B015_C,sentence,"While a potted fern stood in the corner, the pastry chef brushed the chilled egg white over the dough and baked it until the wash began to","As a wristwatch ticked in the next room, the pastry chef brushed the chilled egg white over the dough and baked it until the wash began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B015_C,comparison_entity_kind,fern,wristwatch,fixed C2 bystander
+HEAT_VAL_B016_C,sentence,"While a cat dozed on the windowsill, the pastry chef brushed the separated egg white over the dough and baked it until the wash began to","While a wristwatch lay on the piano, the pastry chef brushed the separated egg white over the dough and baked it until the wash began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B016_C,comparison_entity_kind,cat,wristwatch,fixed C2 bystander
+HEAT_VAL_B017_C,sentence,"With a woollen scarf on the coat rack, the chandler warmed the small beeswax block gently until it began to","With a wristwatch on the mantelpiece, the chandler warmed the small beeswax block gently until it began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B017_C,comparison_entity_kind,scarf,wristwatch,fixed C2 bystander
+HEAT_VAL_B018_C,sentence,"With a deck of cards on the shelf, the chandler warmed the yellow beeswax block gently until it began to","As a wristwatch hung from a nail, the chandler warmed the yellow beeswax block gently until it began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B018_C,comparison_entity_kind,cards,wristwatch,fixed C2 bystander
+HEAT_VAL_B019_C,sentence,"While a cat dozed on the windowsill, the chandler warmed the fragrant beeswax block gently until it began to","While a wristwatch lay beside the keys, the chandler warmed the fragrant beeswax block gently until it began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B019_C,comparison_entity_kind,cat,wristwatch,fixed C2 bystander
+HEAT_VAL_B020_C,sentence,"While a bicycle leaned against the fence, the chandler warmed the small beeswax block gently until it began to","With a wristwatch on the dresser, the chandler warmed the small beeswax block gently until it began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B020_C,comparison_entity_kind,bicycle,wristwatch,fixed C2 bystander
+HEAT_VAL_B021_C,sentence,"With a deck of cards on the shelf, the yellow beeswax block was warmed and laid over a curved form, where it began to","As a wristwatch ticked in the next room, the yellow beeswax block was warmed and laid over a curved form, where it began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B021_C,comparison_entity_kind,cards,wristwatch,fixed C2 bystander
+HEAT_VAL_B022_C,sentence,"As a radio played quietly in the next room, the beeswax was warmed and laid over a curved form, where it began to","While a wristwatch lay on the piano, the beeswax was warmed and laid over a curved form, where it began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B022_C,comparison_entity_kind,radio,wristwatch,fixed C2 bystander
+HEAT_VAL_B023_C,sentence,"While a cat dozed on the windowsill, the yellow beeswax block was warmed and laid over a curved form, where it began to","With a wristwatch on the mantelpiece, the yellow beeswax block was warmed and laid over a curved form, where it began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B023_C,comparison_entity_kind,cat,wristwatch,fixed C2 bystander
+HEAT_VAL_B024_C,sentence,"While a potted fern stood in the corner, the small beeswax block was warmed and laid over a curved form, where it began to","As a wristwatch hung from a nail, the small beeswax block was warmed and laid over a curved form, where it began to",bystander clause replaced by fixed C2 bystander
+HEAT_VAL_B024_C,comparison_entity_kind,fern,wristwatch,fixed C2 bystander
+CUT_V004,sentence,"While a folded umbrella hung by the door, the apprentice cut the scraped parchment with sharp shears until the two halves began to","While a teapot sat on the dresser, the apprentice cut the scraped parchment with sharp shears until the two halves began to",bystander clause replaced by fixed C2 bystander
+CUT_V004,comparison_entity_kind,umbrella,teapot,fixed C2 bystander
+CUT_V008,sentence,"As a radio played quietly in the next room, the apprentice cut the parchment with sharp shears until the two halves began to","With a teapot cooling by the window, the apprentice cut the parchment with sharp shears until the two halves began to",bystander clause replaced by fixed C2 bystander
+CUT_V008,comparison_entity_kind,radio,teapot,fixed C2 bystander
+CUT_V012,sentence,"With a deck of cards on the shelf, the apprentice cut the vellum with sharp shears until the two halves began to","As a teapot steamed in the kitchen, the apprentice cut the vellum with sharp shears until the two halves began to",bystander clause replaced by fixed C2 bystander
+CUT_V012,comparison_entity_kind,cards,teapot,fixed C2 bystander
+CUT_V016,sentence,"While a potted fern stood in the corner, the apprentice cut the old parchment with sharp shears until the two halves began to","While a teapot waited on the cabinet, the apprentice cut the old parchment with sharp shears until the two halves began to",bystander clause replaced by fixed C2 bystander
+CUT_V016,comparison_entity_kind,fern,teapot,fixed C2 bystander
+CUT_V028,sentence,"With a woollen scarf on the coat rack, the apprentice cut the parchment with sharp shears until the two halves began to","With a teapot beside the bread board, the apprentice cut the parchment with sharp shears until the two halves began to",bystander clause replaced by fixed C2 bystander
+CUT_V028,comparison_entity_kind,scarf,teapot,fixed C2 bystander
+CUT_V032,sentence,"While a teddy bear sat on the sofa, the apprentice cut the thin parchment with sharp shears until the two halves began to","As a teapot sat by the toaster, the apprentice cut the thin parchment with sharp shears until the two halves began to",bystander clause replaced by fixed C2 bystander
+CUT_V032,comparison_entity_kind,bear,teapot,fixed C2 bystander
+CUT_V036,sentence,"As a dog barked somewhere outside, the apprentice cut the vellum with sharp shears until the two halves began to","While a teapot sat on the dresser, the apprentice cut the vellum with sharp shears until the two halves began to",bystander clause replaced by fixed C2 bystander
+CUT_V036,comparison_entity_kind,dog,teapot,fixed C2 bystander
+CUT_V040,sentence,"While a bicycle leaned against the fence, the apprentice cut the vellum with sharp shears until the two halves began to","With a teapot cooling by the window, the apprentice cut the vellum with sharp shears until the two halves began to",bystander clause replaced by fixed C2 bystander
+CUT_V040,comparison_entity_kind,bicycle,teapot,fixed C2 bystander
+CUT_V052,sentence,"With a stack of postcards on the sideboard, the carver ran a fine blade through the light balsa strip and the fibres began to","As a teapot steamed in the kitchen, the carver ran a fine blade through the light balsa strip and the fibres began to",bystander clause replaced by fixed C2 bystander
+CUT_V052,comparison_entity_kind,postcards,teapot,fixed C2 bystander
+CUT_V056,sentence,"While a folded umbrella hung by the door, the carver ran a fine blade through the narrow balsa strip and the fibres began to","While a teapot waited on the cabinet, the carver ran a fine blade through the narrow balsa strip and the fibres began to",bystander clause replaced by fixed C2 bystander
+CUT_V056,comparison_entity_kind,umbrella,teapot,fixed C2 bystander
+CUT_V060,sentence,"With a wristwatch lying on the dresser, the carver ran a fine blade through the pale balsa strip and the fibres began to","With a teapot beside the bread board, the carver ran a fine blade through the pale balsa strip and the fibres began to",bystander clause replaced by fixed C2 bystander
+CUT_V060,comparison_entity_kind,wristwatch,teapot,fixed C2 bystander
+CUT_V064,sentence,"While a bicycle leaned against the fence, the carver ran a fine blade through the pale balsa strip and the fibres began to","As a teapot sat by the toaster, the carver ran a fine blade through the pale balsa strip and the fibres began to",bystander clause replaced by fixed C2 bystander
+CUT_V064,comparison_entity_kind,bicycle,teapot,fixed C2 bystander
+CUT_V076,sentence,"As a radio played quietly in the next room, the carver ran a fine blade through the balsa strip and the fibres began to","While a teapot sat on the dresser, the carver ran a fine blade through the balsa strip and the fibres began to",bystander clause replaced by fixed C2 bystander
+CUT_V076,comparison_entity_kind,radio,teapot,fixed C2 bystander
+CUT_V080,sentence,"While a cat dozed on the windowsill, the carver ran a fine blade through the balsa strip and the fibres began to","With a teapot cooling by the window, the carver ran a fine blade through the balsa strip and the fibres began to",bystander clause replaced by fixed C2 bystander
+CUT_V080,comparison_entity_kind,cat,teapot,fixed C2 bystander
+CUT_V084,sentence,"With a calendar pinned to the wall, the carver ran a fine blade through the thin balsa strip and the fibres began to","As a teapot steamed in the kitchen, the carver ran a fine blade through the thin balsa strip and the fibres began to",bystander clause replaced by fixed C2 bystander
+CUT_V084,comparison_entity_kind,calendar,teapot,fixed C2 bystander
+CUT_V088,sentence,"With a woollen scarf on the coat rack, the carver ran a fine blade through the balsa and the fibres began to","While a teapot waited on the cabinet, the carver ran a fine blade through the balsa and the fibres began to",bystander clause replaced by fixed C2 bystander
+CUT_V088,comparison_entity_kind,scarf,teapot,fixed C2 bystander
+CUT_V100,sentence,"With a woollen scarf on the coat rack, the shopfitter scored the clear acrylic sheet along a straightedge and levered it until it began to","With a teapot beside the bread board, the shopfitter scored the clear acrylic sheet along a straightedge and levered it until it began to",bystander clause replaced by fixed C2 bystander
+CUT_V100,comparison_entity_kind,scarf,teapot,fixed C2 bystander
+CUT_V104,sentence,"With a deck of cards on the shelf, the shopfitter scored the rigid acrylic sheet along a straightedge and levered it until it began to","As a teapot sat by the toaster, the shopfitter scored the rigid acrylic sheet along a straightedge and levered it until it began to",bystander clause replaced by fixed C2 bystander
+CUT_V104,comparison_entity_kind,cards,teapot,fixed C2 bystander
+CUT_V108,sentence,"As a dog barked somewhere outside, the shopfitter scored the transparent acrylic sheet along a straightedge and levered it until it began to","While a teapot sat on the dresser, the shopfitter scored the transparent acrylic sheet along a straightedge and levered it until it began to",bystander clause replaced by fixed C2 bystander
+CUT_V108,comparison_entity_kind,dog,teapot,fixed C2 bystander
+CUT_V112,sentence,"With a stack of postcards on the sideboard, the shopfitter scored the acrylic along a straightedge and levered it until it began to","With a teapot cooling by the window, the shopfitter scored the acrylic along a straightedge and levered it until it began to",bystander clause replaced by fixed C2 bystander
+CUT_V112,comparison_entity_kind,postcards,teapot,fixed C2 bystander
+CUT_V124,sentence,"With a calendar pinned to the wall, the shopfitter scored the transparent acrylic sheet along a straightedge and levered it until it began to","As a teapot steamed in the kitchen, the shopfitter scored the transparent acrylic sheet along a straightedge and levered it until it began to",bystander clause replaced by fixed C2 bystander
+CUT_V124,comparison_entity_kind,calendar,teapot,fixed C2 bystander
+CUT_V128,sentence,"While a folded umbrella hung by the door, the shopfitter scored the transparent acrylic sheet along a straightedge and levered it until it began to","While a teapot waited on the cabinet, the shopfitter scored the transparent acrylic sheet along a straightedge and levered it until it began to",bystander clause replaced by fixed C2 bystander
+CUT_V128,comparison_entity_kind,umbrella,teapot,fixed C2 bystander
+CUT_V132,sentence,"While a bicycle leaned against the fence, the shopfitter scored the acrylic sheet along a straightedge and levered it until it began to","With a teapot beside the bread board, the shopfitter scored the acrylic sheet along a straightedge and levered it until it began to",bystander clause replaced by fixed C2 bystander
+CUT_V132,comparison_entity_kind,bicycle,teapot,fixed C2 bystander
+CUT_V136,sentence,"With a wristwatch lying on the dresser, the shopfitter scored the transparent acrylic sheet along a straightedge and levered it until it began to","As a teapot sat by the toaster, the shopfitter scored the transparent acrylic sheet along a straightedge and levered it until it began to",bystander clause replaced by fixed C2 bystander
+CUT_V136,comparison_entity_kind,wristwatch,teapot,fixed C2 bystander
+IMP_VAL_BYS_M01,(new record),,The red canopy that a commuter held over her head on a short handle as the rain came down caught the low morning light.,C2 bystander recognition record added
+IMP_VAL_BYS_N01,(new record),,"The red canopy that the hikers pitched on the hillside as the rain came down, then crawled under, caught the low morning light.",C2 bystander recognition record added
+IMP_VAL_BYS_M02,(new record),,"The compact canopy folded on its shaft with a leather loop handle, its fabric still beaded with rain, was photographed for the catalogue.",C2 bystander recognition record added
+IMP_VAL_BYS_N02,(new record),,"The compact canopy folded flat with its poles in a sleeve, still beaded with rain from the campsite, was photographed for the catalogue.",C2 bystander recognition record added
+IMP_VAL_BYS_M03,(new record),,"The curator photographed the tartan canopy made to be opened by hand and carried overhead, its waterproof panels spread on eight ribs, from several angles.",C2 bystander recognition record added
+IMP_VAL_BYS_N03,(new record),,"The curator photographed the tartan canopy made to stand on the ground over sleepers, its waterproof panels spread on flexible hoops, from several angles.",C2 bystander recognition record added
+IMP_VAL_BYS_M04,(new record),,"Jonas glanced at the grey canopy on a long wooden shaft with a crook grip, unfurled above one walker in a storm, for a moment.",C2 bystander recognition record added
+IMP_VAL_BYS_N04,(new record),,"Jonas glanced at the grey canopy on a frame of light poles with a porch flap, set up in the garden for a night out, for a moment.",C2 bystander recognition record added
+IMP_VAL_BYS_M05,(new record),,"The green canopy that springs open from a pocket-sized bundle, its ribs supporting a rain-proof panel held overhead, drew a curious look from the visitor.",C2 bystander recognition record added
+IMP_VAL_BYS_N05,(new record),,The green canopy that springs open from a packed disc into a ground shelter with a sewn-in floor drew a curious look from the visitor.,C2 bystander recognition record added
+IMP_VAL_BYS_M06,(new record),,"The black canopy carried by its handle along the wet street, shedding water from its dome of fabric, was sketched by a visiting art student.",C2 bystander recognition record added
+IMP_VAL_BYS_N06,(new record),,"The black canopy staked along the wet field, shedding water from its dome of fabric onto the grass, was sketched by a visiting art student.",C2 bystander recognition record added
+IMP_VAL_BYS_M07,(new record),,The inspector pointed out the navy canopy of rain-resistant polyester on a central pole that one person grips overhead to a colleague.,C2 bystander recognition record added
+IMP_VAL_BYS_N07,(new record),,"The inspector pointed out the navy canopy of rain-resistant polyester stretched over hoops, with a zipped door at ground level, to a colleague.",C2 bystander recognition record added
+IMP_VAL_BYS_M08,(new record),,"Priya wrote a brief comment about the striped canopy furled around its shaft with a press-stud strap, kept for walking out in showers.",C2 bystander recognition record added
+IMP_VAL_BYS_N08,(new record),,"Priya wrote a brief comment about the striped canopy rolled around its poles with a strap, kept for weekends of camping.",C2 bystander recognition record added
+IMP_VAL_BYS_M09,(new record),,"The red canopy whose curved grip hangs from the wrist, its folding ribs ready to open against rain, appeared in the corner of the photograph.",C2 bystander recognition record added
+IMP_VAL_BYS_N09,(new record),,"The red canopy whose guy ropes run to pegs in the turf, its fabric dome high enough to sit up in, appeared in the corner of the photograph.",C2 bystander recognition record added
+IMP_VAL_BYS_M10,(new record),,"The compact canopy with a runner that slides up its shaft to raise a domed, water-shedding fabric above the holder, was photographed for the catalogue.",C2 bystander recognition record added
+IMP_VAL_BYS_N10,(new record),,"The compact canopy with a floor and a vestibule, raising a domed, water-shedding fabric over the sleepers below, was photographed for the catalogue.",C2 bystander recognition record added
+HEAT_VAL_BYS_M01,(new record),,"The gold-toned dial on a thin leather band at the wrist, its hands creeping toward noon, caught the low morning light.",C2 bystander recognition record added
+HEAT_VAL_BYS_N01,(new record),,"The gold-toned dial on a thin leather band at the wrist, its needle trembling toward magnetic north, caught the low morning light.",C2 bystander recognition record added
+HEAT_VAL_BYS_M02,(new record),,"The square dial clasped around the wrist, ticking off the minutes of the afternoon, was photographed for the catalogue.",C2 bystander recognition record added
+HEAT_VAL_BYS_N02,(new record),,"The square dial clasped around the wrist, its pointer turning as the hiker changed direction, was photographed for the catalogue.",C2 bystander recognition record added
+HEAT_VAL_BYS_M03,(new record),,"The curator photographed the slim dial worn on the wrist, whose winding crown kept its hands telling the hour, from several angles.",C2 bystander recognition record added
+HEAT_VAL_BYS_N03,(new record),,"The curator photographed the slim dial worn on the wrist, whose rotating ring set a bearing for the next leg, from several angles.",C2 bystander recognition record added
+HEAT_VAL_BYS_M04,(new record),,"Jonas glanced at the black-faced dial on a steel band at the wrist, a small seconds hand circling its face, for a moment.",C2 bystander recognition record added
+HEAT_VAL_BYS_N04,(new record),,"Jonas glanced at the black-faced dial on a steel band at the wrist, a small magnetic pointer floating in its face, for a moment.",C2 bystander recognition record added
+HEAT_VAL_BYS_M05,(new record),,The scratched dial strapped at the wrist with twelve numerals around its face and two hands drew a curious look from the visitor.,C2 bystander recognition record added
+HEAT_VAL_BYS_N05,(new record),,The scratched dial strapped at the wrist with the four cardinal letters around its face and one needle drew a curious look from the visitor.,C2 bystander recognition record added
+HEAT_VAL_BYS_M06,(new record),,"The small round dial on a woven strap around the wrist, consulted to keep an appointment on time, was sketched by a visiting art student.",C2 bystander recognition record added
+HEAT_VAL_BYS_N06,(new record),,"The small round dial on a woven strap around the wrist, consulted to keep a straight course through the forest, was sketched by a visiting art student.",C2 bystander recognition record added
+HEAT_VAL_BYS_M07,(new record),,"The inspector pointed out the silver-rimmed dial fastened at the wrist, its hands showing ten to nine, to a colleague.",C2 bystander recognition record added
+HEAT_VAL_BYS_N07,(new record),,"The inspector pointed out the silver-rimmed dial fastened at the wrist, its needle showing the route bearing south-east, to a colleague.",C2 bystander recognition record added
+HEAT_VAL_BYS_M08,(new record),,"Priya wrote a brief comment about the steel dial buckled to the wrist on a suede strap, with an alarm to mark the hour.",C2 bystander recognition record added
+HEAT_VAL_BYS_N08,(new record),,"Priya wrote a brief comment about the steel dial buckled to the wrist on a suede strap, with a bezel for setting a heading.",C2 bystander recognition record added
+HEAT_VAL_BYS_M09,(new record),,"The gold-toned dial worn on a fabric band at the wrist, its quartz hands keeping the time, appeared in the corner of the photograph.",C2 bystander recognition record added
+HEAT_VAL_BYS_N09,(new record),,"The gold-toned dial worn on a fabric band at the wrist, its pointer always swinging back to north, appeared in the corner of the photograph.",C2 bystander recognition record added
+HEAT_VAL_BYS_M10,(new record),,"The square dial around the wrist on a mesh bracelet, its face showing hours, minutes and the date, was photographed for the catalogue.",C2 bystander recognition record added
+HEAT_VAL_BYS_N10,(new record),,"The square dial around the wrist on a mesh bracelet, its face showing degrees and cardinal points, was photographed for the catalogue.",C2 bystander recognition record added
+CUT_VAL_BYS_M01,(new record),,"The blue-and-white vessel with a domed lid and a gooseneck spout, used every morning to brew tea, caught the low morning light.",C2 bystander recognition record added
+CUT_VAL_BYS_N01,(new record),,"The blue-and-white vessel with a flared rim and a little lip, used every morning to serve milk, caught the low morning light.",C2 bystander recognition record added
+CUT_VAL_BYS_M02,(new record),,"The brown earthenware vessel holding a steeped infusion, its handle warm as it was tipped toward the cups, was photographed for the catalogue.",C2 bystander recognition record added
+CUT_VAL_BYS_N02,(new record),,"The brown earthenware vessel holding chilled cream, its handle cool as it was tipped toward the cups, was photographed for the catalogue.",C2 bystander recognition record added
+CUT_VAL_BYS_M03,(new record),,The curator photographed the porcelain vessel whose lid rattled as the brew was carried to the table and poured through its spout from several angles.,C2 bystander recognition record added
+CUT_VAL_BYS_N03,(new record),,The curator photographed the porcelain vessel whose open top showed the milk inside as it was carried to the table from several angles.,C2 bystander recognition record added
+CUT_VAL_BYS_M04,(new record),,"Jonas glanced at the chipped vessel with a spout on one side and a handle on the other, warmed before the leaves went in, for a moment.",C2 bystander recognition record added
+CUT_VAL_BYS_N04,(new record),,"Jonas glanced at the chipped vessel with a lip on one side and a handle on the other, rinsed cold before the milk went in, for a moment.",C2 bystander recognition record added
+CUT_VAL_BYS_M05,(new record),,The floral vessel in which green tea steeped briefly before being poured out through the spout drew a curious look from the visitor.,C2 bystander recognition record added
+CUT_VAL_BYS_N05,(new record),,The floral vessel in which single cream sat briefly before being poured over the pudding drew a curious look from the visitor.,C2 bystander recognition record added
+CUT_VAL_BYS_M06,(new record),,"The glazed vessel with a lid and a short spout, holding enough brewed tea for four cups, was sketched by a visiting art student.",C2 bystander recognition record added
+CUT_VAL_BYS_N06,(new record),,"The glazed vessel with an open mouth and a short lip, holding enough milk for four cups, was sketched by a visiting art student.",C2 bystander recognition record added
+CUT_VAL_BYS_M07,(new record),,"The inspector pointed out the white china vessel rinsed with hot water, then filled with leaves and left to steep under its lid, to a colleague.",C2 bystander recognition record added
+CUT_VAL_BYS_N07,(new record),,"The inspector pointed out the white china vessel rinsed with cold water, then filled with milk and left uncovered on the tray, to a colleague.",C2 bystander recognition record added
+CUT_VAL_BYS_M08,(new record),,Priya wrote a brief comment about the round-bellied vessel whose spout poured an amber infusion into the waiting cups.,C2 bystander recognition record added
+CUT_VAL_BYS_N08,(new record),,Priya wrote a brief comment about the round-bellied vessel whose lip poured a thin stream of cream into the waiting cups.,C2 bystander recognition record added
+CUT_VAL_BYS_M09,(new record),,"The blue-and-white vessel with a lid tied on by a thin cord, used for brewing loose-leaf tea, appeared in the corner of the photograph.",C2 bystander recognition record added
+CUT_VAL_BYS_N09,(new record),,"The blue-and-white vessel with a small open mouth, used only for serving milk with breakfast, appeared in the corner of the photograph.",C2 bystander recognition record added
+CUT_VAL_BYS_M10,(new record),,"The brown earthenware vessel kept beside the cups, its spout and lid stained from years of brewing, was photographed for the catalogue.",C2 bystander recognition record added
+CUT_VAL_BYS_N10,(new record),,"The brown earthenware vessel kept beside the cups, its lip and rim stained from years of serving cream, was photographed for the catalogue.",C2 bystander recognition record added

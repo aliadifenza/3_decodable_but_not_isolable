@@ -9,7 +9,7 @@ Run from the Mac (folder containing this file and the three JSONL files):
 import json, os, collections
 
 MODEL_ID, REV = "google/gemma-2-2b", "c5ebcd40d208330abc697524c919956e692655cf"
-FILES = ["discovery_v1.1.jsonl", "validation_v1.0.jsonl", "evaluation_v1.0.jsonl"]
+FILES = ["discovery_v1.2.jsonl", "validation_v1.1.jsonl", "evaluation_v1.1.jsonl"]
 
 
 def check(records, tok):
