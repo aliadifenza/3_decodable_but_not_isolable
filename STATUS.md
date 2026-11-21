@@ -2,7 +2,7 @@
 
 **Single source of truth.** Read this before writing any brief or starting any work. Claude updates it after every step; anything not listed here does not exist yet.
 
-**Last updated:** 2026-11-21 19:40 CET · Claude · see git log · **Continuation:** `HANDOFF_2026-11-21_post_G5r.md`
+**Last updated:** 2026-11-21 19:50 CET · Claude · see git log · **Continuation:** `HANDOFF_2026-11-21_post_G5r.md`
 
 ## Current state — confirmatory phase CLOSED
 
@@ -10,7 +10,7 @@
 
 **G5r verification: DONE → NO VALID LAYER.** Under the frozen §7/§14 rules, **P2 and P3 are INCONCLUSIVE**. The confirmatory pipeline (G6 ENGINEER → G10 FULL RUN) is **closed, not executed** — documented NO-GO by the frozen rule. **The evaluation set (v1.1) remains sealed and unused.**
 
-**Next (PI decision pending):** labelled **exploratory** follow-up E1–E3 (see Open decisions), then G11 analysis, G12 independent review, G13 submission. **Deadline: submission 2026-11-22 13:00 CET** (target 12:30).
+**Next:** **exploratory** follow-up E1–E3 — APPROVED 19:38–19:39 (hard cap $10, target ≈ $2.5); code built + local tests PASS; awaiting PI Modal run. Then G11 analysis, G12 independent review, G13 submission. **Deadline: submission 2026-11-22 13:00 CET** (target 12:30).
 
 ### Gate report — G5r (universal format)
 
@@ -50,15 +50,20 @@ Discovery = provided set (v1.1: 231 logged fixes; v1.2: fixed bystander + 60 bys
 
 ## Open decisions (PI)
 
-1. **Exploratory follow-up E1–E3 — not yet approved** (discussed 19:21–19:34; PI paused to continue in a new session). Proposal: discovery/validation only, evaluation stays sealed, labelled exploratory, ≈ 1.5 h build + ≈ $0.30 GPU.
-   - **E1 Dose:** ablate 8 → 16 → 32 → 64 → 128 identity latents (is it "not enough"?).
-   - **E2 Place:** ablate at the last token vs **all tokens** of the description (is identity re-read from other words?).
-   - **E3 Whole:** linear erasure of the full identity direction, incl. the SAE error term (is it one organized direction?).
-   - Same measures as R1 (downstream removal r, amnesic AUC, role-probe preservation, KL). If a method removes identity cleanly, optionally run the causal comparison on **discovery** items only (exploratory).
+1. ~~Exploratory follow-up E1–E3~~ → **APPROVED 19:38–19:39** (see below). No open PI decisions until results.
+
+### Exploratory E1–E3 (labelled EXPLORATORY; never feeds P2/P3)
+
+- **Code:** `exploratory/e_probe.py`, tests `exploratory/test_e_local.py` (7 tests PASS on tiny CPU model + real G5r input: evaluation guards, exact LEACE property, determinism, **G5r replication — k ≤ 8 latent order and k = 8 R1 metrics identical to g5r_probe**, nested sets, controls disjoint, D path).
+- **Scope (PI-approved $3 version, cap $10):** layers 2–14, 12 kinds, discovery + validation; evaluation refused by loader.
+- **Conditions (26 per layer × kind):** E1 k ∈ {8,16,32,64,128} identity latents (first 8 = G5r greedy; continued greedily from top-512 pool — exploratory extension); E2 last token vs all tokens of reference span (crossed with E1 and E3); E3 mean-difference projection and LEACE (10% shrinkage) on the full residual incl. SAE error; controls: same-k random active latents, covariance-matched random direction.
+- **Measures:** = R1 (downstream r, amnesic AUC, role-AUC drop, ‖Δ‖/‖h‖, KL) + item-bootstrap 95% CIs. Frozen R1 thresholds used only as a descriptive bar.
+- **Optional D comparison:** discovery causal items only, for conditions meeting the R1 bar; C1 = random control, C2 = same method on the bystander; **no magnitude matching (deviation from Decision 2, stated)**; event-cluster means + bootstrap CI.
+- **Cost guard:** 2 runs (layers 2–8, 9–14), 45-min hard timeout each → worst case ≈ $1.65 total.
 
 ## PI decisions today (2026-11-21, CET)
 
-18:01 one fixed C2 bystander per family · 18:08 freeze layer/k/strength as rules · 18:32 **G5 SPEC FREEZE** · 18:33 G5r run authorized ($0.37) · 18:47 **Amendment 1** (inclusion by target token only) · 19:10 G5r cap raised to $0.55 · 19:15 Protocol V1.2 pushed with four non-scientific edits · 19:23 direction B (exploratory follow-up) accepted in principle · 19:34 **close this phase; continue E1–E3 discussion in a new session.**
+18:01 one fixed C2 bystander per family · 18:08 freeze layer/k/strength as rules · 18:32 **G5 SPEC FREEZE** · 18:33 G5r run authorized ($0.37) · 18:47 **Amendment 1** (inclusion by target token only) · 19:10 G5r cap raised to $0.55 · 19:15 Protocol V1.2 pushed with four non-scientific edits · 19:23 direction B (exploratory follow-up) accepted in principle · 19:34 **close this phase; continue E1–E3 discussion in a new session.** · 19:38 **E1–E3 approved, $3 version (all layers, random controls, CIs, E1×E2, optional D); hard spend cap $10** · 19:39 go.
 
 ## Spending
 
