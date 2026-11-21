@@ -2,7 +2,7 @@
 
 **Single source of truth.** Read this before writing any brief or starting any work. Claude updates it after every step; anything not listed here does not exist yet.
 
-**Last updated:** 2026-11-21 · Claude · commit after `b0e61bb`
+**Last updated:** 2026-11-21 · Claude · see git log
 
 ## Current gate
 
@@ -13,7 +13,7 @@
 | Item | Path | Commit |
 |---|---|---|
 | Protocol V1.1 (PI-approved) + fidelity record | `protocol/` | a7de87b |
-| G4 feasibility probe (code, results, report) | `g4_probe/` | — |
+| G4 feasibility probe (code, results, report) | `g4_probe/` | a7de87b |
 | G5 verification run (G5v): interventions too weak | `g5_verification/2026-11-21_g5_verification.md` | 088b6d3 |
 | C2 selection bug fix | `g5_verification/2026-11-21_c2_bugfix.md` | e3978f3 |
 | G5 repair design (G5r), local tests | `g5_verification/2026-11-21_g5_repair_spec.md`, `g5r_probe.py` | 2e90e26 |
