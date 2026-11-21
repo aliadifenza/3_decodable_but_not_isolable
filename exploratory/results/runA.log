@@ -1,0 +1,33 @@
+✓ Initialized. View run at 
+https://modal.com/apps/aliadifenza/main/ap-xz03ZHllg5j0TTRSkrwGdC
+✓ Created objects.
+├── 🔨 Created mount /Users/antoniodifenza/kantian_e/e_probe.py
+├── 🔨 Created mount PythonPackage:g4_probe
+└── 🔨 Created function explore.
+EXPLORATORY E1-E3 — not confirmatory; discovery/validation only; evaluation sealed
+layers [2, 3, 4, 5, 6, 7, 8]; worst-case cost of this run $0.83 (hard timeout 45 min); PI cap $10.0
+
+[1AFetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]
+[1AFetching 12 files: 100%|██████████| 12/12 [00:00<00:00, 1983.83it/s]
+
+[1ALoading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+[1ALoading checkpoint shards:  33%|███▎      | 1/3 [00:03<00:06,  3.20s/it]
+[1ALoading checkpoint shards:  67%|██████▋   | 2/3 [00:08<00:04,  4.36s/it]
+[1ALoading checkpoint shards: 100%|██████████| 3/3 [00:09<00:00,  2.70s/it]
+[1ALoading checkpoint shards: 100%|██████████| 3/3 [00:09<00:00,  3.03s/it]
+[   43.1s] recognition_capture
+[   49.0s] causal_capture
+[  349.6s] layer_2
+[  647.5s] layer_3
+[  945.7s] layer_4
+[ 1245.0s] layer_5
+[ 1553.0s] layer_6
+[ 1850.3s] layer_7
+[ 2146.6s] layer_8
+[ 2146.6s] done
+wrote modal_out/e/e_results_layers_2-3-4-5-6-7-8.json
+DONE runtime 2167.4s est $0.662 errors {}
+Stopping app - local entrypoint completed.
+Runner terminated.
+✓ App completed. View run at 
+https://modal.com/apps/aliadifenza/main/ap-xz03ZHllg5j0TTRSkrwGdC
