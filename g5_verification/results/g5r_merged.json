@@ -1,0 +1,1042 @@
+{
+ "status": "G5r merged result (frozen \u00a77 rule)",
+ "sources": [
+  {
+   "path": "results/g5r_results_layers_2-10.json",
+   "sha256": "bbc15e1beabf4ae62ce1fc8d78c3f45464be164c42ede65091619971cb47bb11",
+   "runtime_s": 937.7,
+   "cost_est": 0.287,
+   "layers": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "errors": {
+    "layers": "stopped before layer 11: time budget"
+   }
+  },
+  {
+   "path": "results/g5r_results_layers_11-12-13-14.json",
+   "sha256": "a2850c2264c05d496760bd0089ff8250d56f2fe90977e197fa244b1bc83f9497",
+   "runtime_s": 500.6,
+   "cost_est": 0.153,
+   "layers": [
+    11,
+    12,
+    13,
+    14
+   ],
+   "errors": {}
+  }
+ ],
+ "layers_covered": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14
+ ],
+ "complete": true,
+ "confirmatory_kinds": [
+  "aluminium beverage can",
+  "car windshield",
+  "raw hen's egg"
+ ],
+ "eligible": [],
+ "L_star": null,
+ "k_at_L_star": null,
+ "verdicts": {
+  "2": {
+   "acrylic sheet": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.224999964237213
+   },
+   "aluminium beverage can": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.6875001192092893
+   },
+   "balsa strip": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.8250000476837157
+   },
+   "beeswax block": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.9874998927116393
+   },
+   "car windshield": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.9875001907348632
+   },
+   "corn kernel": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.1944444179534912
+   },
+   "parchment": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.8374999761581419
+   },
+   "raw egg white": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.6125000417232511
+   },
+   "raw hen's egg": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -0.28750026226043696
+   }
+  },
+  "3": {
+   "acrylic sheet": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -2.9500000327825546
+   },
+   "aluminium beverage can": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.0875000953674314
+   },
+   "balsa strip": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.9937500357627868
+   },
+   "beeswax block": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.549999803304672
+   },
+   "car windshield": {
+    "R1": false,
+    "R2": true,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": 0.4312500953674317
+   },
+   "corn kernel": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.40624999999999994
+   },
+   "parchment": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.5687501430511473
+   },
+   "raw egg white": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -2.3124999701976776
+   },
+   "raw hen's egg": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.0749998092651365
+   }
+  },
+  "4": {
+   "acrylic sheet": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.8375000357627868
+   },
+   "aluminium beverage can": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.0750001072883604
+   },
+   "balsa strip": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.41666650772094727
+   },
+   "beeswax block": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.6875001788139342
+   },
+   "car windshield": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.16666650772094727
+   },
+   "corn kernel": {
+    "R1": false,
+    "R2": true,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": 0.12499994039535528
+   },
+   "parchment": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.0437499880790708
+   },
+   "raw egg white": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.7750000357627866
+   },
+   "raw hen's egg": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -0.33333325386047363
+   }
+  },
+  "5": {
+   "acrylic sheet": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -0.5
+   },
+   "aluminium beverage can": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.6375000178813932
+   },
+   "balsa strip": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.875
+   },
+   "beeswax block": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.625
+   },
+   "car windshield": {
+    "R1": false,
+    "R2": true,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": 0.16666674613952637
+   },
+   "corn kernel": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.4437499642372131
+   },
+   "parchment": {
+    "R1": false,
+    "R2": true,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": 0.08124983310699468
+   },
+   "raw egg white": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.000000178813934
+   },
+   "raw hen's egg": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -0.5312501788139342
+   }
+  },
+  "6": {
+   "acrylic sheet": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.1125000715255735
+   },
+   "aluminium beverage can": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -2.1312499940395355
+   },
+   "balsa strip": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.3875001668930053
+   },
+   "beeswax block": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.4375001192092895
+   },
+   "car windshield": {
+    "R1": false,
+    "R2": true,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": 0.11249995231628424
+   },
+   "corn kernel": {
+    "R1": false,
+    "R2": true,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": 0.0
+   },
+   "parchment": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.5124999880790708
+   },
+   "raw egg white": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.4750000238418577
+   },
+   "raw hen's egg": {
+    "R1": false,
+    "R2": true,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": 0.19999986886978155
+   }
+  },
+  "7": {
+   "acrylic sheet": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.9250000417232511
+   },
+   "aluminium beverage can": {
+    "R1": false,
+    "R2": true,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": 0.20000004768371582
+   },
+   "balsa strip": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.2250001132488249
+   },
+   "beeswax block": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.5
+   },
+   "car windshield": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -0.9687500596046447
+   },
+   "corn kernel": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.8812498450279235
+   },
+   "parchment": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.5
+   },
+   "raw egg white": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.6749999821186063
+   },
+   "raw hen's egg": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.16666650772094727
+   }
+  },
+  "8": {
+   "acrylic sheet": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -1.6750001311302183
+   },
+   "aluminium beverage can": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.8125000596046447
+   },
+   "balsa strip": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.899999916553497
+   },
+   "beeswax block": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.599999964237213
+   },
+   "car windshield": {
+    "R1": false,
+    "R2": true,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": 0.41666674613952637
+   },
+   "corn kernel": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.3375001549720762
+   },
+   "parchment": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.28125
+   },
+   "raw egg white": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.1125000715255735
+   },
+   "raw hen's egg": {
+    "R1": false,
+    "R2": true,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": 0.16666674613952637
+   }
+  },
+  "9": {
+   "acrylic sheet": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.9750002026557921
+   },
+   "aluminium beverage can": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.5625
+   },
+   "balsa strip": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.1874999999999998
+   },
+   "beeswax block": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.6750001907348632
+   },
+   "car windshield": {
+    "R1": false,
+    "R2": true,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": 0.31250005960464483
+   },
+   "corn kernel": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.0625
+   },
+   "parchment": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.03750020265579218
+   },
+   "raw egg white": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.4000000953674314
+   },
+   "raw hen's egg": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -0.2499997615814209
+   }
+  },
+  "10": {
+   "acrylic sheet": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.5
+   },
+   "aluminium beverage can": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.312500178813934
+   },
+   "balsa strip": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.1666666269302368
+   },
+   "beeswax block": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.3125
+   },
+   "car windshield": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -0.26875013113021845
+   },
+   "corn kernel": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.5500000119209288
+   },
+   "parchment": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.21875
+   },
+   "raw egg white": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.6500001549720762
+   },
+   "raw hen's egg": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -0.2750002741813659
+   }
+  },
+  "11": {
+   "acrylic sheet": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -0.15000009536743159
+   },
+   "aluminium beverage can": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.5
+   },
+   "balsa strip": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.138888955116272
+   },
+   "beeswax block": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.041666507720947266
+   },
+   "car windshield": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -0.0666666030883789
+   },
+   "corn kernel": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.5624999999999999
+   },
+   "parchment": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.8333332538604736
+   },
+   "raw egg white": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.587499976158142
+   },
+   "raw hen's egg": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -0.16666650772094727
+   }
+  },
+  "12": {
+   "acrylic sheet": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.6875001192092893
+   },
+   "aluminium beverage can": {
+    "R1": false,
+    "R2": true,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": 0.0625
+   },
+   "balsa strip": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.41666650772094727
+   },
+   "beeswax block": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.125
+   },
+   "car windshield": {
+    "R1": false,
+    "R2": true,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": 0.41666674613952637
+   },
+   "corn kernel": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.5250000357627868
+   },
+   "parchment": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.5625
+   },
+   "raw egg white": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.2000002861022947
+   },
+   "raw hen's egg": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.6666665077209473
+   }
+  },
+  "13": {
+   "acrylic sheet": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -1.4375000596046446
+   },
+   "aluminium beverage can": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.5500000119209288
+   },
+   "balsa strip": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.625
+   },
+   "beeswax block": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.4375
+   },
+   "car windshield": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -0.41666650772094727
+   },
+   "corn kernel": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.16250008344650263
+   },
+   "parchment": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.28125
+   },
+   "raw egg white": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.5749999880790709
+   },
+   "raw hen's egg": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -0.125
+   }
+  },
+  "14": {
+   "acrylic sheet": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -0.7937499284744262
+   },
+   "aluminium beverage can": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.20000004768371582
+   },
+   "balsa strip": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.4750000238418577
+   },
+   "beeswax block": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.4812501668930051
+   },
+   "car windshield": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": -0.07500016689300532
+   },
+   "corn kernel": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.7249999344348905
+   },
+   "parchment": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -0.33749991655349726
+   },
+   "raw egg white": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "P3": false,
+    "ok": false,
+    "R2_margin": -1.0125001668930051
+   },
+   "raw hen's egg": {
+    "R1": false,
+    "R2": true,
+    "R3": false,
+    "P3": true,
+    "ok": false,
+    "R2_margin": 0.5
+   }
+  }
+ },
+ "sae_files": {
+  "2": "layer_2/width_16k/average_l0_53/params.npz",
+  "3": "layer_3/width_16k/average_l0_59/params.npz",
+  "4": "layer_4/width_16k/average_l0_60/params.npz",
+  "5": "layer_5/width_16k/average_l0_68/params.npz",
+  "6": "layer_6/width_16k/average_l0_70/params.npz",
+  "7": "layer_7/width_16k/average_l0_69/params.npz",
+  "8": "layer_8/width_16k/average_l0_71/params.npz",
+  "9": "layer_9/width_16k/average_l0_73/params.npz",
+  "10": "layer_10/width_16k/average_l0_77/params.npz",
+  "11": "layer_11/width_16k/average_l0_80/params.npz",
+  "12": "layer_12/width_16k/average_l0_82/params.npz",
+  "13": "layer_13/width_16k/average_l0_83/params.npz",
+  "14": "layer_14/width_16k/average_l0_83/params.npz"
+ },
+ "total_cost_est": 0.44
+}

@@ -58,12 +58,12 @@ Discovery = provided set (v1.1: 231 logged fixes; v1.2: fixed bystander + 60 bys
 
 1. ~~Tokenizer check~~ **DONE** 2026-11-21 (Modal app ap-gpbV9nmiJa8xUMBCZzE6RR). Multi-token targets excluded (impact eval 6, heating eval 10). Amendment 1 (PI-approved): alternatives no longer exclude items. Eligible eval causal items after tokenization: impact 90 / 22 events, heating 86, cutting 96. Full JSON to be archived (`datasets/kantian_v1/audit/`).
 2. ~~Adapt g5r_probe.py~~ DONE (88b9c87, de20455).
-3. G5r: layers 2–10 run; **layers 11–14 running** → merge (`merge_g5r.py`) → record selected layer/k, or "no valid layer" (→ P2/P3 inconclusive per §7).
+3. **G5r DONE — result: NO VALID LAYER** (`g5_verification/results/g5r_merged.json`; runs ap-HjkhUsCPA7dYzyRHoiX4Qw + ap-wVzoKopHVYB4wQwhExVCx7, ≈ $0.44). R1 efficacy failed for every layer 2–14 and every kind (0/156): ablating up to 8 SAE latents removes ≈ 0 identity information downstream (r ≈ 0, amnesic AUC ≈ clean AUC ≈ 0.93–1.0). Per frozen §7/§14: **P2 and P3 are INCONCLUSIVE.** P1 reported separately (§4).
 4. G6 ENGINEER → G7 code dry run with Gemini + Grok review against Protocol V1.1 + G5_SPEC_FREEZE.md.
 
 ## Spending
 
-Cap $30 (Modal). Spent (estimates from run logs): G4 ≈ $0.056 · G5v ≈ $0.029 · tokenizer check < $0.01 · G5r layers 2–10 ≈ $0.287 (ap-HjkhUsCPA7dYzyRHoiX4Qw; stopped at 20-min budget). Total ≈ $0.38.
+Cap $30 (Modal). Spent (estimates from run logs): G4 ≈ $0.056 · G5v ≈ $0.029 · tokenizer check < $0.01 · G5r layers 2–10 ≈ $0.287 + layers 11–14 ≈ $0.153. Total ≈ $0.53.
 G5r cap raised by PI to **$0.55** (2026-11-21 19:10, "of course i approve") to complete layers 11–14. Pilot + full run ceiling: $5 (frozen §15).
 
 ## Rules
