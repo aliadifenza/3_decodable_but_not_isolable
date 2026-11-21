@@ -150,21 +150,23 @@ def run_verify(model, tok, device, log, sae_loader, time_left=lambda: 1e9):
             if K == "vase":   # drop property latents (fragile vs robust within members, discovery noun)
                 pa = auc_cols(A[sel(K, "D", "noun", FRAGILE)], A[sel(K, "D", "noun", ROBUST)])
                 score = torch.where((pa - 0.5).abs() >= 0.25, torch.full_like(score, -1.0), score)
-            cand = torch.topk(score, PREFILTER).indices.tolist(); S, best = [], 0.5
-            while len(S) < K_MAX:
+            # greedy ORDER always continued to K_MAX (needed for size-matched C2); selected set S stops at GAIN_MIN
+            cand = torch.topk(score, PREFILTER).indices.tolist(); order, S, best, stopped = [], [], 0.5, False
+            while len(order) < K_MAX:
                 trial = []
                 for c in cand:
-                    if c in S: continue
-                    sc = A[:, S + [c]].sum(1)
+                    if c in order: continue
+                    sc = A[:, order + [c]].sum(1)
                     trial.append((min(auc1(sc[mD_n], sc[nD_n]), auc1(sc[mD_p], sc[nD_p])), float(A[mD_n][:, c].mean()), c))
                 if not trial: break
                 v, _, c = max(trial)
-                if S and v - best < GAIN_MIN: break
-                S.append(c); best = v
+                if order and v - best < GAIN_MIN: stopped = True
+                order.append(c)
+                if not stopped: S.append(c); best = v
             sc = A[:, S].sum(1)
             tau = youden(torch.cat([sc[mD_n], sc[mD_p]]), torch.cat([sc[nD_n], sc[nD_p]]))
             mV_n, nV_n, mV_p, nV_p = sel(K, "V", "noun"), sel("pool", "V", "noun"), sel(K, "V", "pron"), sel("pool", "V", "pron")
-            m = dict(k=len(S), latents=S, disc_min_auc=best, tau=tau,
+            m = dict(k=len(S), latents=S, greedy_order=order, disc_min_auc=best, tau=tau,
                      recog_noun=auc1(sc[mV_n], sc[nV_n]), recog_pron=auc1(sc[mV_p], sc[nV_p]),
                      perm_frac=float((torch.cat([sc[mV_n], sc[mV_p]]) >= tau).float().mean()),
                      worst_group=min(auc1(sc[sel(K, "V", "noun", {ph})], sc[nV_n]) for ph in G4.CONCEPTS[K]))
@@ -186,12 +188,10 @@ def run_verify(model, tok, device, log, sae_loader, time_left=lambda: 1e9):
                 idx = torch.nonzero(ok).flatten().tolist()
                 idx = sorted(idx, key=lambda j: (abs(float(contrib[j]) - cS), j))[:len(S)]
                 m["c1_latents"], m["c1_pool_size"], m["c1_feasible_selection"] = idx, int(ok.sum()), len(idx) == len(S) and len(S) > 0
-            else:
-                m["ranked"] = torch.topk(score, K_MAX).indices.tolist()
             row[K] = m
         # matching feasibility on causal items (natural norms, no extra forward)
         for it in items:
-            K = it["kind"]; S = row[K]["latents"]; C1 = row[K].get("c1_latents", []); C2 = row[BYSTANDER]["ranked"][:len(S)]
+            K = it["kind"]; S = row[K]["latents"]; C1 = row[K].get("c1_latents", []); C2 = row[BYSTANDER]["greedy_order"][:len(S)]   # BUGFIX 2026-11-21: was score-ranked top-k, not the bystander's selected set
             def contrib(st, rows, lat):
                 if not lat: return 0.0, 0
                 x = st[L][rows].to(device); a = acts(x)[:, lat]
@@ -245,7 +245,7 @@ def run_verify(model, tok, device, log, sae_loader, time_left=lambda: 1e9):
     for it in items:
         mt = it["match"][L]
         if "MATCH_INFEASIBLE" in mt["codes"] or not per_layer[L][it["kind"]]["latents"] or it["tid"] is None: continue
-        K = it["kind"]; S = per_layer[L][K]["latents"]; C1 = per_layer[L][K]["c1_latents"]; C2 = per_layer[L][BYSTANDER]["ranked"][:len(S)]
+        K = it["kind"]; S = per_layer[L][K]["latents"]; C1 = per_layer[L][K]["c1_latents"]; C2 = per_layer[L][BYSTANDER]["greedy_order"][:len(S)]   # BUGFIX (see above)
         N = mt["N_star"]; row = dict(family=it["family"], idx=it["idx"], N_star=N)
         for name, ids, P, lat, n, Lref in [("S", it["_ids"], it["P"], S, mt["n_S"], it["L"]), ("C1", it["_ids"], it["P"], C1, mt["n_C1"], it["L"]),
                                            ("S2", it["_ids2"], it["P2"], S, mt["n_S2"], it["L_c2"]), ("C2", it["_ids2"], it["Pc"], C2, mt["n_C2"], it["L_c2"])]:
