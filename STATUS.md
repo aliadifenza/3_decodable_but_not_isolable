@@ -30,6 +30,29 @@ Discovery = provided set (v1.1: 231 logged fixes; v1.2: fixed bystander + 60 bys
 
 1. **G5r verification run authorization** (paid GPU, hard cap $0.37). It applies the frozen selection rules to set layer/k; failures are reported, not tuned.
 
+## G5 SPEC FREEZE — PI checklist (completed 2026-11-21)
+
+**Required outcome: One immutable experimental specification.** Owner: Ali. Source: `protocol/G5_SPEC_FREEZE.md` (PI-approved 2026-11-21 18:32 CET). The frozen **rules** may produce numerical layer/k results at G5r; this does not reopen the specification.
+
+- [x] Select model, exact revision, tokenizer and execution environment.
+- [x] Freeze experimental prompt families and inclusion rules.
+- [x] Freeze feature-discovery and validation datasets.
+- [x] Freeze property-matched P1 identity/non-identity contrasts, grammatical-role variation, and selectivity/stability thresholds.
+- [x] Freeze held-out testing data with no selection leakage.
+- [x] Freeze feature identification and downstream circuit localization procedures.
+- [x] Freeze intervention layer, site, strength, and matching rules.
+- [x] Freeze C1 and C2 implementations.
+- [x] Freeze actual-activation-change norm tolerance, hook/layer/dimensionality and token-position matching rules, diagnostics, and failure/exclusion handling.
+- [x] Freeze pathway-specific disruption, downstream-component measures, restoration criteria, and infeasibility reporting for P3.
+- [x] Freeze primary and secondary measurements.
+- [x] Freeze sample size and the predeclared discovery-only probe-variability planning procedure within available resources.
+- [x] Freeze effect-size criteria, uncertainty method and multiplicity handling.
+- [x] Freeze falsification, inconclusive and success criteria.
+- [x] Freeze maximum expenditure and engineering contract.
+- [x] Ali approves the complete specification.
+
+**Checklist completion means the rules are approved, not that the pending tokenizer check, G5r run, or independent review has succeeded.** Those remain in Next actions.
+
 ## Next actions (in order)
 
 1. **Tokenizer check** on discovery v1.2 / validation v1.1 / evaluation v1.1 — PI runs on Mac (< $0.01, CPU). Any multi-token target → excluded per frozen §2, reported.
