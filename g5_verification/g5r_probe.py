@@ -399,7 +399,7 @@ def run_repair(model, tok, device, recs, sae_loader, log=print, time_left=lambda
                         P3=(i.get("P3") or {}).get("feasible", False))
             v[K]["ok"] = all(v[K][x] for x in ("R1", "R2", "R3", "P3"))
         verdict[L] = v
-    complete = sorted(out_layers) == sorted(layers)
+    complete = sorted(out_layers) == sorted(LAYERS)   # selection only over the full frozen range 2-14; partial runs are merged by merge_g5r.py
     ok_layers = [L for L, v in verdict.items() if all(v[K]["ok"] for K in confirm)] if complete else []
     ok_all = [L for L, v in verdict.items() if all(x["ok"] for x in v.values())]
     def mm(L): return min(verdict[L][K]["R2_margin"] for K in confirm)
@@ -422,7 +422,7 @@ try:
 
     @app.function(image=image, gpu=GPU, timeout=TIMEOUT_S, volumes={"/root/.cache/huggingface": vol},
                   secrets=[modal.Secret.from_name("huggingface-secret")])
-    def verify(data: bytes):
+    def verify(data: bytes, layers=None):
         import torch, numpy as np, subprocess, tempfile
         t0 = time.time(); logs = []
         def log(s): print(s, flush=True); logs.append(s)
@@ -438,7 +438,7 @@ try:
             fs = [f for f in files if f.startswith(f"layer_{L}/width_16k/") and f.endswith("params.npz")]
             chosen[L] = min(fs, key=lambda s: (abs(int(re.search(r"average_l0_(\d+)", s).group(1)) - 70), s))
             return dict(np.load(hf_hub_download(SAE_REPO, chosen[L])))
-        R = run_repair(model, tok, "cuda", recs, sae_loader, log, time_left=lambda: TIMEOUT_S - 90 - (time.time() - t0))
+        R = run_repair(model, tok, "cuda", recs, sae_loader, log, time_left=lambda: TIMEOUT_S - 90 - (time.time() - t0), layers=layers or LAYERS)
         rt = time.time() - t0
         return json.dumps(dict(status="EXPLORATORY G5 REPAIR VERIFICATION — discovery/validation only",
                                identity=dict(model=MODEL_ID, revision=REV, commit_hash=getattr(model.config, "_commit_hash", None), sae_files=chosen),
@@ -447,9 +447,11 @@ try:
                           default=lambda o: o.tolist() if hasattr(o, "tolist") else str(o)).encode()
 
     @app.local_entrypoint()
-    def main(data: str):
-        b = verify.remote(open(data, "rb").read()); os.makedirs("modal_out/g5r", exist_ok=True)
-        open("modal_out/g5r/g5r_results.json", "wb").write(b); d = json.loads(b)
+    def main(data: str, layers: str = ""):
+        Ls = [int(x) for x in layers.split(",") if x] or None
+        b = verify.remote(open(data, "rb").read(), Ls); os.makedirs("modal_out/g5r", exist_ok=True)
+        name = "g5r_results.json" if not Ls else "g5r_results_layers_%s.json" % "-".join(map(str, Ls))
+        open("modal_out/g5r/" + name, "wb").write(b); d = json.loads(b); print("wrote modal_out/g5r/" + name)
         print(f"DONE runtime {d['runtime_s']}s est ${d['gpu_cost_usd_estimate']} errors {d['results'].get('errors')}")
 except ImportError:
     pass

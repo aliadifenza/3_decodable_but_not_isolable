@@ -34,5 +34,5 @@ for L in (2, 3):
         assert set(i["R3"]["c2_sets"]) <= {"umbrella", "wristwatch", "teapot"}
 sel = R["layer_selection"]
 assert sel["confirmatory_kinds"] == ["aluminium beverage can", "car windshield", "raw hen's egg"], sel["confirmatory_kinds"]
-assert sel["all_layers_completed"] and "IMPACT" in sel["rule"]
+assert (not sel["all_layers_completed"]) and sel["L_star"] is None and "IMPACT" in sel["rule"]   # layers [2,3] is a partial run
 print("dataset schema run PASS:", len(recs), "records,", len(kinds), "kinds; L_star on random model =", sel["L_star"], "(expected None)")
