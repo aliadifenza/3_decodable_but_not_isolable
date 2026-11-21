@@ -55,7 +55,7 @@ Discovery = provided set (v1.1: 231 logged fixes; v1.2: fixed bystander + 60 bys
 
 ## Next actions (in order)
 
-1. **Tokenizer check** on discovery v1.2 / validation v1.1 / evaluation v1.1 — PI runs on Mac (< $0.01, CPU). Any multi-token target → excluded per frozen §2, reported.
+1. ~~Tokenizer check~~ **DONE** 2026-11-21 (Modal app ap-gpbV9nmiJa8xUMBCZzE6RR). Multi-token targets excluded (impact eval 6, heating eval 10). Amendment 1 (PI-approved): alternatives no longer exclude items. Eligible eval causal items after tokenization: impact 90 / 22 events, heating 86, cutting 96. Full JSON to be archived (`datasets/kantian_v1/audit/`).
 2. Claude adapts `g5r_probe.py` to the dataset schema (engineering only; frozen rules unchanged) with local deterministic tests.
 3. G5r run after authorization → record selected layer/k, or "no valid layer" (→ P2/P3 inconclusive per §7).
 4. G6 ENGINEER → G7 code dry run with Gemini + Grok review against Protocol V1.1 + G5_SPEC_FREEZE.md.

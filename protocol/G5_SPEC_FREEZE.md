@@ -19,7 +19,7 @@
 Families: physical_impact (raw hen's egg, aluminium beverage can, car windshield), heating (corn kernel, raw egg white, beeswax block), cutting (parchment, balsa strip, acrylic sheet); 6 property-matched strata per family. **Confirmatory family: physical_impact (Decision 4). Heating and cutting: secondary, reported separately.**
 
 Causal item inclusion (Decision 4 + B6), applied on the intact model before any intervention:
-target and every alternative are single Gemma tokens appended to the prompt; target p ≥ 0.10; target rank ≤ 5; inserting/removing the bystander shifts target log-odds by ≤ 1.0; patient and bystander each named exactly once. Excluded items are logged with reason codes, never replaced.
+target is a single Gemma token appended to the prompt (Amendment 1: multi-token alternatives are dropped from the alternative list, not used to exclude the item); target p ≥ 0.10; target rank ≤ 5; inserting/removing the bystander shifts target log-odds by ≤ 1.0; patient and bystander each named exactly once. Excluded items are logged with reason codes, never replaced.
 
 ## 3. Feature-discovery and validation datasets — FROZEN
 
@@ -106,3 +106,13 @@ Cap remains $30 (Modal). Spent ≈ $0.09. G5r verification: hard cap $0.37 (20-m
 > **Scientific authority: Protocol V1.1 and the approved G5 specification.**
 
 Approved text = draft at commit 2602ac3 (content unchanged except this header and sign-off). Any later change requires a new, explicit PI amendment.
+
+---
+
+## Amendment 1 — causal item inclusion by target token only (PI-approved 2026-11-21 18:47 CET)
+
+- **Original (§2):** target and every alternative must be single Gemma tokens, else the item is excluded.
+- **Change:** inclusion depends on the **target** only (as Protocol V1.1 §B6 requires). A multi-token alternative is dropped from that item's alternative list (secondary B7 measure only); the item stays.
+- **Reason:** the tokenizer check showed "flexed" (an alternative in every windshield prompt) is multi-token, so the original rule removed all 32 windshield evaluation items. Decided from tokenizer output only; no model outputs had been seen.
+- **Impact:** confirmatory impact set 90 items / 22 events / 3 kinds (instead of 58 / 14 / 2). Primary measure unchanged.
+- **PI approval (verbatim):** "sure i approve."
