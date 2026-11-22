@@ -2,15 +2,19 @@
 
 **Single source of truth.** Read this before writing any brief or starting any work. Claude updates it after every step; anything not listed here does not exist yet.
 
-**Last updated:** 2026-11-22 12:15 CET · Claude · see git log · **Continuation:** `HANDOFF_2026-11-21_post_G5r.md`
+**Last updated:** 2026-11-22 12:12 CET · Claude · see git log · **Continuation:** this file (the 2026-11-21 handoff is historical)
 
-## Current state — confirmatory phase CLOSED
+## Current state — ALL ENGINEERING, ANALYSIS, REVIEW AND REPORTING DONE; SUBMISSION PENDING (PI)
 
 **G5 SPEC FREEZE: FROZEN** (PI 2026-11-21 18:32 CET; Amendment 1 18:47 CET). **Scientific authority: Protocol V1.1 + `protocol/G5_SPEC_FREEZE.md`** (V1.2 is a consolidated reissue; the freeze document governs on conflict).
 
 **G5r verification: DONE → NO VALID LAYER.** Under the frozen §7/§14 rules, **P2 and P3 are INCONCLUSIVE**. The confirmatory pipeline (G6 ENGINEER → G10 FULL RUN) is **closed, not executed** — documented NO-GO by the frozen rule. **The evaluation set (v1.1) remains sealed and unused.**
 
-**Next:** E1–E4 **DONE**; G12 reviews **DONE** (Gemini + DeepSeek independent, Qualam internal); report draft + README **DONE**. **Morning: PI reads and edits `report/AlignedLab_Exp3_Kantian_Positional_Logic_report.docx`, optionally sends `review/G12_review_package_v2_2026-11-22.md` to one more independent reviewer, then submits by 12:30.** **Deadline: submission 2026-11-22 13:00 CET** (target 12:30).
+**Next:** only the PI's itch.io submission remains — deadline **Monday 2026-11-23 13:00** (itch.io display time). Steps: `git pull`; export the final report to PDF from Word (Baskerville); on itch.io upload `report/cover.png`, title "Decodable but Not Isolable", the revised abstract, the GitHub link and the PDF; submit; then record the submission URL here.
+
+**Done:** frozen G5r (no valid layer; P2/P3 inconclusive; evaluation sealed) · exploratory E1–E4 · G12 reviews (Gemini + DeepSeek independent, Qualam internal audit) and consolidation · final PI-revised report in `report/` · README led by the paper title · repo description · itch.io cover · 13-slide presentation (private Claude Slides artifact, PI-owned; includes roles and philosophy-to-measurement slides) · compute ≈ $2.21 of $30 for reported model runs.
+
+**Open, optional:** §3.2 provenance wording for the discovery set (lab notes suggest it was assembled from several AI generator streams; PI to confirm).
 
 ### Gate report — G5r (universal format)
 
