@@ -193,7 +193,7 @@ C.push(P("Exploratory work explains why: identity is not held in a few sparse fe
 
 // ---------- Code and data
 C.push(H2("Code and Data"));
-C.push(P("**Code repository:** https://github.com/aliadifenza/3_kantian_positions (public). Frozen protocol and spec in protocol/; frozen verification in g5_verification/; exploratory E1–E4 in exploratory/; reviews in review/; live record in STATUS.md.", { align: AlignmentType.LEFT }));
+C.push(P("**Code repository:** https://github.com/aliadifenza/3_kantian_positional_logic_test (public). Frozen protocol and spec in protocol/; frozen verification in g5_verification/; exploratory E1–E4 in exploratory/; reviews in review/; live record in STATUS.md.", { align: AlignmentType.LEFT }));
 C.push(P("**Data/Datasets:** datasets/kantian_v1/ (discovery v1.2, validation v1.1, evaluation v1.1 sealed; checksums in SHA256SUMS; DATASET_CARD.md).", { align: AlignmentType.LEFT }));
 C.push(P("**Other artifacts:** raw results for every run (JSON), Modal run identifiers, local test suites, figures and analysis scripts. Total compute: about $2.21 of a $30 cap.", { align: AlignmentType.LEFT }));
 

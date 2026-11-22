@@ -52,6 +52,8 @@ These are roles **within one research case**, not evidence that this arrangement
 
 ## Repository and evidence
 
+This repository was renamed from `3_kantian_positions` to `3_kantian_positional_logic_test` on 2026-11-22. Archived documents (protocol, handoff, reviews) keep the old name as written at the time; GitHub redirects old links.
+
 - [protocol/](protocol/) — Protocol V1.1 (approved), fidelity record, V1.2 consolidated reissue, **G5 spec freeze**.
 - [datasets/kantian_v1/](datasets/kantian_v1/) — all splits with checksums, generation and audit scripts, dataset card.
 - [g4_probe/](g4_probe/) — G4 feasibility probe (exploratory).
