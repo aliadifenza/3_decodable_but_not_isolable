@@ -2,7 +2,7 @@
 
 **Single source of truth.** Read this before writing any brief or starting any work. Claude updates it after every step; anything not listed here does not exist yet.
 
-**Last updated:** 2026-11-21 21:35 CET · Claude · see git log · **Continuation:** `HANDOFF_2026-11-21_post_G5r.md`
+**Last updated:** 2026-11-22 10:45 CET · Claude · see git log · **Continuation:** `HANDOFF_2026-11-21_post_G5r.md`
 
 ## Current state — confirmatory phase CLOSED
 
@@ -71,6 +71,11 @@ Discovery = provided set (v1.1: 231 logged fixes; v1.2: fixed bystander + 60 bys
 - **G12 reviews:** Gemini (independent), DeepSeek (independent; substituted for Grok, unavailable), Qualam (internal audit, not independent). All agree claims 2, 6; all judge 3–4 overstated; claim 5 moved to Discussion as a V2 hypothesis (PI 21:05). Consolidation `review/G12_consolidation_2026-11-21.md`; v2 package with E4 addendum `review/G12_review_package_v2_2026-11-22.md`.
 - **Report draft:** `report/AlignedLab_Exp3_Kantian_Positional_Logic_report.docx` (Apart template structure, Baskerville, US English; build script `report/build_report.js`). Open items for PI: confirm discovery-set provenance wording (§3.2), confirm hackathon name in footnote, revise text in own voice (template asks for primarily team-written text).
 - **README** rewritten in the house style of 2_epistemic_vacuum.
+
+### 2026-11-22 morning
+
+- README: hackathon name corrected to "Mechanistic Interpretability Hackathon 5: Autointerp", hosted by victorlf4 (Victor Levoso) on itch.io — verified from the jam page (PI-supplied PDF, 10:29). Not an Apart Research event; "(Apart Research)" removed. **Submission window: 2026-11-20 17:00 → 2026-11-23 13:00** (itch.io display time) — the deadline is Monday, not Sunday. Official theme "Autointerp Evals" is a suggestion, not a rule. Judging: default itch.io voting. G2 reviewers (Gemini, Grok) and the dataset-generation history added. No engineering changes; no runs.
+- Lab notes (private AlignedLab repo, `docs/lab_notes/3_kantian_positions/`) read for the report: they add the G2 review (Gemini + Grok, CONDITIONAL GO) and the dataset-generation failures (Adaption Labs export rejected; Grok capacity exhausted; Gemini-reported ZIP never delivered; separate Modal Qwen2.5-7B cutting generator, cost unverified).
 
 ## PI decisions today (2026-11-21, CET)
 
