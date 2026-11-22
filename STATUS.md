@@ -2,7 +2,7 @@
 
 **Single source of truth.** Read this before writing any brief or starting any work. Claude updates it after every step; anything not listed here does not exist yet.
 
-**Last updated:** 2026-11-22 10:40 CET · Claude · see git log · **Continuation:** `HANDOFF_2026-11-21_post_G5r.md`
+**Last updated:** 2026-11-22 12:15 CET · Claude · see git log · **Continuation:** `HANDOFF_2026-11-21_post_G5r.md`
 
 ## Current state — confirmatory phase CLOSED
 
@@ -75,6 +75,7 @@ Discovery = provided set (v1.1: 231 logged fixes; v1.2: fixed bystander + 60 bys
 ### 2026-11-22 morning
 
 - README: hackathon name corrected to "Mechanistic Interpretability Hackathon 5: Autointerp", hosted by victorlf4 (Victor Levoso) on itch.io — verified from the jam page (PI-supplied PDF, 10:29). Not an Apart Research event; "(Apart Research)" removed. **Submission window: 2026-11-20 17:00 → 2026-11-23 13:00** (itch.io display time) — the deadline is Monday, not Sunday. Official theme "Autointerp Evals" is a suggestion, not a rule. Judging: default itch.io voting. G2 reviewers (Gemini, Grok) and the dataset-generation history added. No engineering changes; no runs.
+- **Final report committed** (PI-revised, 2026-11-22): `report/AlignedLab_Exp3_Kantian_Positional_Logic_report.docx`, replacing the Claude draft at the same path. Claude's edits on PI instruction ("do all the updates you see fit"): footnote hackathon name/host; repo URL; appendix cross-references after the PI's reordering (A philosophy, B workflow, C what went wrong, D additional results, E context); "overtime" → "over time"; removed the line "We operationalized identity as it follows:" (the definition is philosophical, the operationalization is A.2); "creative overhead" → "creative dimension"; G2 design review by Gemini + Grok in Table A1/B roles; new item C.7 on the dataset-generation history (Adaption Labs export, Grok capacity, undelivered Gemini ZIP, Qwen2.5-7B Modal generator); compute note that a separate dataset-generator test's cost was not recorded. itch.io cover image `report/cover.png`. Presentation deck: private Claude Slides artifact (owner: PI).
 - Repository renamed to `aliadifenza/3_kantian_positional_logic_test` (PI, 2026-11-22 ~10:33); README notes the rename; report link updated in `report/build_report.js` (the PI's edited report must use the new URL too).
 - Lab notes (private AlignedLab repo, `docs/lab_notes/3_kantian_positions/`) read for the report: they add the G2 review (Gemini + Grok, CONDITIONAL GO) and the dataset-generation failures (Adaption Labs export rejected; Grok capacity exhausted; Gemini-reported ZIP never delivered; separate Modal Qwen2.5-7B cutting generator, cost unverified).
 

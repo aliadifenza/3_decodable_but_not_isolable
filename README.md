@@ -61,7 +61,7 @@ This repository was renamed from `3_kantian_positions` to `3_kantian_positional_
 - [g5_verification/](g5_verification/) — G5v verification, C2 bug record, repair spec, **G5r frozen verification** (`g5r_probe.py`, results, merge, tests).
 - [exploratory/](exploratory/) — E1–E3 (`e_probe.py`) and E4 (`e4_probe.py`), local tests, analysis scripts, raw results, summaries, figures.
 - [review/](review/) — review packages (v1, v2), Gemini, DeepSeek and Qualam reviews verbatim, consolidation, plain-English explainer.
-- [report/](report/) — submission report (Word) and its build script.
+- [report/](report/) — **final submission report** (`AlignedLab_Exp3_Kantian_Positional_Logic_report.docx`, PI-revised), the cover image, and `build_report.js`, which generated the first draft only.
 - [STATUS.md](STATUS.md) — live record of every PI decision, run, cost and result.
 
 ## Reproduce
