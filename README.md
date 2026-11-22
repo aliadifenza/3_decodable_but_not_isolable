@@ -1,6 +1,7 @@
-# AlignedLab — Experiment 3: The Kantian Positional Logic Test
+# Decodable but Not Isolable
 
-**Is an object's identity a condition of possibility for predicting what happens to it? A gated, pre-frozen test in Gemma-2-2B**
+**Testing Whether an Object’s Identity Is a Condition of Possibility for Causal Prediction in Gemma-2-2B**  
+AlignedLab Experiment 3 · The Kantian Positional Logic Test
 
 **Principal investigator:** Dr. Ali A. Di Fenza (AlignedLab, Berlin)  
 **Research collaborators:** Qualam (GPT-6: research director, methodology, internal audit), Claude (lead engineer: code, data, analysis, report draft), Gemini and Grok (independent design reviewers at G2), Gemini and DeepSeek (independent results reviewers at G12; Grok unavailable by then). The PI retained scientific authority and interpretation.  
