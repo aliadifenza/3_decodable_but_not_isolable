@@ -2,15 +2,15 @@
 
 **Single source of truth.** Read this before writing any brief or starting any work. Claude updates it after every step; anything not listed here does not exist yet.
 
-**Last updated:** 2026-11-22 12:12 CET · Claude · see git log · **Continuation:** this file (the 2026-11-21 handoff is historical)
+**Last updated:** 2026-11-22 12:40 CET · Claude · see git log
 
-## Current state — ALL ENGINEERING, ANALYSIS, REVIEW AND REPORTING DONE; SUBMISSION PENDING (PI)
+## Current state — SUBMITTED (2026-11-22 ~12:34 CET, 1 day 26 min before the deadline)
 
 **G5 SPEC FREEZE: FROZEN** (PI 2026-11-21 18:32 CET; Amendment 1 18:47 CET). **Scientific authority: Protocol V1.1 + `protocol/G5_SPEC_FREEZE.md`** (V1.2 is a consolidated reissue; the freeze document governs on conflict).
 
 **G5r verification: DONE → NO VALID LAYER.** Under the frozen §7/§14 rules, **P2 and P3 are INCONCLUSIVE**. The confirmatory pipeline (G6 ENGINEER → G10 FULL RUN) is **closed, not executed** — documented NO-GO by the frozen rule. **The evaluation set (v1.1) remains sealed and unused.**
 
-**Next:** only the PI's itch.io submission remains — deadline **Monday 2026-11-23 13:00** (itch.io display time). Steps: `git pull`; export the final report to PDF from Word (Baskerville); on itch.io upload `report/cover.png`, title "Decodable but Not Isolable", the revised abstract, the GitHub link and the PDF; submit; then record the submission URL here.
+**Submitted:** "Decodable but Not Isolable" is entered in Mechanistic Interpretability Hackathon 5: Autointerp (itch.io jam, host victorlf4), submitted by Narintea; downloads: report PDF + slides PDF; cover image set. Rating opens 2026-11-23 13:00. Verified by PI screenshot of the jam submission page.
 
 **Done:** frozen G5r (no valid layer; P2/P3 inconclusive; evaluation sealed) · exploratory E1–E4 · G12 reviews (Gemini + DeepSeek independent, Qualam internal audit) and consolidation · final PI-revised report in `report/` · README led by the paper title · repo description · itch.io cover · 13-slide presentation (private Claude Slides artifact, PI-owned; includes roles and philosophy-to-measurement slides) · compute ≈ $2.21 of $30 for reported model runs.
 
